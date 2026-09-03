@@ -1,0 +1,39 @@
+<svg id="employee_arrow.svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="63" viewBox="0 0 63 63">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #00e4c2;
+        stroke-width: 3px;
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        filter: url(#filter-2);
+      }
+
+      .cls-3 {
+        fill: #15a5ff;
+        fill-rule: evenodd;
+      }
+    </style>
+    <filter id="filter" x="0" y="0" width="63" height="63" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="1.5" y="1.5" width="60" height="60" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHkxPSIzMCIgeDI9IjYwIiB5Mj0iMzAiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTZhNWZmIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMC4zIiBzdG9wLWNvbG9yPSIjMDBiZmY2Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAwZTRjMSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNjAiIGhlaWdodD0iNjAiLz4KPC9zdmc+Cg=="/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#15a5ff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g style="fill: none; filter: url(#filter)">
+    <circle id="楕円形_1" data-name="楕円形 1" class="cls-1" cx="31.5" cy="31.5" r="30" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use xlink:href="#楕円形_1" style="stroke: #00e4c2; filter: none; fill: none"/>
+  <g id="グループ_1" data-name="グループ 1" class="cls-2">
+    <path id="長方形_513" data-name="長方形 513" class="cls-3" d="M1700.85,5600.97l-10.6-10.61,2.12-2.12,10.6,10.61Z" transform="translate(-1666.5 -5558.5)"/>
+    <path id="長方形_513_のコピー" data-name="長方形 513 のコピー" class="cls-3" d="M1702.27,5580.88l-10.61,10.61-2.12-2.13,10.61-10.6Z" transform="translate(-1666.5 -5558.5)"/>
+  </g>
+</svg>

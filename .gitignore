@@ -1,0 +1,19 @@
+# Environment-specific configuration and credentials
+**/wp-config.php
+**/.user.ini
+**/.htpasswd
+
+# Runtime data
+**/wp-content/uploads/
+**/wp-content/cache/
+**/wp-content/upgrade/
+**/wp-content/ai1wm-backups/
+**/*.log
+**/error_log
+
+# Migration artifacts
+**/*.sql
+**/*.sql.gz
+**/*.wpress
+**/*-file-manifest.json
+**/.DS_Store

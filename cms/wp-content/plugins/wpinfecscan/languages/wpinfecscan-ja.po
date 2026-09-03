@@ -1,0 +1,1102 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: ja\n"
+
+msgid "All files are continuously scanned every 10 minutes after designated time."
+msgstr "１０分に一回、設定時間以降に全てのファイルをスキャンし終わるまで実行されます。"
+
+msgid "The definition file of WordPress malware scanner is not the latest version. Please update from [Malware Scan] in the administration display."
+msgstr "ワードプレスマルウェアスキャナの定義ファイルが最新ではありません。管理画面メニューの「Malware　Scan」より定義ファイルを更新していただけます。"
+
+msgid "Detected malware infection. Please check from [Malware Scan] in the administration display."
+msgstr "マルウェアの感染を検出しました。管理画面メニューの「Malware　Scan」よりご確認ください。"
+
+msgid "*Scanning may take up to 10 minutes to complete. Please wait for a moment."
+msgstr "※スキャン完了まで10分ほどかかる場合もございます。このままお待ちください。"
+
+msgid "Start scanning"
+msgstr "今すぐスキャン開始"
+
+msgid "Scanning in progress"
+msgstr "スキャン中です"
+
+msgid "Setting"
+msgstr "設定"
+
+msgid "Purchase"
+msgstr "購入"
+
+msgid "*This file is subjected to a detailed inspection."
+msgstr "※このファイルは詳細検査されます"
+
+msgid "Pattern matched"
+msgstr "パターンマッチしました"
+
+msgid "Display"
+msgstr "表示"
+
+msgid "Latest version"
+msgstr "最新です"
+
+msgid "Purchase the latest definition file"
+msgstr "最新の定義ファイルを購入する"
+
+msgid "*Required to purchase the above pattern to detect the latest malware."
+msgstr "※最新のマルウェアを検出するには上記検出パターンのご購入が必要です"
+
+msgid "(Subscription of definition until "
+msgstr "(定義の購読期限:"
+
+msgid "Definition of malware patterns :"
+msgstr "マルウェア検出パターン定義　:"
+
+msgid "The number of files scanned in last 24 hours"
+msgstr "24時間でスキャンしたファイル数"
+
+msgid "Files"
+msgstr "ファイル"
+
+msgid "Inspecting files/database that have changed contents or have passed for a certain period since the last inspection."
+msgstr "内容が変化したファイル・データベースや最終検査日から一定時間経過したファイル・データベースを検査しています"
+
+msgid "Detected"
+msgstr "検出"
+
+msgid "Pattern matching"
+msgstr "パターンマッチ"
+
+msgid "Definitive diagnosis"
+msgstr "確定診断"
+
+msgid "Display infected files"
+msgstr "感染ファイル表示"
+
+msgid "Not detected any malware in this website."
+msgstr "このサイトにマルウェアは見つかりませんでした"
+
+msgid "*Pattern matched signifies the file matches to malware in its characteristics, and definitive diagnosis signifies the file is judged as containing harmful code by detailed inspection."
+msgstr "※パターンマッチとはマルウェアの特徴に一致したファイルのことで、確定診断とはさらにそのファイルが詳細検査によって有害なコードを含むと判定されたファイルです。"
+
+msgid "Scan automatically"
+msgstr "自動スキャンを行う"
+
+msgid "Beginning time of auto scanning"
+msgstr "自動スキャンの開始時間"
+
+msgid "O'Clock"
+msgstr "時"
+
+msgid "Notify by e-mail upon detection"
+msgstr "検出時にメール通知"
+
+msgid "E-mail address"
+msgstr "メールアドレス"
+
+msgid "Hide detection alert on the administration display"
+msgstr "管理画面の検出時のアラートを非表示"
+
+msgid "*E-mail notification is only once in 24 hours even if detected multiple times."
+msgstr "※メール通知は複数回検出した場合でも24時間に一度となります"
+
+msgid "*The beginning time of auto scanning may be different when using WordPress cron."
+msgstr "※ワードプレスのCRONを利用している場合自動スキャンの開始時間がずれることがございます"
+
+msgid "Scanning completed!"
+msgstr "スキャンが完了しました!"
+
+msgid "WordPress doctor"
+msgstr "ワードプレスドクター"
+
+msgid "Highlighted pattern matched rows."
+msgstr "パターンにマッチした行をハイライトしています。"
+
+msgid "Close"
+msgstr "このウィンドウを閉じる"
+
+msgid "The directory was not applicable:"
+msgstr "ディレクトリではありませんでした:"
+
+msgid " Please check the malware detected."
+msgstr "にてマルウェアを検出しましたのでご確認ください"
+
+msgid "Inspection result"
+msgstr "検査結果"
+
+msgid "Beginning time:"
+msgstr "開始時間:"
+
+msgid "End time:"
+msgstr "終了時間:"
+
+msgid "Duration for scanning:"
+msgstr "スキャンにかかった時間:"
+
+msgid "Directories scanned:"
+msgstr "スキャンしたディレクトリ:"
+
+msgid "The number of directories scanned:"
+msgstr "スキャンしたディレクトリ数:"
+
+msgid "The number of files scanned (Files that have changed contents or have passed for a certain period since the last inspection):"
+msgstr "スキャンしたファイル数（変更されたファイルまたは一定期間が経過したファイル）:"
+
+msgid "Unreliable files (malware, virus) found:"
+msgstr "発見した疑わしいファイル(マルウェア・ウィルス):"
+
+msgid "Scanning completed"
+msgstr "スキャンが完了しました"
+
+msgid "Seconds"
+msgstr "秒"
+
+msgid "notyetviewed_en.png"
+msgstr "notyetviewed.png"
+
+msgid "malwaredetected_en.png"
+msgstr "malwaredetected.png"
+
+msgid "patternmatched_en.png"
+msgstr "patternmatched.png"
+
+msgid "title_en.png"
+msgstr "title.png"
+
+msgid "The number of files scanned:"
+msgstr "スキャンしたファイル数:"
+
+msgid "The number of malwares detected:"
+msgstr "ファイルマルウェア検出数:"
+
+msgid "A new pattern has added."
+msgstr "検出パターンが追加されました。"
+
+msgid "(Subscription of definition"
+msgstr "(定義の購読"
+
+msgid "Pattern not purchased"
+msgstr "未取得検出パターン"
+
+msgid "Patterns"
+msgstr "パターン"
+
+msgid "Added date"
+msgstr "追加日"
+
+msgid "Explanation"
+msgstr "解説"
+
+msgid "*Display up to 50 results"
+msgstr "※最大50件まで表示します"
+
+msgid "Access denied."
+msgstr "アクセスできません"
+
+msgid "Please enter the captcha."
+msgstr "キャプチャを入力してください"
+
+msgid "Incorrect value of total captcha"
+msgstr "キャプチャ合計の値が正しくありません"
+
+msgid "Please enter the result of the calculation above."
+msgstr "上の計算式の答えを入力してください"
+
+msgid "Couldn't activate protection of important files because of no permission to write htaccess file."
+msgstr "htaccessファイルの書き込み権限が無いため重要ファイル保護機能を有効にできませんでした"
+
+msgid "Couldn't activate server security function because of no permission to write htaccess file."
+msgstr "htaccessファイルの書き込み権限が無いためサーバーセキュリティー機能を有効にできませんでした"
+
+msgid "Couldn't activate disable function of INDEX list because of no permission to write htaccess file."
+msgstr "htaccessファイルの書き込み権限が無いためINDEXリスト表示抑制機能を有効にできませんでした"
+
+msgid "Couldn't activate disable function of Proxy comments because of no permission to write htaccess file."
+msgstr "htaccessファイルの書き込み権限が無いためProxyコメント無効機能を有効にできませんでした"
+
+msgid "The new login URL should be consist of more than 6 half-width integers."
+msgstr "ログインURL変更先は半角整数6文字以上で入力されてください"
+
+msgid "The login and wp-login are unavailable."
+msgstr "login,wp-loginはご利用いただけません"
+
+msgid "Couldn't activate disable function of spam bots because of no permission to write htaccess file."
+msgstr "htaccessファイルの書き込み権限が無いためスパムボットの停止機能を有効にできませんでした"
+
+msgid "Couldn't activate disable function of WPSCAN because of no permission to write htaccess file."
+msgstr "htaccessファイルの書き込み権限が無いためWPSCAN禁止機能を有効にできませんでした"
+
+msgid "Couldn't activate Track Trace function because of no permission to write htaccess file."
+msgstr "htaccessファイルの書き込み権限が無いためTrack Trace機能を有効にできませんでした"
+
+msgid "Security"
+msgstr "セキュリティー"
+
+msgid "Security score"
+msgstr "セキュリティースコア"
+
+msgid "Points (Risk level High)"
+msgstr "点 (危険度　高)"
+
+msgid "Security measures are required"
+msgstr "セキュリティー対策が必要です"
+
+msgid "Points"
+msgstr "点"
+
+msgid "Login protection"
+msgstr "ログインの保護"
+
+msgid "Login LockDown"
+msgstr "ログインロックダウン"
+
+msgid "Blocks login for 10 minutes after 3 repeated login failures. This function can reduce the risk of hacker incursion by a brute-force attack on the login display."
+msgstr "3回ログインに失敗するとそのユーザーを10分間ログインできないようにします。この機能を有効にすることによってハッカーがログイン画面で、パスワードを総当たりで突破する危険性を低下させることができます。"
+
+msgid "Login captcha"
+msgstr "ログインキャプチャ"
+
+msgid "Displays captcha on the login display. Adding questionnaire on the login display can reduce the risk of hacker incursion and prevent administrative rights from being deprived."
+msgstr "ログイン画面にキャプチャを表示します。ログイン画面にクイズを追加することでハッカーが機械的にログイン試行を繰り返して管理者権限を奪われる危険性を低下することができます。"
+
+msgid "Change login page URL"
+msgstr "ログインページURL変更"
+
+msgid "Changed URL"
+msgstr "変更先URL"
+
+msgid "<span style='color:red'>Please make sure to take a note of the login URL</span> so as not to forget when changing it."
+msgstr "※半角英数-変更される場合は<span style='color:red'>必ずログインURLをメモするなどして忘れないように</span>されてください。"
+
+msgid "Prevents hackers from accessing the login page by changing the login page URL."
+msgstr "ログインページのURLを変更し、ハッカーがログインページにアクセスすること自体を困難とします。"
+
+msgid "Protect WordPress information and files"
+msgstr "ワードプレスの情報やファイルの保護"
+
+msgid "Prevent information leak about WordPress version"
+msgstr "ワードプレスのバージョンの漏洩を防止"
+
+msgid "Hackers try to find out WordPress version to utilize the fragility. Hides the information by disabling meta generator output and query (numeric variable of the version which is given to CSS or JS read into HTML)."
+msgstr "ハッカーはワードプレスのバージョンを外部から調べて脆弱性を利用します。ワードプレスが出力するバージョン情報を含むメタジェネレータ出力やクエリ(HTMLに読みこまれるCSSやJSに付与されるバージョンの数値変数)を停止して、ワードプレスのバージョンを秘匿します"
+
+msgid "Protect important files"
+msgstr "重要ファイルの保護"
+
+msgid "Prevents any access to htaccess and wp-config.php"
+msgstr "htaccess、wp-config.phpへのアクセス禁止と保護を行います"
+
+msgid "Protect server information"
+msgstr "サーバー情報の保護"
+
+msgid "Prevents any access to readme.html, license.txt and wp-config-sample.php which consist WordPress or plugins and may contain version or server information. Also restricts server signature which outputs server information."
+msgstr "ワードプレスやプラグインに含まれてバージョンやサーバー固有の情報を含む可能性のあるreadme.html, license.txt や wp-config-sample.phpへのアクセスの禁止を行います。また、サーバー情報を出力するserver signatureを抑制します。"
+
+msgid "Prohibit display of Index list"
+msgstr "Indexリストの表示を禁止します"
+
+msgid "Disables display of file list when accessing a directory which does not contain any index file, such as Index.html."
+msgstr "Index.html等のインデックスファイルが含まれていないディレクトリにアクセスしたときにフォルダのファイル一覧が表示されてしまう問題を修正します。"
+
+msgid "Prohibit WPSCAN"
+msgstr "WPSCANの禁止"
+
+msgid "WPSCAN is a fragility checker for WordPress which is used by many hackers for a pre-survey. Hides version information or block certain IP for a while when the IP tried to access specified file, to disable WPSCAN."
+msgstr "WPSCANはワードプレスの脆弱性を調査するツールで多くのハッカーが事前調査に利用します。WPSCANの活動を無力化するためにバージョン情報の秘匿や、特定ファイルにアクセスしたときにそのIPからのアクセスを一定時間遮断します。"
+
+msgid "Permission (write permission of files)"
+msgstr "パーミッション(ファイルの書き込み権限)"
+
+msgid "Current permission"
+msgstr "現在のパーミッション"
+
+msgid "Recommended permission"
+msgstr "推奨のパーミッション"
+
+msgid "<small>Write permission of files is fragile. Please replace the particulars indicated in red or yellow in the left table with recommended permission.</small>"
+msgstr "<small>ファイルの書き込み権限に脆弱性がございます。左の表で赤、または黄色に表示されている項目を推奨のパーミッションに変更されてください。</small>"
+
+msgid "<small>Permission (write permission of files) are properly set.</small>"
+msgstr "<small>パーミッション(ファイルの書き込み権限)は適切に設定されています</small>"
+
+msgid "Protect WordPress functions"
+msgstr "ワードプレスの機能の保護"
+
+msgid "Prohibit editing of themes and plugins"
+msgstr "テーマの編集とプラグインの編集を禁止"
+
+msgid "Disables editing of themes and plugins from the administration display."
+msgstr "管理画面からテーマやプラグインを編集できる機能を停止します。"
+
+msgid "Prohibit Pingback"
+msgstr "Pingback の禁止"
+
+msgid "Disables Pingback; notification function of WordPress, which has a risk of being utilized for high-intensity attack with multiple accesses or of information leak about username, etc."
+msgstr "ワードプレスの通知機能であるPingbackは多数のアクセスを行うことで高負荷攻撃に利用されたり、脆弱性を利用されてユーザー名などが漏洩することがあります。このPingback機能を無効とします。"
+
+msgid "Prohibit REST API"
+msgstr "REST APIを禁止"
+
+msgid "REST API is loaded into WordPress 4.7 or later which enables outside posting, information aquisition, modification and addition of posts, etc. However, it has great fragility in some versions and may be subjected to other misuse in future.<br>Its function is utilized in some famous plugins such as Jetpack and ContactForm7, therefore disables all Jetpack and ContactForm7 functions except REST API.<br>If enables its function while using REST API in other plugins, some kind of malfunction may occur."
+msgstr "REST APIはワードプレス４．７以上に搭載されている外部からの投稿や情報の取得、投稿の変更追加なども可能な便利な仕組みですが、大きな脆弱性があるバージョンもあります。また、今後も不正な利用方法が発見される可能性が高い機能です。<br>REST APIの機能はJetpackやContactForm7など著名なプラグインでも利用が進んでいます。ゆえにJetpackやContactForm7のREST APIの利用を除いた機能をすべて停止します。<br>他のプラグインでもREST APIの機能が利用されている場合この機能を有効にすると、何らかの機能不全がサイトに起こる可能性があります。"
+
+msgid "Prohibit Trace & Track"
+msgstr "Trace & Trackを禁止"
+
+msgid "Prevents attacks utilizing Trace & Track function of the server (unique processing method of requests sent to the server) such as HTTP trace attack (XST) and cross site scripting (XSS)."
+msgstr "HTTP トレースアタック (XST)やクロスサイトスクリプティング (XSS)といったサーバーのTrace & Track機能(サーバーに送られるリクエストの特殊な処理方法)を利用した攻撃を抑制します。"
+
+msgid "Protect comments from spam"
+msgstr "コメント保護、スパムからの保護"
+
+msgid "Prohibit comment posting via proxy"
+msgstr "プロクシ経由のコメント投稿の禁止"
+
+msgid "Prohibits comment posting via proxy by judging from header information unique for the proxy users."
+msgstr "プロクシ経由のコメント投稿をプロクシを利用しているユーザーが発信する特有のヘッダー情報から判定して禁止します。"
+
+msgid "Comment form captcha"
+msgstr "コメントフォームキャプチャ"
+
+msgid "Prevents automatic comment posting by adding captcha to the comment form. It may not be displayed in particular themes which display customized comment form."
+msgstr "コメントフォームにキャプチャを追加し、機械的にコメントを投稿されることを抑制します。カスタムなコメントフォームを表示する一部テーマでは表示されないことがあります。"
+
+msgid "Prohibit comment posting by spambots"
+msgstr "スパムボットのコメント投稿の禁止"
+
+msgid "Spambot is a program which posts comments automatically and does not have any referrer. Prevents comment posting by spambots by disabling posting from viewers who have no referrers."
+msgstr "スパムボットは、コメントを機械的に投稿するプログラムで、アクセス元のリファラーがないという特徴があります。リファラーがない閲覧者のコメント投稿を禁止することでスパムボットによるコメント投稿を抑制します。"
+
+msgid "*Security function may not work appropriately on multi-site."
+msgstr "※セキュリティー機能はマルチサイトにおいて一部機能が正しく動作しない可能性がございます。"
+
+msgid "Malwares continue increasing day by day with overcoming pattern definition of security softwares. It is recommended to apply the latest pattern to your website to obtain maximum security protection."
+msgstr "マルウェアは日々セキュリティーソフトのパターン定義を乗り越えて増え続けます。最大のセキュリティー保護を得るためには、最新のパターンをサイトに適応されることをお勧めいたします。"
+
+msgid "Ban brute-force attack IP to XMLRPC and wp-login"
+msgstr "XMLRPC,wp-loginへのブルートフォースアタックIPのバン"
+
+msgid "List of IPs blocking"
+msgstr "ブロック中のIP一覧"
+
+msgid "Disables accessing for 3 hours of the IP which tried to access XMLRPC or wp-login for more than 50 times in 10 minutes. Since this function detects only excessive access, it can be used with Jetpack and also reduces the load of the website by preventing brute-force attack."
+msgstr "XMLRPC,wp-loginへ1０分の間に50回以上のアクセスを行ったIPアドレスを3時間アクセス不可能にします。この機能は過剰なアクセスだけを検出するためJETPACKと併用できます。また、ブルートフォースアタックを抑制することでサイトの負荷を下げます。"
+
+msgid "Password reset captcha"
+msgstr "パスワードリセットキャプチャ"
+
+msgid "Displays captcha on the password reset display to prevent hacking that utilizes fragility of mail transmission program on the display."
+msgstr "パスワードリセット画面にキャプチャを表示します。パスワードリセット画面でのメール送信プログラムの脆弱性を利用したハッキングを抑制することができます。"
+
+msgid "Attention!: Use of malware scanner through localhost or IP is restricted to inspection of 100 malware patterns."
+msgstr "！ご注意！ ローカルホストまたはIPでのマルウェアスキャナのご利用は100件のマルウェア検出パターンによる検査に制限されます"
+
+msgid "Couldn't get malware pattern. Is the website public and operating with WordPress?"
+msgstr "マルウェアの検出パターンが取得できませんでした。サイトが公開されていてワードプレスで動いていますか？"
+
+msgid "Scanning is currently unavailable because the latest malware pattern is unobtainable. Please try again manually after checked that [The website is public and is operating with WordPress], [The plugins used are the latest version]."
+msgstr "現在最新のマルウェア検出パターンが取得できないためスキャンを実行できません。「サイトが公開されていてワードプレスで動作していること」「最新のプラグインを利用されていること」をご確認の上再度手動でスキャンを実行してみてください。"
+
+msgid "Definition of malware patterns"
+msgstr "マルウェア検出パターン定義"
+
+msgid "Detectable the latest malware patterns"
+msgstr "最新のマルウェアを検出できます"
+
+msgid "No action required."
+msgstr "必要な処置はありません。"
+
+msgid "Malware patterns are not the latest version"
+msgstr "マルウェア検出パターンが最新でないようです"
+
+msgid "Subscription of malware pattern definition files is recommended to detect malware codes which are increasing day by day."
+msgstr "マルウェア検出パターンの定義ファイルを購読して日々追加されるマルウェアのコードの検出ができるようにしておかれることをお勧めいたします。"
+
+msgid "List of IPs succeeded to login with administrator permission in the last 1 month"
+msgstr "最近1か月間での管理者権限ログイン成功IP一覧"
+
+msgid "Protect author information"
+msgstr "オーサー情報の保護"
+
+msgid "Prevents WordPress from outputting user information based on accesses from a particular query, such as /?author=1."
+msgstr "/?author=1等の特殊なクエリによるアクセスでワードプレスがユーザー情報を出力するのを抑制します"
+
+msgid "Couldn't activate author protection because of no permission to write htaccess file."
+msgstr "htaccessファイルの書き込み権限が無いためオーサー保護機能を有効にできませんでした"
+
+msgid "There are <a href='Javascript:void(0);' style='color:black;text-decoration:underline;' onClick='showmisyutokutab()'>unacquired malware patterns</a> on your website."
+msgstr "あなたのサイトで<a href='Javascript:void(0);' style='color:black;text-decoration:underline;' onClick='showmisyutokutab()'>未取得のマルウェア検出パターン</a>が"
+
+msgid "- Patterns"
+msgstr "個あります。"
+
+msgid "Your current IP"
+msgstr "現在のあなたのIP"
+
+msgid "Utilize this IP blocker to permanently disable the listed IPs."
+msgstr "リストにあるIPを恒久的にブロックするには"
+
+msgid "Use IP blocking"
+msgstr "こちらのIPブロック機能"
+
+msgid " function."
+msgstr "をご利用ください"
+
+msgid "Utilize this IP blocker to permanently disable the listed IPs. <a href='Javascript:void(0);' style='color:black;text-decoration: underline;' onClick='showipblocktab()'>Use IP blocking</a> function."
+msgstr "リストにあるIPを恒久的にブロックするには<a href='Javascript:void(0);' style='color:black;text-decoration: underline;' onClick='showipblocktab()'>こちらのIPブロック機能</a>をご利用ください"
+
+msgid "IP blocker"
+msgstr "IPブロック"
+
+msgid "Vulnerability"
+msgstr "脆弱性検査"
+
+msgid "Block IPs manually"
+msgstr "手動でIPをブロックする"
+
+msgid "Enter one IP per line in the below column which you want to block from access to the entire website, then press [Save the changes] at the bottom."
+msgstr "下の入力欄にサイト全体にアクセスするのを防がれたいIPを1行にひとつづつ入力して最下部の「変更の保存」ボタンを押されてください"
+
+msgid "Example"
+msgstr "例"
+
+msgid "IP map of active hackers"
+msgstr "ハッキングを行っているハッカーIPマップ"
+
+msgid "These IPs are of hackers around the world detected daily by WordPress doctor. This data is updated every 24 hours."
+msgstr "このIPのデータは、ワードプレスドクターが日々検出している世界中のハッカーのIPです。24時間ごとに更新しています。"
+
+msgid "Block this IP automatically from access to the website (Paid)"
+msgstr "自動でこのIPのサイトへのアクセスをブロックする (有料)"
+
+msgid "Hacker's IP</td><td>country, region"
+msgstr "ハッキング行動を行っているコンピューターのIP</td><td>国、地域"
+
+msgid "This function is exclusive for subscription (paid) members of malware."
+msgstr "この機能はマルウェア購読会員(有料)様向けの機能です"
+
+msgid "This infection will be displayed after purchased the latest malware definition file from <a href='Javascript:void(0);' onclick='showsubscribetab()'>here</a>.<br><small>*Please scan again after purchased.</small>"
+msgstr "このファイルは最新のマルウェア定義ファイルを<a href='Javascript:void(0);' onclick='showsubscribetab()'>こちら</a>から購入いただくことで表示できます<br><small>※ご購入後再スキャンをされてください</small>"
+
+msgid "This infection will be displayed after purchased the latest malware definition file."
+msgstr "このマルウェア感染情報は最新のマルウェア定義ファイルを購入いただくことで表示できます"
+
+msgid "Security measures"
+msgstr "セキュリティー対策"
+
+msgid "Settings of security functions to protect login and files, to prevent brute-force attack and spam, etc. Move to<b>detailed</b>settings to activate each function individually."
+msgstr "ログインの保護や、総当たり攻撃、ファイルの保護、スパム被害などを防ぐセキュリティー機能を設定いたします。それぞれの機能を個別に有効にされたい場合は<b>詳細</b>設定をご利用ください"
+
+msgid "*Higher security settings may interfere with site operations when the website is equipped with several plugins or is customized."
+msgstr "※より高いセキュリティー設定は多数のプラグインの導入やカスタマイズをされている場合、サイトの動作を一部阻害する可能性があります。"
+
+msgid "Disable security functions"
+msgstr "セキュリティー機能を使用しない"
+
+msgid "Security level: Moderate"
+msgstr "セキュリティーレベル:中"
+
+msgid "<b>Activated functions</b>: Login LockDown, Prevent information leak about WordPress version, Protect important files (htaccess, wp-config.php), Protect server information, Prohibit display of Index list, Prohibit WPSCAN, Prohibit Pingback,  Include file protection, Upload folder protection, Prevent brute-force attack, Prohibit comment posting via proxy, Prohibit comment posting by spambots"
+msgstr "<b>有効になる機能</b>::ログインロックダウン, ワードプレスのバージョンの漏洩を防止, 重要(htaccess、wp-config.php)ファイルの保護, サーバー固有の情報の保護, Indexリストの表示を禁止, WPSCANの禁止, Pingback の禁止,　Includeファイルの直接アクセス禁止, UploadフォルダのPHPアクセス禁止機能, ブルートフォースアタックを防止, プロクシ経由のコメント投稿の禁止, スパムボットのコメント投稿の禁止"
+
+msgid "Security level: High (Recommended)"
+msgstr "セキュリティーレベル:高(推奨)"
+
+msgid "<b>Activated functions</b>: Login LockDown, Login captcha, Password reset captcha, Prevent information leak about WordPress version, Protect important files (htaccess, wp-config.php), Protect server information, Block access to wlwmanifest.xml, Block malicious query, Protect author information, Prohibit display of Index list, Prohibit WPSCAN, Prohibit Pingback, Prevent brute-force attack, Prohibit Trace & Track, Include file protection, Upload folder protection, Block danger SQL query,  Prohibit comment posting via proxy, Comment form captcha, Prohibit comment posting by spambots"
+msgstr "<b>有効になる機能</b>:ログインロックダウン, ログインキャプチャ, パスワードリセットキャプチャ, ワードプレスのバージョンの漏洩を防止, 重要(htaccess、wp-config.php)ファイルの保護, サーバー固有の情報の保護, wlwmanifest.xmlへの外部アクセスを禁止, 不正なクエリのブロック, オーサー情報の保護, Indexリストの表示を禁止, WPSCANの禁止, Pingback の禁止, ブルートフォースアタックを防止, Trace & Trackを禁止, Includeファイルの直接アクセス禁止, UploadフォルダのPHPアクセス禁止機能, 危険なSQLクエリの送信禁止機能,  プロクシ経由のコメント投稿の禁止, コメントフォームキャプチャ, スパムボットのコメント投稿の禁止"
+
+msgid "To enhance the security level further, it is recommended to set properly the permissions in the rows displayed in red or yellow."
+msgstr "さらにセキュリティーを向上させるには、赤または黄色で表示されている行のパーミッションを適切に設定されることをお勧めいたします。"
+
+msgid "Security level: Highest"
+msgstr "セキュリティーレベル:最高"
+
+msgid "<b>Activated functions</b>: Login LockDown, Login captcha, Password reset captcha, Change login page URL, Prevent information leak about WordPress version, Protect important files (htaccess, wp-config.php), Protect server information, Block access to wlwmanifest.xml, Block malicious query, Protect author information, Prohibit display of Index list, Prohibit WPSCAN, Prohibit editing themes and plugins,Include file protection, Upload folder protection, Block danger SQL query, Prohibit Pingback, Prevent brute-force attack, Prohibit REST API, Prohibit Trace & Track, Prohibit comment posting via proxy, Comment form captcha, Prohibit comment posting by spambots"
+msgstr "<b>有効になる機能</b>:ログインロックダウン, ログインキャプチャ, パスワードリセットキャプチャ, ログインページURL変更, ワードプレスのバージョンの漏洩を防止, 重要(htaccess、wp-config.php)ファイルの保護, サーバー固有の情報の保護, wlwmanifest.xmlへの外部アクセスを禁止, 不正なクエリのブロック, オーサー情報の保護, Indexリストの表示を禁止, WPSCANの禁止, テーマの編集とプラグインの編集を禁止, Pingback の禁止, ブルートフォースアタックを防止, REST APIを禁止, Trace & Trackを禁止,　Includeファイルの直接アクセス禁止, UploadフォルダのPHPアクセス禁止機能, 危険なSQLクエリの送信禁止機能,  プロクシ経由のコメント投稿の禁止, コメントフォームキャプチャ, スパムボットのコメント投稿の禁止"
+
+msgid "*The login URL will be changed as follows. Make sure to take a note so as not to forget."
+msgstr "※ログインURLが下記に変更されます。必ずメモなどをお取りいただき忘れないようにされてください。"
+
+msgid "Security level: Detailed"
+msgstr "セキュリティーレベル:詳細"
+
+msgid "(Displayed when activating higher than moderate-level security function)"
+msgstr "(中以上のセキュリティー機能を有効にすると表示されます)"
+
+msgid "Utilize <a href='Javascript:void(0);' style='color:black;text-decoration: underline;' onClick='showipblocktab()'>this IP blocker</a> to permanently block the listed IPs."
+msgstr "リストにあるIPを恒久的にブロックするには<a href='Javascript:void(0);' style='color:black;text-decoration: underline;' onClick='showipblocktab()'>こちらのIPブロック機能</a>をご利用ください"
+
+msgid "List of blocked IPs in the last 6 months"
+msgstr "この半年間でブロックしたIP一覧"
+
+msgid "Security log"
+msgstr "セキュリティーログ"
+
+msgid "Unable to activate most of the security functions because of no permission to write the file. Please access again after conferred write permission on the file with using FTP."
+msgstr "ファイルに書き込み権限が無いためセキュリティー機能の多くは有効化できません。FTPソフトウェアなどでこちらのファイルに書き込み権限を付与されたうえで再度アクセスされてみてください。"
+
+msgid "Real-time block"
+msgstr "リアルタイムブロック"
+
+msgid "Real-time block of website tampering"
+msgstr "サイト改ざんのリアルタイムブロック"
+
+msgid "This function is to block and record hacking activities before website tampering. <b>Since this function monitors all accesses except for page display, it may reduce the browsing speed up to 50% and inhibit particular functions of plugins.</b> It is recommended that you don't activate the function except when the website is repeatedly threatened with tampering. <br>*A particular symbolic query is conferred when activating the function, which is not due to a malfunction."
+msgstr "ハッカーの活動をサイトに改ざんを加える前にブロックし、記録する機能です。この機能は<b>ページ表示以外のすべてのアクセスを監視するため、サイトの動作速度を最大５０%低下させサイトのプラグインの特殊な機能等の動作を一部阻害する可能性</b>があります。ハッカーに繰り返しサイトが改ざんをされているとき以外は機能を有効にされないことをお勧めいたします。<br>※機能を有効にされると一部のURLに特殊な記号のクエリが付与されますが動作不全ではございません。"
+
+msgid "Enable function"
+msgstr "機能を有効にする"
+
+msgid "What if you catch hacking activities with real-time block?"
+msgstr "リアルタイムブロックでハッカーの活動を捕えたら？"
+
+msgid "1. Block hacker's IP permanently by this <a href='Javascript:void(0);' style='color:black;text-decoration: underline;' onClick='showipblocktab()'>IP blocker</a>."
+msgstr "①ハッカーのIPを<a href='Javascript:void(0);' style='color:black;text-decoration: underline;' onClick='showipblocktab()'>こちらのIPブロック機能</a>より恒久的にブロックしましょう。"
+
+msgid "2. There is a possibility of fragility of the files displayed in the column [Files accessed by hacker\", or backdoor. Take preventive measures, such as deleting the file, solving the fragility, etc."
+msgstr "②ハッカーがアクセスしたファイル　の列に表示されているファイルに脆弱性があるか、バックドアの可能性があります。このファイルを削除または脆弱性の解決を行うなどの対策を取りましょう。"
+
+msgid "What if the website causes a malfunction?"
+msgstr "サイトの動作不全が起こったら？"
+
+msgid "Disable this function or access WordPress top directory with using FTP and delete #SERVER_REALTIMEBLOCK_START ~ #SERVER_REALTIMEBLOCK_END of htaccess file."
+msgstr "この機能を停止されるか、ワードプレスのトップディレクトリにFTPアクセスされて、htaccessファイルの #SERVER_REALTIMEBLOCK_START ～ #SERVER_REALTIMEBLOCK_ENDまで消去することで機能を完全に停止することができます。"
+
+msgid "Blocked date and time"
+msgstr "ブロック日時"
+
+msgid "Hacker's IP"
+msgstr "ハッカーのIP"
+
+msgid "Files accessed by hacker"
+msgstr "ハッカーがアクセスしたファイル"
+
+msgid "Details of sent information"
+msgstr "送信データ詳細"
+
+msgid "*No record of real-time block found"
+msgstr "※リアルタイムブロックは記録されていません"
+
+msgid "Delete all records"
+msgstr "記録を消去する"
+
+msgid "Couldn't activate the function. Please confirm the htaccess file is writeable."
+msgstr "機能が有効にできませんでした。htaccessファイルが書き込み可能となっていることをご確認ください"
+
+msgid "Failed to real-time block of malwares. Please disable and re-activate the function from the plugin, or delete #SERVER_REALTIMEBLOCK_START ~ #SERVER_REALTIMEBLOCK_END of htaccess file."
+msgstr "リアルタイムマルウェアブロックに失敗しました。プラグインにて機能を停止・再有効化するか、htaccessファイルの#SERVER_REALTIMEBLOCK_START～#SERVER_REALTIMEBLOCK_ENDまで消去してみてください。"
+
+msgid "Brute-force attack"
+msgstr "ブルートフォース"
+
+msgid "Run WPSCAN"
+msgstr "WPSCANの実行"
+
+msgid "Delete the file"
+msgstr "ファイル削除"
+
+msgid "Delete"
+msgstr "削除"
+
+msgid "Couldn't open the file."
+msgstr "ファイルが開けませんでした。"
+
+msgid " - Save changes of the file."
+msgstr "のファイルの変更を保存します。"
+
+msgid "Note that file editing may cause errors of the website."
+msgstr "ファイルの編集がサイトにエラーを引き起こすことがございますのでご注意ください。"
+
+msgid " - Delete the file."
+msgstr "のファイルを削除します。"
+
+msgid "Note that file deletion may cause errors of the website."
+msgstr "ファイルの削除がサイトにエラーを引き起こすことがございますのでご注意ください。"
+
+msgid "Failed to change the file."
+msgstr "ファイル変更に失敗しました"
+
+msgid "Changed the file."
+msgstr "ファイルを変更しました"
+
+msgid "Failed to delete the file."
+msgstr "ファイル削除に失敗しました"
+
+msgid "Deleted the file."
+msgstr "ファイルを削除しました"
+
+msgid "File deletion"
+msgstr "ファイルの削除"
+
+msgid "Save edit"
+msgstr "編集結果の保存"
+
+msgid "Close this window"
+msgstr "このウィンドウを閉じる"
+
+msgid "*Note that editing or deleting malware files may cause errors due to the related programs, and may lead to malfunction such as undisplayable website."
+msgstr "※マルウェアファイルの編集や削除の際は関連したプログラムによるエラーを引き起こす場合があり最悪サイトが表示されなくなるなどの障害が起こる場合がございます。十分ご注意ください。"
+
+msgid "Make sure to read <a href='javascript:void(0);' onClick='showexptalert()'>this notifications </a>upon removal or deletion of malware files."
+msgstr "マルウェアの駆除、削除の際は<a href='javascript:void(0);' onClick='showexptalert()'>こちらの注意事項</a>を必ずお読みください"
+
+msgid "Notifications upon removal or deletion of malware files"
+msgstr "マルウェア駆除・編集をされる際のご注意"
+
+msgid "<h4>Infected files</h4><p>Removal of malwares requires technical knowledge. It is recommended to ask an expert, but pay attention especially to the following points when you manage it by yourself.<br></p><ul style='list-style:disc !important;margin:20px;'><li>If the malware is infesting the file originally consists WordPress, please delete only <b>the tampered parts </b>carefully.</li><li> If the file is not a regular file of WordPress, the entire file can be deleted without any problem.</li></ul><p>However, if the tampered file is read by <b>another tampered file </b>, deletion of the tampered file may cause errors to the caller and may lead to malfunction such as undisplayable website. In that case, investigation of the caller and deletion of its tampering are required.</p>"
+msgstr "<h4>感染したファイル</h4><p>マルウェアの排除には、専門的な知識が必要です。ご自身で行われる場合は下記の点に特にお気を付けください。<br></p><ul style='list-style:disc !important;margin:20px;'><li>ワードプレスに元々含まれているファイルに寄生しているタイプのマルウェアの場合は、<b>改ざん部分</b>のみを慎重に削除いただく必要がございます。</li><li>ワードプレスの正規ファイルでない場合は、そのファイル毎削除されても問題は起こりにくいと思いますが、稀にその改ざんファイルを<b>さらに別の改ざんファイル</b>が読み込んでいることがございます。</li></ul><p>この場合、改ざんファイルを削除すると呼び出し元にエラーが発生し最悪サイトが表示されないなどの不具合が起こる可能性がございます。エラーが起こりましたら呼び出し元ファイルの調査とそのファイルの改ざんも削除する必要があります。</p>"
+
+msgid "<h4>Infected database</h4><p>Database infections often result in Javascript code embedded in posts and widgets. It is often possible to make it harmless by removing only the part of the malware contained in the content without removing it line by line.</p>"
+msgstr "<h4>感染したデータベース</h4><p>データベースの感染は多くの場合、投稿にやウィジェットに埋め込まれたJavascriptコードになります。行ごと削除せずに、コンテンツに含まれるマルウェアの部分だけを取り除くことで多くの場合無害化することが可能です。</p>"
+
+msgid "Couldn't activate Include file protection because of no permission to write htaccess file."
+msgstr "htaccessファイルの書き込み権限が無いためIncludeファイルの直接アクセス禁止機能を有効にできませんでした"
+
+msgid "Couldn't activate Upload folder protection because of no permission to write htaccess file."
+msgstr "htaccessファイルの書き込み権限が無いためUploadフォルダのPHPアクセス禁止機能を有効にできませんでした"
+
+msgid "Couldn't activate Block danger SQL query because of no permission to write htaccess file."
+msgstr "htaccessファイルの書き込み権限が無いため危険なSQLクエリの送信禁止機能を有効にできませんでした"
+
+msgid "Include file protection"
+msgstr "Includeファイルの直接アクセス禁止"
+
+msgid "Protect direct access to include php files in wp-include folder and other."
+msgstr "他のPHPプログラムに読み込まれて使用されているタイプのファイルへの直接アクセスを禁止することで脆弱性への攻撃を抑制することができます。"
+
+msgid "Upload folder protection"
+msgstr "UploadフォルダのPHPアクセス禁止"
+
+msgid "BLock access to malcious file in wordpress upload directory."
+msgstr "Uploadフォルダに不正なPHPコードを埋め込まれている場合、そのプログラムへのアクセスを禁止することでさらなる感染被害の拡大を防ぐことができます。"
+
+msgid "Block danger SQL query"
+msgstr "危険なSQLクエリの送信禁止"
+
+msgid "Block danger SQL queries that used for SQL injection."
+msgstr "SQLインジェクションに利用される危険なSQLクエリをブロックします。"
+
+msgid "Please wait 10 minutes until login page is usable."
+msgstr "ログイン試行回数が上限に達しました。10分間ログインがロックされました"
+
+msgid "Too many login attempts"
+msgstr "ログイン試行回数が上限に達しました"
+
+msgid "There are 2 htaccess files in wordpress root folder and wordpress home folder. We recommend to delete root folder htaccess file to work security functions properly. <br>Delete this file:"
+msgstr "ワードプレスのルートディレクトリと、ホームディレクトリに２つのHTACCESSファイルがございます。セキュリティー機能が正しく動作しない可能性がありますのでルートディレクトリのHTACCESSファイルを削除されることをお勧めいたします。 <br>このファイルを削除されてください:"
+
+msgid "Or maybe your site's allow_url_fopen setting is off."
+msgstr "もしくはお使いのサーバーのallow_url_fopen設定が有効になっていないかXMLRPCのアクセス禁止により、マルウェア検出パターンが取得できなくなっているかもしれません。"
+
+msgid "*Edited"
+msgstr "※編集されました"
+
+msgid "Display & Edit"
+msgstr "表示・編集"
+
+msgid "Vulnerability check"
+msgstr "脆弱性検査"
+
+msgid "This vulnerability checker will check if there are valunability(over CVSS 7.5 point) in your site's plugin and wordpress. We search valunability form <a href='https://nvd.nist.gov/vuln' target='_blank'>NIST</a> database."
+msgstr "この検査では最も危険な脆弱性(CVSS7.5ポイント~)があるか調べます。<br>※CVSSとは、情報システムの脆弱性に対するオープンで包括的、汎用的な評価手法であり、７．５ポイント以上はサイトの外部から、認証無しにデータベースの書き換えや、ファイルの改ざん等ができる極めて危険な活動をサイト上で可能とする脆弱性です。脆弱性は、国際機関である<a href='https://nvd.nist.gov/vuln' target='_blank'>NIST</a>のデータベースに基づくデータより検出しています。"
+
+msgid "You cannot run vulnerability checker on localhost or IP."
+msgstr "ローカルホストまたは、IPアドレスでのサイトでは脆弱性検査は実施できません。"
+
+msgid "Run vulnerability checker"
+msgstr "脆弱性検査の実施"
+
+msgid "Checking valunability now..."
+msgstr "検査を実施していますこのままお待ちください"
+
+msgid "Vulnerability check result"
+msgstr "前回の脆弱性検査結果"
+
+msgid "Name"
+msgstr "名称"
+
+msgid "Type"
+msgstr "タイプ"
+
+msgid "Version"
+msgstr "バージョン"
+
+msgid "Status"
+msgstr "状態"
+
+msgid "Valunability"
+msgstr "脆弱性"
+
+msgid "No vulnerability"
+msgstr "危険な脆弱性はありません"
+
+msgid "Vulnerability found"
+msgstr "脆弱性があります"
+
+msgid "Not checked"
+msgstr "未検査"
+
+msgid "Valunability check failed. Are your site running on global domain?"
+msgstr "検査を実施できませんでした。ドメインで公開サイトとなっていることをご確認ください。\\nその他サーバーダウンにより検査が実施できない可能性もございます。しばらく待ってからもう一度実行されてみてください。"
+
+msgid "Valunability check result"
+msgstr "検査結果"
+
+msgid " Recentry add vulnerabilities"
+msgstr "　最近追加された脆弱性"
+
+msgid "WordPress/Plugin name"
+msgstr "WordPress/Plugin名称"
+
+msgid "CVE2 Score"
+msgstr "CVE2 Score(危険度　/10)"
+
+msgid "Add date"
+msgstr "追加日"
+
+msgid "Not available"
+msgstr "検査を実施できません"
+
+msgid "(You can check valunability one time for free.)"
+msgstr "(無料バージョンでは脆弱性検査を1回実行いただけます)"
+
+msgid "Not available (Please purchase for malware subscription to check valunability on your site)"
+msgstr "検査を実施できません(さらに脆弱性検査を実施いただくにはマルウェア購読会員を購入されて下さい)"
+
+msgid "Vulnerability to check"
+msgstr "下記の脆弱性を検査"
+
+msgid "<b style='color:#337ab7'>Disclaimer</b>: We do not guarantee the accuracy of the result of WordPress Doctor: Malware Scan Plugin. In addition, we are not responsible for any damage to users, other indirect servers, any items, or data by using this tool. In order to scan the malware found by us after installation, you need to subscribe the malware definition. Please use WordPress Doctor: Malware Scan Plugin with kind understanding and acknowledgement that it acquires a part of inspection data for the purpose of accuracy improvement.<br><b style='color:#337ab7'>Prohibited matters (licensing)</b>: Many of the functions of this plug-in can be used free of charge. But using this plug-in to get compensation from customers (Providing other companies with paid malware scanning and removal services) is prohibited. If you violate this clause, you agree to charge 400 $ per site. If you are interested in doing business like this, please contact us and conclude a licensing agreement. "
+msgstr "<b style='color:#337ab7'>免責事項</b> ワードプレスドクター:マルウェアスキャン プラグインの結果について、当社はその正確性を何ら保証する物ではありません。また、このツールを使用する事によって、使用者または間接的な他のサーバーやいかなる物品やデータの損害に付いて当社は一切の責任を負いません。インストール時点以降に弊社が発見したマルウェアのスキャンを行うにはマルウェア定義の購読が必要となります。ワードプレスドクター:マルウェアスキャン プラグインは検査データの一部を精度向上のために取得していますことをご理解とご了承の上ご利用ください。<br><b style='color:#337ab7'>禁止事項(ライセンシング) </b>当プラグインの機能の多くは、無償で利用できますが、このプラグインを利用して顧客から対価を得る行為(マルウェアスキャンや駆除等、当プラグインの機能を利用したサービスとして他社に有償で提供する行為)は当社に特別なライセンシング契約を行った事業者様以外は禁止とさせていただきます。この条項に違反している事業者様には1サイトにつき4万円~のご請求とそのお支払いを頂くことに同意いただきます。 弊社と<a href='https://wp-doctor.work/WPINFECTPAY_S/_partner/register.php' target='_blank'>パートナーシップ契約</a>をしていただいた企業様は、当プラグインの機能を利用して有料でのマルウェア検査・駆除等を御社保守サービス等を介して自由にエンドユーザー向けにご提供いただけます。またプラグインを割引価格で御社の顧客にご提供することも可能となります。"
+
+msgid "Show agreement"
+msgstr "利用許諾の表示"
+
+msgid "File"
+msgstr "ファイル"
+
+msgid "Database"
+msgstr "データベース"
+
+msgid "Is this plugin latest version?"
+msgstr "お使いのプラグインが最新バージョンかご確認ください。"
+
+msgid "The number of database table scanned:"
+msgstr "スキャンしたデータベース:"
+
+msgid "The number of malwares detected on database:"
+msgstr "データベースマルウェア検出数:"
+
+msgid "Table name:"
+msgstr "テーブル名:"
+
+msgid "Col name:"
+msgstr "列名:"
+
+msgid "ID number:"
+msgstr "行番号:"
+
+msgid "Delete the DB row"
+msgstr "データベースの行を削除"
+
+msgid "*This data is subjected to a detailed inspection."
+msgstr "※このデータは詳細検査されます"
+
+msgid "Delete the database row data?"
+msgstr "このデータベースの行を削除しますか？"
+
+msgid "Note that database row data deletion may cause errors of the website."
+msgstr "※データベースのデータを削除することによりサイトの表示やログインにエラーが発生し、最悪サイトが表示されなくなるなどの障害が起こる場合がございます。十分ご注意ください。"
+
+msgid "Failed to delete database row data."
+msgstr "削除に失敗しました"
+
+msgid "Deleted database row data."
+msgstr "データベースの行が削除されました"
+
+msgid "Couldn't load the database data."
+msgstr "データベースから読み込めませんでした"
+
+msgid "Databse data deletion"
+msgstr "データベースの行を削除"
+
+msgid "Save changes of the database data?"
+msgstr "データベースの編集を保存しますか？"
+
+msgid "Note that data editing may cause errors of the website."
+msgstr "データベースのデータを編集することにより、サイトの表示や動作にエラーを引き起こす場合がございます。"
+
+msgid "Failed to change the data."
+msgstr "データ編集の保存に失敗しました"
+
+msgid "Changed the data."
+msgstr "データベースのデータを変更しました"
+
+msgid "The number of database scanned:"
+msgstr "スキャンしたデータベース数:"
+
+msgid "Unreliable database data (malware, virus) found:"
+msgstr "マルウェア感染したデータベースのデータ数:"
+
+msgid "Serialized data"
+msgstr "シリアライズデータ"
+
+msgid "A data stricture broken. Save failed."
+msgstr "配列の構造が壊れているため保存できません。"
+
+msgid "This data is serialized (array) data. In most cases, you will need to correct the text and enter the correct value for the 's:character count'."
+msgstr "※このデータはシリアライズされた(配列)データです。多くの場合テキストの修正ととも「s:文字数」の個所も正しい値を入力する必要がございます。"
+
+msgid "Block malicious query"
+msgstr "危険な改ざんクエリをブロック"
+
+msgid "Block hackers from sending queries for tampering files (40 different types) that are written very common ly in malicious files."
+msgstr "ハッカーがファイル改ざんのために外部から送信してくるもっともよく使われる改ざんパターンが含まれる危険なクエリを４０種類ブロックします。"
+
+msgid "Couldn't activate block malicious query function because of no permission to write htaccess file."
+msgstr "htaccessファイルの書き込み権限が無いため危険な改ざんクエリのブロック機能を有効にできませんでした。"
+
+msgid "Database creation failed and the scan could not be performed. Please check if this mysql user has permission to create database table."
+msgstr "データベースの作成に失敗しスキャンを実施できませんでした。データベースの作成権限がお使いデータベースのユーザーにあるかご確認ください。"
+
+msgid " patterns added since purchased"
+msgstr "のマルウェア検出パターンがご契約日より追加されました"
+
+msgid "Advanced blocking of hackers' IP"
+msgstr "ハッカーのIPのより高度なブロック"
+
+msgid "When hackers attack your site, they check to see if the vulnerable files are present on your site　by actually accessing them. By detecting such access and immediately blocking the hacker's IP　for 24 hours, you can reduce the risk of hacking through the vulnerability."
+msgstr "ハッカーがサイトの脆弱性を狙って攻撃する際は、その脆弱性のあるファイルがあなたのサイトに存在するか、実際にアクセスすることによって調べます。このようなアクセスを検出し、そのハッカーのIPを即時24時間ブロックすることによりその後のハッキング行為を継続できなくし、脆弱性を利用したハッキングの危険性を低下させます。"
+
+msgid "Enable advanced blocking features of the hacker's IP (Paid)"
+msgstr "ハッカーのIPの高度なブロッキング機能を有効にする (有料)"
+
+msgid "List of detected malicious accesses (displays up to 50)"
+msgstr "検出した不正なアクセスリスト(最大５０件表示します)"
+
+msgid "Access file"
+msgstr "アクセスされたファイル"
+
+msgid "Block"
+msgstr "ブロック中"
+
+msgid "Detect time"
+msgstr "検出日"
+
+msgid "Enable access"
+msgstr "アクセスを許可"
+
+msgid "Block ended"
+msgstr "ブロック期間終了"
+
+msgid "Do you want to delete the record of this IP and unblock it?"
+msgstr "このIPの記録を削除してブロックを解除しますか？"
+
+msgid "Enable function (Paid)"
+msgstr "機能を有効にする (有料)"
+
+msgid "Query"
+msgstr "受信データ"
+
+msgid "During the license period"
+msgstr "ライセンス期間中"
+
+msgid "This feature greatly reduces the possibility of tampering or malware infection with two algorithms that protect against hacker attacks before they occur<br>1 Blocks the patterns of the most commonly hacked files on the Internet for the past month.<br>2 Detects unauthorized access to programs directly in files other than those listed above, performs malware scanning, and blocks access if malware code patterns are included.<br>*This feature blocks the operation of vulnerable plug-ins and themes, and may interfere with some of their functions.<br>"
+msgstr "この機能では２つのアルゴリズムで、ハッカーの攻撃を事前に防御し改ざんやマルウェアの感染の可能性を大きく低下させます<br>１　インターネット上で過去１カ月間、最もよくハッキングされるファイルをワードプレスドクターで集計し、毎日に配信されているパターンにてブロックします<br>２　上記以外のファイルで直接プログラムにアクセスされた、不正なアクセスを検出し、マルウェア検査を実施し、マルウェアのコードパターンが含まれる場合アクセスを遮断してブロックします<br>※この機能は脆弱性のあるプラグインやテーマの動作をブロックし、機能の一部を阻害する可能性がございます<br>"
+
+msgid "Top 10 most attacked files now"
+msgstr "現在最も攻撃を受けているファイルTOP10"
+
+msgid "File name"
+msgstr "ファイル名"
+
+msgid "Ajax action"
+msgstr "アクション(ajax action)"
+
+msgid "Attack Frequency"
+msgstr "攻撃頻度"
+
+msgid "<b style='color:red'>High</b>"
+msgstr "<b style='color:red'>高</b>"
+
+msgid "Real-time block history"
+msgstr "リアルタイムブロック履歴"
+
+msgid "Attacked vulnerability type"
+msgstr "攻撃される脆弱性タイプ"
+
+msgid "Plugin"
+msgstr "プラグイン"
+
+msgid "Theme"
+msgstr "テーマ"
+
+msgid "Theme or Plugin"
+msgstr "テーマもしくはプラグイン"
+
+msgid "Other"
+msgstr "その他"
+
+msgid "Last update "
+msgstr "パターン更新日時 "
+
+msgid "When this feature is enabled, %s other attack patterns will be blocked."
+msgstr "この機能を有効にされると、その他%sパターンの攻撃をブロックします"
+
+msgid "Couldn't activate the function.<br>1 Please confirm the htaccess file is writeable.<br>2 Database table is creatable.<br>3 file_get_contents is activated on PHP config."
+msgstr "機能が有効にできませんでした。<br>1 htaccessファイルが書き込み可能となっていることをご確認ください<br>2 データベースのテーブル作成権限があることをご確認ください<br>3 file_get_contents関数がお使いのPHPで利用可能なことをご確認ください"
+
+msgid "Displays up to 255 items."
+msgstr "最大２５５件まで表示します"
+
+msgid "This data judged which contains malicious code."
+msgstr "詳細検査の結果マルウェアと判定されました"
+
+msgid "Not yet judged as malware."
+msgstr "詳細検査されていません"
+
+msgid "This data contains malicious code patterns."
+msgstr "マルウェアのパターンと一致しました"
+
+msgid "Malware scan"
+msgstr "マルウェアスキャン"
+
+msgid "It displays a record of up to 255 hacks blocked by the real-time blocking function of the plugin."
+msgstr "プラグインのリアルタイムブロック機能によってブロックしたハッキングを最大２５５件まで記録・表示します"
+
+msgid "Emergency site shutdown"
+msgstr "サイトへの全アクセスの緊急停止"
+
+msgid "Blocks all external access except for your current login IP"
+msgstr "現在のログインIP"
+
+msgid ".　It prohibits all external access and deters the activities of the kind of malware that automatically repeats tampering. You can then remove the malware."
+msgstr "以外の全外部アクセスをブロックします。この機能は、繰り返しサイトが改ざんされる場合に、一旦全ての外部アクセスを禁止し、自動で改ざんが行われるタイプのマルウェアの活動を抑止し、改ざんを取り除いたうえでサイトを再公開するのに役に立つ機能となります。"
+
+msgid "*When this feature is enabled, all accesses except your current IP will be ignored. If you are unable to access the site due to a change of your IP address, please delete #EMERGENCY_BLOCK_START to #EMERGENCY_BLOCK_END in the HTACCESS file on the server and you will be able to access the site again."
+msgstr "※この機能を有効にすると、現在のあなたのIP以外の全てのアクセスが停止されます。アクセスIPが変わることでご自身もサイトにアクセスできなくなった場合はサーバーにあるHTACCESSファイルの#EMERGENCY_BLOCK_START~#EMERGENCY_BLOCK_ENDを削除されると再度アクセスできるようになります。"
+
+msgid "processing..."
+msgstr "処理中です..."
+
+msgid "error:You do not have permission to perform this function."
+msgstr "error:この機能を実行する権限がありません"
+
+msgid "error:Could not be changed due to incorrect data sent."
+msgstr "error:送信データの不正により変更できませんでした"
+
+msgid "error:Failed to write to HTACCESS file."
+msgstr "error:HTACCESSファイルへの書き込みに失敗しました"
+
+msgid "It worked! Only the currently logged-in IP can access the site now!"
+msgstr "成功しました！現在ログイン中のIPのみがサイトにアクセスできるようになりました"
+
+msgid "Make the site accessible again."
+msgstr "サイトをアクセス可能に戻す"
+
+msgid "When the site is made accessible again, the contents of the old htaccess file below will be restored. If there is any malware in this file, please delete it before restoring the site."
+msgstr "サイトを再度アクセス可能とする場合、下記の古いhtaccessファイルの内容が復元されます。この中にマルウェアが含まれる場合、消去いただいたうえで復元されてください。"
+
+msgid "Restored access to the site."
+msgstr "サイトのアクセスを戻しました"
+
+msgid "Manual Extermination"
+msgstr "手動駆除"
+
+msgid "Automatic Restore"
+msgstr "自動駆除"
+
+msgid "Replace the infected file with the same version of the file distributed from the official WordPress website. Files that do not exist in the official directory will be deleted. Database data and configuration files cannot be disinfected automatically. Please note that if you have customized the target files, the customized parts will be lost."
+msgstr "感染ファイルをワードプレスの公式サイトより配布されている同一バージョンのファイルと置き換えます。また、公式ディレクトリに存在しないファイルは削除されます。 データベースのデータや設定ファイルは自動駆除できません。 対象のファイルをカスタマイズしている場合、そのカスタマイズ部分が消えてしまいますのでご注意ください。"
+
+msgid "Display and edit"
+msgstr "表示して編集"
+
+msgid "Display data"
+msgstr "データの編集"
+
+msgid "Delete row data"
+msgstr "データの削除"
+
+msgid "This file cannot be disinfected automatically because it is a theme file"
+msgstr "このファイルはテーマファイルの為自動駆除できません"
+
+msgid "This file cannot be disinfected automatically because it is not an authorized file in wordpress.org"
+msgstr "このファイルはワードプレスorgに正規ファイルがないため自動駆除できません"
+
+msgid "This file is a configuration file and cannot be disinfected automatically"
+msgstr "このファイルは設定ファイルの為自動駆除できません"
+
+msgid "Cannot be automatically disinfected because it is data in the database"
+msgstr "データベース上のデータの為自動駆除できません"
+
+msgid "Automatic disinfection failed. It did not exist in the official directory. Possibly an original theme or plugin."
+msgstr "自動駆除に失敗しました。このバージョンのプログラムがすでに公式ディレクトリに存在しないかオリジナルなテーマやプラグインの可能性があります。"
+
+msgid "Automatic extermination failed. There is a possibility that the file could not be rewritten due to a write permission problem."
+msgstr "自動駆除に失敗しました。ファイルの書き込み権限の問題で書き換えができなかった可能性がございます。"
+
+msgid "Database data not exists."
+msgstr "データベースに感染データがありませんでした"
+
+msgid "The official directory is down or shomething went wrong for restoring file."
+msgstr "公式ディレクトリがダウンしているか、不明なエラーの発生により処理できませんでした"
+
+msgid "Processing..."
+msgstr "処理中です"
+
+msgid "Block access to wlwmanifest.xml."
+msgstr "wlwmanifest.xmlへのアクセスのブロック"
+
+msgid "Prevents any access to wlwmanifest.xml. This file is used by Windows Live Writer to update your WordPress site, but is subject to unauthorized data acquisition and attack by hackers. Enabling this feature will disable WordPress updates by Windows Live Writer."
+msgstr "wlwmanifest.xmlへの外部アクセスを禁止します。このファイルは、Windows Live Writerによってワードプレスサイトを更新する際に使用されますが、ハッカーの不正なデータ取得や攻撃対象となります。この機能を有効にするとWindows Live Writerによるワードプレスの更新ができなくなります。"
+
+msgid "Couldn't activate bloack wlwmanifest function because of no permission to write htaccess file."
+msgstr "htaccessファイルの書き込み権限がないため、bloack wlwmanifest機能を有効にできませんでした。"
+
+msgid "Auto-restore all"
+msgstr "一括自動駆除"
+
+msgid "Cancel batch automatic extermination?"
+msgstr "一括自動駆除をキャンセルしますか？"
+
+msgid "Bulk extermination is running..."
+msgstr "一括駆除を実行中です..."
+
+msgid "Bulk Delete failed. You do not have permission."
+msgstr "一括駆除が失敗しました。権限がありません"
+
+msgid "Batch deletion failed."
+msgstr "一括駆除が失敗しました"
+
+msgid "Batch deletion failed. There were no files that can be deleted automatically."
+msgstr "一括駆除が失敗しました。自動駆除できるファイルがありませんでした。"
+
+msgid "Unknown malware was detected and could not be executed. You can confirm the diagnosis of unknown malware by subscribing to the paid service and rescanning."
+msgstr "不明なマルウェアが検出されているため実行できませんでした。有料サービスをご契約の上再スキャンすることで不明なマルウェアを確定診断することができます。"
+
+msgid "Batch disinfection of files that can be automatically removed has been completed."
+msgstr "自動駆除可能なファイルの一括駆除が完了しました"
+
+msgid "Bulk Delete"
+msgstr "一括駆除"
+
+msgid "This function will replace all files detected as malware with legitimate files that are publicly available in the official WordPress directory. Please note that some files that are not in the official directory may not be replaced. <br><br>Please note that if a malware-detected file contains any customizations, the customizations in that file will be overwritten and deleted. We recommend that you back up your site prior to implementation."
+msgstr "この機能では、マルウェアとして検出されたファイルをワードプレスの公式ディレクトリに公開されている正規ファイルと連続して一括で置き換え駆除いたします。公式ディレクトリに無いファイルは一部置き換え等ができない場合がございます。<br><br>マルウェア検出されたファイルにカスタマイズがある場合、そのファイルのカスタマイズが上書きされて消えてしまいますのでご注意ください。実施前にサイトのバックアップをお取りになることをお勧めいたします。"
+
+msgid "Start batch extermination"
+msgstr "一括駆除を開始する"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "WordPress Doctor Malware scan and Security plugin"
+msgstr "ワードプレスドクター　マルウェアスキャナー＆セキュリティープラグイン"
