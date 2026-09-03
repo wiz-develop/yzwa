@@ -35,16 +35,6 @@ $keywords = CFS()->get('keywords', $setting_page_id);
 	<link rel="canonical" href="<?php echo esc_url( home_url( '/' ) ); ?>">
 	<link rel="Shortcut Icon" type="image/x-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/image/common/favicon.png" />
 	<?php wp_head(); ?>
-	
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-L3WRXCEG7W"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-
-	gtag('config', 'G-L3WRXCEG7W');
-	</script>
 </head>
 
 <body id="app_yzwa" <?php body_class(); ?>>

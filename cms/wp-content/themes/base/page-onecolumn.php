@@ -12,9 +12,9 @@
 
 get_header();
 
-$page_tit_en = CFS()->get('page_tit_en', $get_page_id);
-$func_screen = CFS()->get('func_screen', $get_page_id);
-$widget_name = CFS()->get('widget_name', $get_page_id);
+$page_tit_en = CFS()->get('page_tit_en', get_queried_object_id());
+$func_screen = CFS()->get('func_screen', get_queried_object_id());
+$widget_name = CFS()->get('widget_name', get_queried_object_id());
 ?>
 <div id="splash"></div>
 <div class="splashbg"></div>

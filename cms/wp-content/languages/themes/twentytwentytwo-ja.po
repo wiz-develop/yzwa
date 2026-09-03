@@ -2,18 +2,18 @@
 # This file is distributed under the same license as the Themes - Twenty Twenty-Two package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-03-31 13:24:57+0000\n"
+"PO-Revision-Date: 2022-05-25 02:32:04+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/4.0.0-alpha.4\n"
+"X-Generator: GlotPress/4.0.0-alpha.3\n"
 "Language: ja_JP\n"
 "Project-Id-Version: Themes - Twenty Twenty-Two\n"
 
 #. Description of the theme
 #, gp-priority: high
-msgid "Built on a solidly designed foundation, Twenty Twenty-Two embraces the idea that everyone deserves a truly unique website. The theme’s subtle styles are inspired by the diversity and versatility of birds: its typography is lightweight yet strong, its color palette is drawn from nature, and its layout elements sit gently on the page. The true richness of Twenty Twenty-Two lies in its opportunity for customization. The theme is built to take advantage of the Site Editor features introduced in WordPress 5.9, which means that colors, typography, and the layout of every single page on your site can be customized to suit your vision. It also includes dozens of block patterns, opening the door to a wide range of professionally designed layouts in just a few clicks. Whether you’re building a single-page website, a blog, a business website, or a portfolio, Twenty Twenty-Two will help you create a site that is uniquely yours."
+msgid "Built on a solidly designed foundation, Twenty Twenty-Two embraces the idea that everyone deserves a truly unique website. The theme’s subtle styles are inspired by the diversity and versatility of birds: its typography is lightweight yet strong, its color palette is drawn from nature, and its layout elements sit gently on the page. The true richness of Twenty Twenty-Two lies in its opportunity for customization. The theme is built to take advantage of the Full Site Editing features introduced in WordPress 5.9, which means that colors, typography, and the layout of every single page on your site can be customized to suit your vision. It also includes dozens of block patterns, opening the door to a wide range of professionally designed layouts in just a few clicks. Whether you’re building a single-page website, a blog, a business website, or a portfolio, Twenty Twenty-Two will help you create a site that is uniquely yours."
 msgstr "確かなデザイン基盤の上に構築された Twenty Twenty-Two には、誰もが真にユニークなサイトを持つべきだという信念があります。テーマの繊細なスタイルは、鳥の多様性と多才さに影響を受け、タイポグラフィは軽量でありながら力強く、カラーパレットは自然界から選ばれ、レイアウト要素はページ上に優しく配置されています。Twenty Twenty-Two の真の豊かさは、そのカスタマイズの可能性にあります。WordPress 5.9で導入されたフルサイト編集機能を活用し、色、タイポグラフィ、サイト上のすべてのページのレイアウトをビジョンに合わせてカスタマイズできます。また、数十種類のブロックパターンを搭載し、数クリックでプロがデザインしたさまざまなレイアウトを利用できます。シングルページのサイトからブログ、企業サイト、ポートフォリオまで、Twenty Twenty-Two は、あなただけのユニークなサイト作成を支援します。"
 
 #. Theme Name of the theme
@@ -502,13 +502,16 @@ msgid "Title and button header"
 msgstr "タイトル、ボタンのヘッダー"
 
 #: inc/patterns/header-text-only-with-tagline-black-background.php:6
-msgid "Text-only header with tagline and background"
-msgstr "テキストのみのヘッダー - キャッチフレーズと背景"
+msgid "Text-only header with tagline and black background"
+msgstr "テキストのみのヘッダー - キャッチフレーズ、黒の背景"
+
+#: inc/patterns/header-text-only-salmon-background.php:6
+msgid "Text-only header with salmon background"
+msgstr "テキストのみのヘッダー - サーモンピンクの背景"
 
 #: inc/patterns/header-text-only-green-background.php:6
-#: inc/patterns/header-text-only-salmon-background.php:6
-msgid "Text-only header with background"
-msgstr "テキストのみのヘッダー - 背景"
+msgid "Text-only header with green background"
+msgstr "テキストのみのヘッダー - 緑の背景"
 
 #: inc/patterns/header-stacked.php:6
 msgid "Logo and navigation header"
@@ -519,16 +522,16 @@ msgid "Small header with dark background"
 msgstr "小さなヘッダー - 暗い背景"
 
 #: inc/patterns/header-logo-navigation-social-black-background.php:6
-msgid "Logo, navigation, and social links header with background"
-msgstr "ロゴ、ナビゲーション、ソーシャルリンクのヘッダー - 背景"
+msgid "Logo, navigation, and social links header with black background"
+msgstr "ロゴ、ナビゲーション、ソーシャルリンクのヘッダー - 黒い背景"
 
 #: inc/patterns/header-logo-navigation-offset-tagline.php:6
 msgid "Logo, navigation, and offset tagline Header"
 msgstr "ロゴ、ナビゲーション、オフセットのキャッチフレーズのヘッダー"
 
 #: inc/patterns/header-logo-navigation-gray-background.php:6
-msgid "Logo and navigation header with background"
-msgstr "ロゴ、ナビゲーション、ヘッダー - 背景"
+msgid "Logo and navigation header with gray background"
+msgstr "ロゴ、ナビゲーション、ヘッダー - 灰色の背景"
 
 #: inc/patterns/header-large-dark.php:24
 #: inc/patterns/hidden-heading-and-bird.php:14
@@ -556,16 +559,16 @@ msgid "Default header"
 msgstr "デフォルトヘッダー"
 
 #: inc/patterns/header-centered-title-navigation-social.php:6
-msgid "Centered header with navigation, social links, and background"
-msgstr "中央揃えのヘッダー - ナビゲーション、ソーシャルリンク、背景"
+msgid "Centered header with navigation, social links, and salmon background"
+msgstr "中央揃えのヘッダー - ナビゲーション、ソーシャルリンク、サーモンピンクの背景"
 
 #: inc/patterns/header-centered-logo.php:6
 msgid "Header with centered logo"
 msgstr "ロゴを中央に配置したヘッダー"
 
 #: inc/patterns/header-centered-logo-black-background.php:6
-msgid "Header with centered logo and background"
-msgstr "ヘッダー - 中央揃えのロゴ、背景"
+msgid "Header with centered logo and black background"
+msgstr "ヘッダー - 中央揃えのロゴ、黒の背景"
 
 #: inc/patterns/general-wide-image-intro-buttons.php:31
 msgid "Learn More"

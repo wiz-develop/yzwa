@@ -1,13 +1,14 @@
 === zipaddr-jp ===
 Contributors: ta_terunuma
 Donate link: https://zipaddr2.com/wordpress/
-Tags: zipaddr, zip, address, plugin, ajax, cross-domain
+Tags: zipaddr, zip, address, ajax, cross-domain
 Requires at least: 3.7
-Tested up to: 6.0
-Stable tag: 1.33
+Tested up to: 7.0
+Stable tag: 1.45
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
+zipaddr-jp is a collaborative tool that automatically inputs addresses from postal codes.
 
 == Description ==
 Firstly zipaddr has two sites of zipaddr.com and zipaddr2.com in a service provider.
@@ -36,19 +37,52 @@ The main operating procedure is as follows.
 5.Wordpress bury each data in an address column on the Wordpress side.
 
 == Installation ==
-
 1. Upload `zipaddr-jp` to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Frequently asked questions ==
-
-
+Nothing in particular.
 
 == Screenshots ==
-
 1. https://zipaddr2.com/wordpress/popup.png
 
 == Changelog ==
+= 1.45 =
+We have reviewed the source code.
+
+= 1.44 =
+We have reviewed the source code.
+
+= 1.43 =
+We now support the WooCommerce block version.
+
+= 1.42 =
+We encoded the parameters.
+
+= 1.41 =
+We supported JetFormBuilder.
+
+= 1.40 =
+We reviewed our best practices and security checks.
+
+= 1.39 =
+We supported forms similar to YubinBango.js.
+
+= 1.38 =
+We changed the prefix from D. to ZP. for compatibility.
+We supported Booking Package.
+
+= 1.37 =
+We supported Forminator.
+
+= 1.36 =
+We supported TieredWorks.
+
+= 1.35 =
+We made the footer display optional.
+
+= 1.34 =
+We supported Mailfrom.
 
 = 1.33 =
 We have defined the default settings for the new form tool.
@@ -150,3 +184,4 @@ It added a setting function of the operation environment.
 It register an initial version.
 
 == Upgrade notice ==
+Nothing in particular.

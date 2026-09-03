@@ -50,7 +50,7 @@
                                     <select name="cfs[fields][<?php echo $field->weight; ?>][type]">
                                         <?php foreach ( CFS()->fields as $type ) : ?>
                                         <?php $selected = ($type->name == $field->type) ? ' selected' : ''; ?>
-                                        <option value="<?php echo $type->name; ?>"<?php echo $selected; ?>><?php echo $type->label; ?></option>
+                                        <option value="<?php echo esc_attr( $type->name ); ?>"<?php echo $selected; ?>><?php echo esc_html( $type->label ); ?></option>
                                         <?php endforeach; ?>
                                     </select>
                                 </td>

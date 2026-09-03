@@ -9,7 +9,7 @@
 
 use function Bhittani\StarRating\functions\sanitize;
 /**
- * $Id: sitemap-core.php 2823802 2022-11-24 18:12:38Z auctollo $
+ * $Id: sitemap-core.php 3105873 2024-06-22 03:26:37Z auctollo $
  */
 
 // Enable for dev! Good code doesn't generate any notices...
@@ -387,9 +387,12 @@ class GoogleSitemapGeneratorPage {
 		$r  = '';
 		$r .= "\t<url>\n";
 		$r .= "\t\t<loc>" . $this->escape_xml( esc_url_raw( $this->url ) ) . "</loc>\n";
+
 		if ( $this->last_mod > 0 ) {
-			$r .= "\t\t<lastmod>" . gmdate( 'Y-m-d\TH:i:s+00:00', $this->last_mod ) . "</lastmod>\n";
+			//$r .= "\t\t<lastmod>" . gmdate( 'Y-m-d\TH:i:s+00:00', $this->last_mod ) . "</lastmod>\n";
+			$r .= "\t\t<lastmod>"  . gmdate( 'Y-m-d\TH:i:sP', $this->last_mod ) .  "</lastmod>\n";
 		}
+
 		if ( ! empty( $this->change_freq ) ) {
 			$r .= "\t\t<changefreq>" . $this->change_freq . "</changefreq>\n";
 		}
@@ -397,6 +400,7 @@ class GoogleSitemapGeneratorPage {
 			$r .= "\t\t<priority>" . number_format( $this->priority, 1 ) . "</priority>\n";
 		}
 		$r .= "\t</url>\n";
+		
 		return $r;
 	}
 
@@ -644,7 +648,7 @@ class GoogleSitemapGeneratorPrioByCountProvider implements Google_Sitemap_Genera
 	 * @return string The translated name
 	 */
 	public static function get_name() {
-		return __( 'Comment Count', 'sitemap' );
+		return __( 'Comment Count', 'google-sitemap-generator' );
 	}
 
 	/**
@@ -654,7 +658,7 @@ class GoogleSitemapGeneratorPrioByCountProvider implements Google_Sitemap_Genera
 	 * @return string The translated description
 	 */
 	public static function get_description() {
-		return __( 'Uses the number of comments of the post to calculate the priority', 'sitemap' );
+		return __( 'Uses the number of comments of the post to calculate the priority', 'google-sitemap-generator' );
 	}
 
 	/**
@@ -712,7 +716,7 @@ class GoogleSitemapGeneratorPrioByAverageProvider implements Google_Sitemap_Gene
 	 * @return string The translated name
 	 */
 	public static function get_name() {
-		return __( 'Comment Average', 'sitemap' );
+		return __( 'Comment Average', 'google-sitemap-generator' );
 	}
 
 	/**
@@ -722,7 +726,7 @@ class GoogleSitemapGeneratorPrioByAverageProvider implements Google_Sitemap_Gene
 	 * @return string The translated description
 	 */
 	public static function get_description() {
-		return __( 'Uses the average comment count to calculate the priority', 'sitemap' );
+		return __( 'Uses the average comment count to calculate the priority', 'google-sitemap-generator' );
 	}
 
 	/**
@@ -753,7 +757,7 @@ class GoogleSitemapGeneratorPrioByAverageProvider implements Google_Sitemap_Gene
 	public function get_post_priority( $post_id, $comment_count ) {
 
 		// Do not divide by zero !
-		if ( 0 === $this->average ) {
+		if ( 0 === $this->average|| 0.0 === $this->average ) {
 			if ( $comment_count > 0 ) {
 				$priority = 1;
 			} else {
@@ -910,13 +914,13 @@ final class GoogleSitemapGenerator {
 			load_plugin_textdomain( 'sitemap', false, dirname( plugin_basename( __FILE__ ) ) . '/lang' );
 
 			$this->freq_names = array(
-				'always'  => __( 'Always', 'sitemap' ),
-				'hourly'  => __( 'Hourly', 'sitemap' ),
-				'daily'   => __( 'Daily', 'sitemap' ),
-				'weekly'  => __( 'Weekly', 'sitemap' ),
-				'monthly' => __( 'Monthly', 'sitemap' ),
-				'yearly'  => __( 'Yearly', 'sitemap' ),
-				'never'   => __( 'Never', 'sitemap' ),
+				'always'  => __( 'Always', 'google-sitemap-generator' ),
+				'hourly'  => __( 'Hourly', 'google-sitemap-generator' ),
+				'daily'   => __( 'Daily', 'google-sitemap-generator' ),
+				'weekly'  => __( 'Weekly', 'google-sitemap-generator' ),
+				'monthly' => __( 'Monthly', 'google-sitemap-generator' ),
+				'yearly'  => __( 'Yearly', 'google-sitemap-generator' ),
+				'never'   => __( 'Never', 'google-sitemap-generator' ),
 			);
 
 			$this->load_options();
@@ -1143,6 +1147,39 @@ final class GoogleSitemapGenerator {
 				}
 			}
 
+			/**
+			 * Filter: 'sm_sitemap_exclude_post_type' - Allow extending and modifying the post types to exclude.
+			 *
+			 * @param array $post_types_to_exclude The post types to exclude.
+			 */
+			$post_types_to_exclude = [];
+			$post_types_to_exclude = apply_filters( 'sm_sitemap_exclude_post_types', $post_types_to_exclude );
+			if ( ! is_array( $post_types_to_exclude ) ) {
+				$post_types_to_exclude = [];
+			}
+			if ( ! empty( $post_types_to_exclude ) ) {
+				foreach ( $active_post_types as $key => $active_post_type ) {
+					if ( in_array( $active_post_type, $post_types_to_exclude ) ) {
+						unset( $active_post_types[ $key ] );
+					}
+				}
+			}
+
+			/**
+			 * Filter: 'sm_sitemap_include_post_type' - Allow extending and modifying the post types to include.
+			 *
+			 * @param array $post_types_to_include The post types to include.
+			 */
+			$post_types_to_include = [];
+			$post_types_to_include = apply_filters( 'sm_sitemap_include_post_type', $post_types_to_include );
+			if ( ! is_array( $post_types_to_include ) ) {
+				$post_types_to_include = [];
+			}
+			if ( ! empty( $post_types_to_include ) ) {
+				$active_post_types = array_merge( $active_post_types, $post_types_to_include );
+				$active_post_types = array_unique( $active_post_types );
+			}
+
 			wp_cache_set( $cache_key, $active_post_types, 'sitemap', 20 );
 		}
 
@@ -1155,16 +1192,26 @@ final class GoogleSitemapGenerator {
 	 * @since 4.0b11
 	 * @return int[] Array with excluded post IDs
 	 */
-	public function get_excluded_post_i_ds() {
+	public function get_excluded_post_ids() {
+		$posts_to_exclude = [];
 
 		$excludes = (array) $this->get_option( 'b_exclude' );
 
-		// Exclude front page page if defined .
-		if ( get_option( 'show_on_front' ) === 'page' && get_option( 'page_on_front' ) ) {
-			$excludes[] = get_option( 'page_on_front' );
-			return $excludes;
+		$excluded_posts_ids = array_filter( array_map( 'intval', $excludes ), array( $this, 'is_greater_zero' ) );
+
+		/**
+		 * Filter: 'sm_exclude_from_sitemap_by_post_ids' - Allow extending and modifying the posts to exclude.
+		 *
+		 * @param array $posts_to_exclude The posts to exclude.
+		 */
+		$posts_to_exclude = apply_filters( 'sm_exclude_from_sitemap_by_post_ids', $posts_to_exclude );
+		if ( ! is_array( $posts_to_exclude ) ) {
+			$posts_to_exclude = [];
 		}
-		return array_filter( array_map( 'intval', $excludes ), array( $this, 'is_greater_zero' ) );
+		
+		$excluded_posts_ids = array_merge( $excluded_posts_ids, $posts_to_exclude );
+
+		return array_unique( $excluded_posts_ids );
 	}
 
 	/**
@@ -1216,6 +1263,8 @@ final class GoogleSitemapGenerator {
 			}
 		}
 
+		$rules = apply_filters( 'sm_robots_disallowed_ids', array_unique( $rules ) );
+		
 		return $rules;
 	}
 	/**
@@ -1341,6 +1390,10 @@ final class GoogleSitemapGenerator {
 		$this->options['sm_b_style_default'] = true; // Use default style .
 		$this->options['sm_b_style']         = ''; // Include a stylesheet in the XML .
 		$this->options['sm_b_baseurl']       = ''; // The base URL of the sitemap .
+		$this->options['sm_b_rewrites2']	 = false; //status updating url rules
+		$this->options['sm_b_indexnow']		 = true; //On indexnow functionality
+		$this->options['sm_b_activate_indexnow'] = false; //On indexnow functionality
+		$this->options['sm_b_index_date'] = ''; //On indexnow date
 		$this->options['sm_b_robots']        = true; // Add sitemap location to WordPress' virtual robots.txt file .
 		$this->options['sm_b_html']          = true; // Include a link to a html version of the sitemap in the XML sitemap .
 		$this->options['sm_b_exclude']       = array(); // List of post / page IDs to exclude .
@@ -1353,6 +1406,7 @@ final class GoogleSitemapGenerator {
 		$this->options['sm_in_cats']        = false; // Include categories .
 		$this->options['sm_product_tags']   = true; // Hide product tags in sitemap .
 		$this->options['sm_in_product_cat'] = true; // Include product categories .
+		$this->options['sm_in_product_assortment'] = true; // Include products .
 		$this->options['sm_in_arch']        = false; // Include archives .
 		$this->options['sm_in_auth']        = false; // Include author pages .
 		$this->options['sm_in_tags']        = false; // Include tag pages .
@@ -1393,7 +1447,9 @@ final class GoogleSitemapGenerator {
 		$this->options['sm_i_lastping']          = 0; // When was the last ping .
 		$this->options['sm_i_supportfeed']       = true; // shows the support feed .
 		$this->options['sm_i_supportfeed_cache'] = 0; // Last refresh of support feed .
-		$this->options['sm_links_page']          = 10; // Link per page support with default value 10. .
+		$this->options['sm_links_page']          = 1000; // Link per page support with default value 1000. .
+		$this->options['sm_user_consent']        = false;
+		$this->options['sm_wp_sitemap_status']   = true;
 	}
 
 	/**
@@ -1412,6 +1468,14 @@ final class GoogleSitemapGenerator {
 		// First init default values, then overwrite it with stored values so we can add default
 		// values with an update which get stored by the next edit.
 		$stored_options = get_option( 'sm_options' );
+
+		// Custom Taxonomies
+		if ( !empty( $stored_options['sm_in_tax'] ) ) {
+			foreach ( $stored_options['sm_in_tax'] as $custom_tax ) {
+				$this->options[ "sm_cf_" . $custom_tax ] = 'weekly'; // Change frequency of custom taxonomy .
+				$this->options[ "sm_pr_" . $custom_tax ] = 0.3; // Priority of custom taxonomy .
+			}
+		}
 
 		if ( $stored_options && is_array( $stored_options ) ) {
 			foreach ( $stored_options as $k => $v ) {
@@ -1470,6 +1534,7 @@ final class GoogleSitemapGenerator {
 	 */
 	public function save_options() {
 		$oldvalue = get_option( 'sm_options' );
+		// add_filter('pre_update_option_sm_options', [$this,'modify_excluded_sitemap_ids'], 10, 2);
 		if ( $oldvalue === $this->options ) {
 			return true;
 		} else {
@@ -1477,6 +1542,20 @@ final class GoogleSitemapGenerator {
 		}
 	}
 
+
+	/**
+	 * Excluded posts via code 
+	 */
+	public function modify_excluded_sitemap_ids($new_value, $old_value) {
+		$hidden_product_ids = $this->exclude_hidden_products_from_sitemap();
+		$new_value['sm_b_exclude'] = array_unique($hidden_product_ids);
+		return $new_value;
+	}
+	
+	public function exclude_hidden_products_from_sitemap(){
+		$excludedArray = []; // here array of posts ID
+		return $excludedArray;
+	}
 	/**
 	 * Returns the additional pages
 	 *
@@ -1544,6 +1623,22 @@ final class GoogleSitemapGenerator {
 			add_option( 'sm_cpages', $this->pages, '', 'no' );
 			return true;
 		}
+	}
+
+	/**
+	 * Get the maximum number of entries per XML sitemap.
+	 *
+	 * @return int The maximum number of entries.
+	 */
+	public function get_entries_per_page() {
+		/**
+		 * Filter the maximum number of entries per XML sitemap.
+		 *
+		 * @param int $entries The maximum number of entries per XML sitemap.
+		 */
+		$entries = (int) apply_filters( 'sm_sitemap_entries_per_page', $this->get_option( 'links_page' ) );
+
+		return $entries;
 	}
 
 
@@ -1662,6 +1757,7 @@ final class GoogleSitemapGenerator {
 			'sitemap(-+([a-zA-Z0-9_-]+))?\.xml\.gz$' => 'index.php?xml_sitemap=params=$matches[2];zip=true',
 			'sitemap(-+([a-zA-Z0-9_-]+))?\.html$'    => 'index.php?xml_sitemap=params=$matches[2];html=true',
 			'sitemap(-+([a-zA-Z0-9_-]+))?\.html.gz$' => 'index.php?xml_sitemap=params=$matches[2];html=true;zip=true',
+			'post(-+([a-zA-Z0-9_-]+))?\.xml$'     => 'index.php?xml_sitemap=params=$matches[2]',
 		);
 		foreach ( $wp_rules as $key => $value ) {
 			if ( array_key_exists( $key, $sm_rules ) ) {
@@ -1686,9 +1782,10 @@ final class GoogleSitemapGenerator {
 		$pl      = $this->is_using_permalinks();
 		$options = '';
 		if ( ! empty( $type ) ) {
-			$options .= $type;
+			if($type != 'pt') $options .= $type;
 			if ( ! empty( $params ) ) {
-				$options .= '-' . $params;
+				//$options .= '-' . $params;
+				$options .= $params;
 			}
 		}
 
@@ -1718,13 +1815,34 @@ final class GoogleSitemapGenerator {
 			self::setup_rewrite_hooks();
 			GoogleSitemapGeneratorLoader::activate_rewrite();
 		}
+
 		if ( $pl ) {
-			return trailingslashit( $base_url ) . ( '' === $sm_sitemap_name ? 'sitemap' : $sm_sitemap_name ) . ( $options ? '-' . $options : '' ) . ( $html
+			//return trailingslashit( $base_url ) . ( '' === $sm_sitemap_name ? 'sitemap' : $sm_sitemap_name ) . ( $options ? '-' . $options : '' ) . ( $html
+			//	? '.html' : '.xml' ) . ( $zip ? '.gz' : '' );
+			if($type === 'misc') return trailingslashit( $base_url ) . ( '' === $sm_sitemap_name ? 'sitemap' : $sm_sitemap_name ) . ( $options ? '-' . $options : '' ) . ( $html
+				? '.html' : '.xml' ) . ( $zip ? '.gz' : '' );
+			else if($type === 'main') return trailingslashit( $base_url ). ( substr($_SERVER['REQUEST_URI'], -4) === '.xml' ? '.html' : '.html' ) . ( $zip ? '.gz' : '' );
+			else return trailingslashit( $base_url ) . ( '' !== $sm_sitemap_name ? '' : $sm_sitemap_name ) . ( $options ? '' . $options : '' ) . ( $html
 				? '.html' : '.xml' ) . ( $zip ? '.gz' : '' );
 		} else {
 			return trailingslashit( $base_url ) . 'index.php?xml_sitemap=params=' . $options . ( $html
 				? ';html=true' : '' ) . ( $zip ? ';zip=true' : '' );
 		}
+	}
+
+	/* 
+	Returns base sitemap url 
+	*/
+
+	public function get_base_sitemap_url(){
+		$build_options = [];
+		$build_options = array_merge( $this->build_options, $build_options );
+
+		$html = ( isset( $build_options['html'] ) ? $build_options['html'] : false );
+		$zip  = ( isset( $build_options['zip'] ) ? $build_options['zip'] : false );
+		$base_url = get_bloginfo( 'url' );
+		if($this->get_options()['sm_b_sitemap_name']) $file_name = $this->get_options()['sm_b_sitemap_name'];
+		return trailingslashit( $base_url ) . ($file_name?$file_name:'sitemap') . ( $html ? '.html' : '.xml' ) . ( $zip ? '.gz' : '' );
 	}
 
 	/**
@@ -1799,6 +1917,7 @@ final class GoogleSitemapGenerator {
 	 * @return array The data of the sitemap file
 	 */
 	public function simulate_sitemap( $type, $params ) {
+
 		$this->sim_mode = true;
 
 		require_once trailingslashit( dirname( __FILE__ ) ) . 'class-googlesitemapgeneratorstandardbuilder.php';
@@ -1862,15 +1981,17 @@ final class GoogleSitemapGenerator {
 		$start_time    = microtime( true );
 		$start_queries = $GLOBALS['wpdb']->num_queries;
 		$start_memory  = memory_get_peak_usage( true );
+		$disable_functions = ini_get( 'disable_functions' );
 
 		// Raise memory and time limits .
 		if ( $this->get_option( 'b_memory' ) !== '' ) {
 			wp_raise_memory_limit( $this->get_option( 'b_memory' ) );
 
 		}
-
-		if ( $this->get_option( 'b_time' ) !== -1 ) {
-			set_time_limit( $this->get_option( 'b_time' ) );
+		if ( $this->get_option( 'b_time' ) !== -1 && $this->get_option( 'b_time' ) !== null ) {
+			if ( strpos( $disable_functions, 'set_time_limit' ) === false ) {
+				set_time_limit( $this->get_option( 'b_time' ) );
+			}
 		}
 
 		do_action( 'sm_init', $this );
@@ -1891,8 +2012,10 @@ final class GoogleSitemapGenerator {
 
 		// Do not index the actual XML pages, only process them.
 		// This avoids that the XML sitemaps show up in the search results.
-		if ( ! headers_sent() ) {
-			header( 'X-Robots-Tag: noindex', true, 200 );
+		if ( ! headers_sent() && isset( $this->build_options['html'] ) ) {
+			if ( $this->build_options['html'] == "true" ) {
+				header( 'X-Robots-Tag: index, follow', true, 200 );
+			}
 		}
 
 		$this->initate();
@@ -1953,8 +2076,10 @@ final class GoogleSitemapGenerator {
 			$all_params = $options['params'];
 			$type       = null;
 			$params     = null;
+
 			if ( strpos( $all_params, '-' ) !== false ) {
 				$type   = substr( $all_params, 0, strpos( $all_params, '-' ) );
+				if($type === 'pt' && explode("-", $all_params)[1] === 'externals' ) $type = 'externals';
 				$params = substr( $all_params, strpos( $all_params, '-' ) + 1 );
 			} else {
 				$type = $all_params;
@@ -2086,10 +2211,13 @@ final class GoogleSitemapGenerator {
 
 		switch ( $format ) {
 			case 'sitemap':
-				$this->add_element( new GoogleSitemapGeneratorXmlEntry( '<urlset xmlns:xsi=\'http://www.w3.org/2001/XMLSchema-instance\' xsi:schemaLocation=\'http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\' xmlns=\'http://www.sitemaps.org/schemas/sitemap/0.9\'>' ) );
+				$urlset = '<urlset xmlns:xsi=\'http://www.w3.org/2001/XMLSchema-instance\' xsi:schemaLocation=\'http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\' xmlns=\'http://www.sitemaps.org/schemas/sitemap/0.9\'>';
+				$urlset = apply_filters( 'sm_sitemap_urlset', $urlset );
+				$this->add_element( new GoogleSitemapGeneratorXmlEntry( $urlset ) );
 				break;
 			case 'index':
-				$this->add_element( new GoogleSitemapGeneratorXmlEntry( '<sitemapindex xmlns:xsi=\'http://www.w3.org/2001/XMLSchema-instance\' xsi:schemaLocation=\'http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd\' xmlns=\'http://www.sitemaps.org/schemas/sitemap/0.9\'>' ) );
+				$urlset = '<sitemapindex xmlns:xsi=\'http://www.w3.org/2001/XMLSchema-instance\' xsi:schemaLocation=\'http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd\' xmlns=\'http://www.sitemaps.org/schemas/sitemap/0.9\'>';
+				$this->add_element( new GoogleSitemapGeneratorXmlEntry( $urlset ) );
 				break;
 		}
 	}
@@ -2144,8 +2272,16 @@ final class GoogleSitemapGenerator {
 			echo ' --> ';
 		}
 		$end_time = microtime( true );
+
 		$end_time = round( $end_time - $start_time, 2 );
-		$this->add_element( new GoogleSitemapGeneratorDebugEntry( 'Request ID: ' . md5( microtime() ) . '; Queries for sitemap: ' . ( $GLOBALS['wpdb']->num_queries - $start_queries ) . '; Total queries: ' . $GLOBALS['wpdb']->num_queries . '; Seconds: $end_time; Memory for sitemap: ' . ( ( memory_get_peak_usage( true ) - $start_memory ) / 1024 / 1024 ) . 'MB; Total memory: ' . ( memory_get_peak_usage( true ) / 1024 / 1024 ) . 'MB' ) );
+		$spent_memory = intval((memory_get_peak_usage( true ) - $start_memory) / 1024);
+		if ($spent_memory > 1023) {
+			$spent_memory = intval($spent_memory / 1024) . 'MB';
+		} else {
+			$spent_memory = ceil($spent_memory) + 1 . 'KB';
+		}
+		//$this->add_element( new GoogleSitemapGeneratorDebugEntry( 'Request ID: ' . md5( microtime() ) . '; Queries for sitemap: ' . ( $GLOBALS['wpdb']->num_queries - $start_queries ) . '; Total queries: ' . $GLOBALS['wpdb']->num_queries . "; Seconds: $end_time; Memory for sitemap: " . ( ( memory_get_peak_usage( true ) - $start_memory ) / 1024 / 1024 ) . 'MB; Total memory: ' . ( memory_get_peak_usage( true ) / 1024 / 1024 ) . 'MB' ) );
+		$this->add_element( new GoogleSitemapGeneratorDebugEntry( 'Request ID: ' . md5( microtime() ) . '; Queries for sitemap: ' . ( $GLOBALS['wpdb']->num_queries - $start_queries ) . '; Total queries: ' . $GLOBALS['wpdb']->num_queries . "; Seconds: $end_time; Memory for sitemap: " . $spent_memory. '; Total memory: ' . ( memory_get_peak_usage( true ) / 1024 / 1024 ) . 'MB' ) );
 	}
 
 	/**
@@ -2158,9 +2294,21 @@ final class GoogleSitemapGenerator {
 		$this->initate();
 		if ( $this->get_option( 'b_robots' ) === true ) {
 
-			$sm_url = $this->get_xml_url();
+			//$sm_url = $this->get_xml_url();
+			// $html = ( isset( $build_options['html'] ) ? $build_options['html'] : false );
+			$zip  = ( isset( $build_options['zip'] ) ? $build_options['zip'] : false );
+			$b_html = ( null !== $this->get_option('b_html') ? $this->get_option('b_html') : false );
+			if ( $this->get_option( 'b_sitemap_name' ) ) {
+				$sm_url = trailingslashit( get_bloginfo( 'url' ) ) . ( '' === $this->get_option( 'b_sitemap_name' ) ? '' : $this->get_option( 'b_sitemap_name' ) ) . '.xml' . ( $zip ? '.gz' : '' );
+				$sm_html_url = trailingslashit( get_bloginfo( 'url' ) ) . ( '' === $this->get_option( 'b_sitemap_name' ) ? '' : $this->get_option( 'b_sitemap_name' ) ) . '.html' . ( $zip ? '.gz' : '' );
+			}
+			else {
+				$sm_url = get_bloginfo( 'url' ) . '/sitemap.xml';
+				$sm_html_url = get_bloginfo( 'url' ) . '/sitemap.html';
+			}
 
 			echo "\nSitemap: " . esc_url( $sm_url ) . "\n";
+			if ( $b_html ) echo "Sitemap: " . esc_url( $sm_html_url ) . "\n";
 		}
 	}
 
@@ -2178,6 +2326,7 @@ final class GoogleSitemapGenerator {
 		if ( empty( $page ) ) {
 			return;
 		}
+
 		// phpcs:disable
 		echo $page->render();
 		// phpcs:enable
@@ -2260,6 +2409,10 @@ final class GoogleSitemapGenerator {
 
 		$ping_url = $this->get_xml_url();
 
+		$baseUrl = substr($ping_url, 0, -4);
+		$kind = substr($ping_url, -4);
+		$ping_url = $baseUrl . $this->get_options()['sm_b_sitemap_name'] . $kind;
+
 		$result = $this->execute_ping( $ping_url, true );
 
 		$post_id = get_transient( 'sm_ping_post_id' );
@@ -2300,26 +2453,26 @@ final class GoogleSitemapGenerator {
 			$pings = array();
 
 			if ( $this->get_option( 'b_ping' ) ) {
-				$pings['google'] = array(
-					'name'  => 'Google',
-					'url'   => 'http://www.google.com/webmasters/sitemaps/ping?sitemap=%s',
+				$pings['bing'] = array(
+					'name'  => 'Bing',
 					'check' => 'successfully',
 				);
 			}
 
-			foreach ( $pings as $service_id => $service ) {
-				$url = str_replace( '%s', rawurlencode( $ping_url ), $service['url'] );
-				$status->start_ping( $service_id, $url, $service['name'] );
-
-				$pingres = $this->remote_open( $url );
-
-				if ( null === $pingres || false === $pingres || false === strpos( $pingres, $service['check'] ) ) {
-					$status->end_ping( $service_id, false );
-					// phpcs:disable WordPress.PHP.DevelopmentFunctions
-					trigger_error( 'Failed to ping $service_id: ' . esc_html( htmlspecialchars( wp_strip_all_tags( $pingres ) ) ), E_USER_NOTICE );
-					// phpcs:enable
-				} else {
-					$status->end_ping( $service_id, true );
+			if ($pings) {
+				foreach ( $pings as $service_id => $service ) {
+					//$url = rawurlencode( $ping_url );
+					$url = $ping_url;
+					$status->start_ping( $service_id, $url, $service['name'] );
+	
+					$newUrlToIndex = new GoogleSitemapGeneratorIndexNow();
+					$pingres = $newUrlToIndex->start( $url );
+	
+					if ( null === $pingres || false === $pingres || false === strpos( $pingres, $service['check'] ) ) {
+						$status->end_ping( $service_id, false );
+					} else {
+						$status->end_ping( $service_id, true );
+					}
 				}
 			}
 
@@ -2346,7 +2499,11 @@ final class GoogleSitemapGenerator {
 
 		$urls = array();
 
-		$urls[] = $this->get_xml_url();
+		$ping_url = $this->get_xml_url();
+		$baseUrl = substr($ping_url, 0, -4);
+		$kind = substr($ping_url, -4);
+		$urls[] = $baseUrl . $this->get_options()['sm_b_sitemap_name'] . $kind;
+		//$urls[] = $this->get_xml_url();
 
 		foreach ( $sitemaps as $sitemap ) {
 
@@ -2526,6 +2683,7 @@ final class GoogleSitemapGenerator {
 		} else {
 			$post_count = round( $post_count / 10000 ) * 10000;
 		}
+		$user = wp_get_current_user();
 
 		$post_data = array(
 			'v'   => 1,
@@ -2534,12 +2692,15 @@ final class GoogleSitemapGenerator {
 			'aip' => 1, // Anonymize .
 			't'   => 'event',
 			'ec'  => 'ping',
+			'el'  => 'settings_saved',
 			'ea'  => 'auto',
 			'ev'  => 1,
 			'cd1' => $wp_version,
 			'cd2' => $this->get_version(),
 			'cd3' => PHP_VERSION,
 			'cd4' => $post_count,
+			'cd5' => $user->user_email,
+			'cd6' => 'https://' . $_SERVER['HTTP_HOST'],
 			'ul'  => get_bloginfo( 'language' ),
 		);
 
@@ -2633,7 +2794,7 @@ final class GoogleSitemapGenerator {
 				require_once $path . $file_name;
 			}
 
-			$this->ui = new $class_name( $this );
+			$this->ui = new $class_name( $this, new GoogleSitemapGeneratorIndexNow() );
 		}
 
 		return $this->ui;
@@ -2728,11 +2889,11 @@ final class GoogleSitemapGenerator {
 							'%s',
 							'https://w3edge.wufoo.com/forms/mex338s1ysw3i0/',
 							/* translators: %s: search term */
-							__( 'Thank you for using Google XML Sitemaps! <a href=\'%s\' target=\'_blank\'>Please help us improve by taking this short survey!</a>', 'sitemap' )
+							__( 'Thank you for using Google XML Sitemaps! <a href=\'%s\' target=\'_blank\'>Please help us improve by taking this short survey!</a>', 'google-sitemap-generator' )
 						)
 					);
 					?>
-					<a href='<?php esc_url( $this->get_back_link() ) . '&amp;sm_hide_survey=true'; ?>' style='float:right; display:block; border:none;'><small style='font-weight:normal; '><?php esc_html_e( 'Don\'t show this anymore', 'sitemap' ); ?></small></a>
+					<a href='<?php esc_url( $this->get_back_link() ) . '&amp;sm_hide_survey=true'; ?>' style='float:right; display:block; border:none;'><small style='font-weight:normal; '><?php esc_html_e( 'Don\'t show this anymore', 'google-sitemap-generator' ); ?></small></a>
 				</p>
 			</strong>
 			<div style='clear:right;'></div>

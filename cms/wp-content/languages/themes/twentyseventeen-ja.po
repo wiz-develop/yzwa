@@ -7,7 +7,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/4.0.0-alpha.1\n"
+"X-Generator: GlotPress/4.0.0-beta.2\n"
 "Language: ja_JP\n"
 "Project-Id-Version: Themes - Twenty Seventeen\n"
 
@@ -121,44 +121,47 @@ msgstr "大見出しとボタン"
 msgid "Footer"
 msgstr "フッター"
 
-#: functions.php:346
+#: functions.php:343
 msgid "Add widgets here to appear in your sidebar on blog posts and archive pages."
 msgstr "ブログ投稿やアーカイブページのサイドバーに表示されるウィジェットをここに追加してください。"
 
-#: functions.php:344 sidebar.php:18
+#: functions.php:341 sidebar.php:18
 msgid "Blog Sidebar"
 msgstr "ブログサイドバー"
 
-#: template-parts/header/site-branding.php:34
-#: template-parts/navigation/navigation-top.php:31
+#. translators: Hidden accessibility text.
+#: template-parts/header/site-branding.php:37
+#: template-parts/navigation/navigation-top.php:34
 msgid "Scroll down to content"
 msgstr "本文までスクロール"
 
-#: functions.php:187
+#: functions.php:186
 msgctxt "Theme starter content"
 msgid "Coffee"
 msgstr "コーヒー"
 
-#: functions.php:183
+#: functions.php:182
 msgctxt "Theme starter content"
 msgid "Sandwich"
 msgstr "サンドイッチ"
 
-#: functions.php:179
+#: functions.php:178
 msgctxt "Theme starter content"
 msgid "Espresso"
 msgstr "エスプレッソ"
 
-#: inc/custom-header.php:128
+#. translators: Hidden accessibility text.
+#: inc/custom-header.php:130
 msgid "Pause background video"
 msgstr "背景動画を一時停止"
 
-#: inc/custom-header.php:127
+#. translators: Hidden accessibility text.
+#: inc/custom-header.php:128
 msgid "Play background video"
 msgstr "背景動画を再生"
 
 #. translators: %s: The section ID.
-#: inc/template-tags.php:157
+#: inc/template-tags.php:168
 msgid "Front Page Section %s Placeholder"
 msgstr "フロントページセクション%sのプレースホルダー"
 
@@ -166,7 +169,8 @@ msgstr "フロントページセクション%sのプレースホルダー"
 msgid "When the two-column layout is assigned, the page title is in one column and content is in the other."
 msgstr "2カラムレイアウトが割り当てられると、ページタイトルが一方のカラムに、コンテンツが他方のカラムにそれぞれ配置されます。"
 
-#: single.php:34
+#. translators: Hidden accessibility text.
+#: single.php:36
 msgid "Next Post"
 msgstr "次の投稿"
 
@@ -174,16 +178,18 @@ msgstr "次の投稿"
 msgid "Posts"
 msgstr "投稿"
 
-#: inc/template-tags.php:88
+#. translators: Hidden accessibility text.
+#: inc/template-tags.php:94
 msgid "Tags"
 msgstr "タグ"
 
-#: inc/template-tags.php:84
+#. translators: Hidden accessibility text.
+#: inc/template-tags.php:86
 msgid "Categories"
 msgstr "カテゴリー"
 
 #. translators: Used between list items, there is a space after the comma.
-#: functions.php:660
+#: functions.php:687
 msgid ", "
 msgstr "、"
 
@@ -246,27 +252,27 @@ msgstr "配色"
 msgid "Default Header Image"
 msgstr "デフォルトのヘッダー画像"
 
-#: functions.php:368
+#: functions.php:365
 msgid "Footer 2"
 msgstr "フッター2"
 
-#: functions.php:358 functions.php:370
+#: functions.php:355 functions.php:367
 msgid "Add widgets here to appear in your footer."
 msgstr "フッターに表示させるにはここにウィジェットを追加してください。"
 
-#: functions.php:356
+#: functions.php:353
 msgid "Footer 1"
 msgstr "フッター1"
 
 #. translators: If there are characters in your language that are not supported
 #. by Libre Franklin, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:296
+#: functions.php:301
 msgctxt "Libre Franklin font: on or off"
 msgid "on"
 msgstr "off"
 
-#: functions.php:69 functions.php:211
+#: functions.php:62 functions.php:210
 #: template-parts/navigation/navigation-top.php:12
 msgid "Top Menu"
 msgstr "トップメニュー"
@@ -279,7 +285,7 @@ msgstr "返信"
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr "お探しのコンテンツを見つけられませんでした。検索をお試しください。"
 
-#: search.php:59
+#: search.php:62
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr "検索キーワードに一致するものが見つかりませんでした。 別のキーワードで試してみてください。"
 
@@ -292,29 +298,34 @@ msgstr "最初の投稿を公開する準備はできましたか ? <a href=\"%s
 msgid "Nothing Found"
 msgstr "何も見つかりませんでした"
 
-#: single.php:33
+#. translators: Hidden accessibility text.
+#: single.php:34
 msgid "Previous Post"
 msgstr "前の投稿"
 
-#: comments.php:71 single.php:33
+#. translators: Hidden accessibility text.
+#: comments.php:72 single.php:34
 msgid "Previous"
 msgstr "前"
 
-#: comments.php:72 single.php:34
+#. translators: Hidden accessibility text.
+#: comments.php:74 single.php:36
 msgid "Next"
 msgstr "次"
 
-#: searchform.php:20
+#. translators: Hidden accessibility text.
+#: searchform.php:28
 msgctxt "submit button"
 msgid "Search"
 msgstr "検索"
 
-#: searchform.php:19
+#: searchform.php:24
 msgctxt "placeholder"
 msgid "Search &hellip;"
 msgstr "検索&hellip;"
 
-#: searchform.php:17
+#. translators: Hidden accessibility text.
+#: searchform.php:20
 msgctxt "label"
 msgid "Search for:"
 msgstr "検索:"
@@ -325,7 +336,7 @@ msgid "Search Results for: %s"
 msgstr "「%s」の検索結果"
 
 #. translators: %s: Post title. Only visible to screen readers.
-#: functions.php:398 template-parts/page/content-front-page-panels.php:45
+#: functions.php:395 template-parts/page/content-front-page-panels.php:45
 #: template-parts/page/content-front-page.php:42
 #: template-parts/post/content-audio.php:83
 #: template-parts/post/content-gallery.php:70
@@ -344,7 +355,7 @@ msgid "Twenty Seventeen requires at least WordPress version 4.7. You are running
 msgstr "Twenty Seventeen には WordPress 4.7以降のバージョンが必要です。現在ご利用中のバージョンは%sです。アップグレードしてもう一度お試しください。"
 
 #. translators: %s: Post title. Only visible to screen readers.
-#: inc/template-tags.php:116
+#: inc/template-tags.php:124
 msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "<span class=\"screen-reader-text\">\"%s\" を</span>編集"
 
@@ -361,19 +372,20 @@ msgstr "固定ページ:"
 msgid "Menu"
 msgstr "メニュー"
 
-#: header.php:28
+#. translators: Hidden accessibility text.
+#: header.php:31
 msgid "Skip to content"
 msgstr "コンテンツへスキップ"
 
-#: functions.php:490
+#: functions.php:509
 msgid "Collapse child menu"
 msgstr "サブメニューを閉じる"
 
-#: functions.php:489
+#: functions.php:508
 msgid "Expand child menu"
 msgstr "サブメニューを展開"
 
-#: functions.php:70 functions.php:222
+#: functions.php:63 functions.php:221
 msgid "Social Links Menu"
 msgstr "﻿ソーシャルリンクメニュー"
 
@@ -386,7 +398,7 @@ msgstr "Proudly powered by %s"
 msgid "Footer Social Links Menu"
 msgstr "フッターソーシャルリンクメニュー"
 
-#: comments.php:82
+#: comments.php:84
 msgid "Comments are closed."
 msgstr "コメントは受け付けていません。"
 
@@ -403,15 +415,18 @@ msgctxt "comments title"
 msgid "One Reply to &ldquo;%s&rdquo;"
 msgstr "&ldquo;%s&rdquo; への1件の返信"
 
-#: archive.php:51 index.php:55 search.php:52
+#. translators: Hidden accessibility text.
+#: archive.php:54 index.php:58 search.php:55
 msgid "Page"
 msgstr "固定ページ"
 
-#: archive.php:50 index.php:54 search.php:51
+#. translators: Hidden accessibility text.
+#: archive.php:52 index.php:56 search.php:53
 msgid "Next page"
 msgstr "次のページ"
 
-#: archive.php:49 index.php:53 search.php:50
+#. translators: Hidden accessibility text.
+#: archive.php:50 index.php:54 search.php:51
 msgid "Previous page"
 msgstr "前のページ"
 

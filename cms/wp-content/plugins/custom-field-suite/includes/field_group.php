@@ -26,16 +26,16 @@ class cfs_field_group
         INNER JOIN $wpdb->postmeta m1 ON m1.post_id = p.ID AND m1.meta_key = 'cfs_fields'
         INNER JOIN $wpdb->postmeta m2 ON m2.post_id = p.ID AND m2.meta_key = 'cfs_rules'
         INNER JOIN $wpdb->postmeta m3 ON m3.post_id = p.ID AND m3.meta_key = 'cfs_extras'
-        WHERE p.post_status = 'publish'";
+        WHERE p.post_status = 'publish' AND p.post_type = 'cfs'";
         $results = $wpdb->get_results( $sql );
 
         $output = [];
         foreach ( $results as $result ) {
             $output[ $result->ID ] = [
                 'title'     => $result->post_title,
-                'fields'    => unserialize( $result->fields ),
-                'rules'     => unserialize( $result->rules ),
-                'extras'    => unserialize( $result->extras )
+                'fields'    => $this->safe_unserialize( $result->fields, [] ),
+                'rules'     => $this->safe_unserialize( $result->rules, [] ),
+                'extras'    => $this->safe_unserialize( $result->extras, [] )
             ];
         }
 
@@ -63,9 +63,23 @@ class cfs_field_group
 
             // Loop through field groups
             foreach ( $options['import_code'] as $group ) {
+                if ( ! is_array( $group ) ) {
+                    continue;
+                }
+
+                $group = $this->sanitize_config( $group );
+                $group['post_title'] = isset( $group['post_title'] ) ? sanitize_text_field( $group['post_title'] ) : '';
+                $group['post_name'] = isset( $group['post_name'] ) ? sanitize_title( $group['post_name'] ) : '';
+                $group['cfs_fields'] = isset( $group['cfs_fields'] ) && is_array( $group['cfs_fields'] ) ? $group['cfs_fields'] : [];
+                $group['cfs_rules'] = isset( $group['cfs_rules'] ) && is_array( $group['cfs_rules'] ) ? $group['cfs_rules'] : [];
+                $group['cfs_extras'] = isset( $group['cfs_extras'] ) && is_array( $group['cfs_extras'] ) ? $group['cfs_extras'] : [];
+
+                if ( '' === $group['post_name'] ) {
+                    continue;
+                }
 
                 // Make sure this field group doesn't exist
-                if ( ! in_array( $group['post_name'], $existing_groups ) ) {
+                if ( ! in_array( $group['post_name'], $existing_groups, true ) ) {
 
                     // Insert new post
                     $post_id = wp_insert_post( [
@@ -109,15 +123,15 @@ class cfs_field_group
 
             $return = '';
             if ( ! empty( $stats['imported'] ) ) {
-                $return .= '<div>' . __( 'Imported', 'cfs' ) . ': ' . implode( ', ', $stats['imported'] ) . '</div>';
+                $return .= '<div>' . esc_html__( 'Imported', 'cfs' ) . ': ' . esc_html( implode( ', ', $stats['imported'] ) ) . '</div>';
             }
             if ( ! empty( $stats['skipped'] ) ) {
-                $return .= '<div>' . __( 'Skipped', 'cfs' ) . ': ' . implode( ', ', $stats['skipped'] ) . '</div>';
+                $return .= '<div>' . esc_html__( 'Skipped', 'cfs' ) . ': ' . esc_html( implode( ', ', $stats['skipped'] ) ) . '</div>';
             }
             return $return;
         }
         else {
-            return '<div>' . __( 'Nothing to import', 'cfs' ) . '</div>';
+            return '<div>' . esc_html__( 'Nothing to import', 'cfs' ) . '</div>';
         }
     }
 
@@ -132,12 +146,22 @@ class cfs_field_group
 
         $post_ids = [];
         $field_groups = [];
-        foreach ( $options['field_groups'] as $post_id ) {
-            $post_ids[] = (int) $post_id;
+        foreach ( (array) $options['field_groups'] as $post_id ) {
+            $post_ids[] = absint( $post_id );
         }
 
-        $post_ids = implode( ',', $post_ids );
-        $post_data = $wpdb->get_results( "SELECT ID, post_title, post_name FROM {$wpdb->posts} WHERE post_type = 'cfs' AND ID IN ($post_ids)" );
+        $post_ids = array_values( array_filter( $post_ids ) );
+        if ( empty( $post_ids ) ) {
+            return [];
+        }
+
+        $post_id_placeholders = implode( ',', array_fill( 0, count( $post_ids ), '%d' ) );
+        $post_data = $wpdb->get_results(
+            $wpdb->prepare(
+                "SELECT ID, post_title, post_name FROM {$wpdb->posts} WHERE post_type = %s AND ID IN ($post_id_placeholders)",
+                array_merge( [ 'cfs' ], $post_ids )
+            )
+        );
 
         foreach ( $post_data as $row ) {
             $field_groups[ $row->ID ] = [
@@ -146,9 +170,14 @@ class cfs_field_group
             ];
         }
 
-        $meta_data = $wpdb->get_results( "SELECT * FROM {$wpdb->postmeta} WHERE meta_key LIKE 'cfs_%' AND post_id IN ($post_ids)" );
+        $meta_data = $wpdb->get_results(
+            $wpdb->prepare(
+                "SELECT * FROM {$wpdb->postmeta} WHERE meta_key LIKE %s AND post_id IN ($post_id_placeholders)",
+                array_merge( [ $wpdb->esc_like( 'cfs_' ) . '%' ], $post_ids )
+            )
+        );
         foreach ( $meta_data as $row ) {
-            $value = unserialize( $row->meta_value );
+            $value = $this->safe_unserialize( $row->meta_value, [] );
             $field_groups[ $row->post_id ][ $row->meta_key ] = $value;
         }
 
@@ -190,19 +219,28 @@ class cfs_field_group
 
         $new_fields = [];
 
-        foreach ( $params['fields'] as $key => $field ) {
+        $fields = isset( $params['fields'] ) && is_array( $params['fields'] ) ? $params['fields'] : [];
+        foreach ( $fields as $key => $field ) {
 
             // Sanitize the field
-            $field = stripslashes_deep( $field );
+            $field['type'] = isset( $field['type'] ) ? sanitize_key( $field['type'] ) : '';
+            if ( ! isset( CFS()->fields[ $field['type'] ] ) ) {
+                continue;
+            }
 
             // Allow for field customizations
             $field = CFS()->fields[ $field['type'] ]->pre_save_field( $field );
+
+            $field['id'] = isset( $field['id'] ) ? absint( $field['id'] ) : 0;
+            $field['name'] = isset( $field['name'] ) ? sanitize_key( $field['name'] ) : '';
+            $field['label'] = isset( $field['label'] ) ? sanitize_text_field( $field['label'] ) : '';
+            $field['notes'] = isset( $field['notes'] ) ? sanitize_textarea_field( $field['notes'] ) : '';
 
             // Set the parent ID
             $field['parent_id'] = empty( $field['parent_id'] ) ? 0 : (int) $field['parent_id'];
 
             // Save empty array for fields without options
-            $field['options'] = empty( $field['options'] ) ? [] : $field['options'];
+            $field['options'] = empty( $field['options'] ) ? [] : $this->sanitize_config( $field['options'] );
 
             // Use an existing ID if available
             if ( 0 < (int) $field['id'] ) {
@@ -211,7 +249,7 @@ class cfs_field_group
                 $current_field_ids[] = $field['id'];
 
                 // Rename the postmeta key if necessary
-                if ( $field['name'] != $prev_fields[ $field['id'] ] ) {
+                if ( isset( $prev_fields[ $field['id'] ] ) && $field['name'] != $prev_fields[ $field['id'] ] ) {
                     $wpdb->query(
                         $wpdb->prepare("
                             UPDATE {$wpdb->postmeta} m
@@ -257,13 +295,17 @@ class cfs_field_group
         $deleted_field_ids = apply_filters( 'cfs_deleted_field_ids', $deleted_field_ids );
 
         if ( 0 < count( $deleted_field_ids ) ) {
-            $deleted_field_ids = implode( ',', $deleted_field_ids );
-            $wpdb->query("
-                DELETE v, m
-                FROM {$wpdb->prefix}cfs_values v
-                INNER JOIN {$wpdb->postmeta} m ON m.meta_id = v.meta_id
-                WHERE v.field_id IN ($deleted_field_ids)"
-            );
+            $deleted_field_ids = array_values( array_filter( array_map( 'absint', $deleted_field_ids ) ) );
+            if ( ! empty( $deleted_field_ids ) ) {
+                $placeholders = implode( ',', array_fill( 0, count( $deleted_field_ids ), '%d' ) );
+                $wpdb->query( $wpdb->prepare( "
+                    DELETE v, m
+                    FROM {$wpdb->prefix}cfs_values v
+                    INNER JOIN {$wpdb->postmeta} m ON m.meta_id = v.meta_id
+                    WHERE v.field_id IN ($placeholders)",
+                    $deleted_field_ids
+                ) );
+            }
         }
 
         /*---------------------------------------------------------------------------------------------
@@ -281,9 +323,10 @@ class cfs_field_group
                     $params['rules'][ $type ] = explode( ',', $params['rules'][ $type ] );
                 }
 
+                $operator = isset( $params['rules']['operator'][ $type ] ) ? $params['rules']['operator'][ $type ] : '==';
                 $data[ $type ] = [
-                    'operator' => $params['rules']['operator'][ $type ],
-                    'values' => $params['rules'][ $type ],
+                    'operator' => in_array( $operator, [ '==', '!=' ], true ) ? $operator : '==',
+                    'values' => $this->sanitize_config( $params['rules'][ $type ] ),
                 ];
             }
         }
@@ -295,7 +338,36 @@ class cfs_field_group
             Save extras
         ---------------------------------------------------------------------------------------------*/
 
-        update_post_meta( $post_id, 'cfs_extras', $params['extras'] );
+        $extras = isset( $params['extras'] ) && is_array( $params['extras'] ) ? $this->sanitize_config( $params['extras'] ) : [];
+        update_post_meta( $post_id, 'cfs_extras', $extras );
+    }
+
+
+    private function sanitize_config( $value ) {
+        if ( is_array( $value ) ) {
+            $sanitized = [];
+            foreach ( $value as $key => $item ) {
+                $sanitized_key = is_int( $key ) ? $key : sanitize_text_field( (string) $key );
+                $sanitized[ $sanitized_key ] = $this->sanitize_config( $item );
+            }
+            return $sanitized;
+        }
+
+        if ( is_scalar( $value ) || null === $value ) {
+            return sanitize_textarea_field( (string) $value );
+        }
+
+        return '';
+    }
+
+
+    private function safe_unserialize( $value, $default = false ) {
+        if ( empty( $value ) ) {
+            return $default;
+        }
+
+        $output = @unserialize( $value, [ 'allowed_classes' => false ] );
+        return ( false === $output && 'b:0;' !== $value ) ? $default : $output;
     }
 }
 

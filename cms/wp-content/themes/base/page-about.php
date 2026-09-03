@@ -12,7 +12,7 @@
 
 get_header();
 
-$page_tit_en = CFS()->get('page_tit_en', $get_page_id);
+$page_tit_en = CFS()->get('page_tit_en', get_queried_object_id());
 
 ?>
 <div id="splash"></div>

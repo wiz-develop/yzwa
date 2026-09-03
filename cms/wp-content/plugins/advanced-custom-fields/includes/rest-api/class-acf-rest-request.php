@@ -1,4 +1,13 @@
 <?php
+/**
+ * @package ACF
+ * @author  WP Engine
+ *
+ * © 2026 Advanced Custom Fields (ACF®). All rights reserved.
+ * "ACF" is a trademark of WP Engine.
+ * Licensed under the GNU General Public License v2 or later.
+ * https://www.gnu.org/licenses/gpl-2.0.html
+ */
 
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
@@ -12,10 +21,6 @@ if ( class_exists( 'ACF_Rest_Request' ) ) {
 
 /**
  * Class ACF_Rest_Request
- *
- * @property-read string $object_sub_type
- * @property-read string $object_type
- * @property-read string $http_method
  */
 class ACF_Rest_Request {
 
@@ -87,16 +92,22 @@ class ACF_Rest_Request {
 	 * Determine the HTTP method of the current request.
 	 */
 	private function set_http_method() {
-		$this->http_method = strtoupper( $_SERVER['REQUEST_METHOD'] );
+		$this->http_method = 'GET';
 
+		if ( ! empty( $_SERVER['REQUEST_METHOD'] ) ) {
+			$this->http_method = strtoupper( sanitize_text_field( $_SERVER['REQUEST_METHOD'] ) );
+		}
+
+		// phpcs:disable WordPress.Security.NonceVerification.Recommended -- Verified elsewhere.
 		// HTTP method override for clients that can't use PUT/PATCH/DELETE. This is identical to WordPress'
 		// handling in \WP_REST_Server::serve_request(). This block of code should always be identical to that
 		// in core.
 		if ( isset( $_GET['_method'] ) ) {
-			$this->http_method = strtoupper( $_GET['_method'] );
+			$this->http_method = strtoupper( sanitize_text_field( $_GET['_method'] ) );
 		} elseif ( isset( $_SERVER['HTTP_X_HTTP_METHOD_OVERRIDE'] ) ) {
-			$this->http_method = strtoupper( $_SERVER['HTTP_X_HTTP_METHOD_OVERRIDE'] );
+			$this->http_method = strtoupper( sanitize_text_field( $_SERVER['HTTP_X_HTTP_METHOD_OVERRIDE'] ) );
 		}
+		// phpcs:enable WordPress.Security.NonceVerification.Recommended
 	}
 
 	/**
@@ -242,5 +253,4 @@ class ACF_Rest_Request {
 
 		return null;
 	}
-
 }

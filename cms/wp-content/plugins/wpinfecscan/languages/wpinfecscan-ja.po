@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
+"Last-Translator: \n"
 "Language-Team: \n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4\n"
-"Last-Translator: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: ja\n"
+"X-Generator: Poedit 3.4.1\n"
 
 msgid "All files are continuously scanned every 10 minutes after designated time."
 msgstr "１０分に一回、設定時間以降に全てのファイルをスキャンし終わるまで実行されます。"
@@ -114,8 +114,8 @@ msgstr "※ワードプレスのCRONを利用している場合自動スキャ�
 msgid "Scanning completed!"
 msgstr "スキャンが完了しました!"
 
-msgid "WordPress doctor"
-msgstr "ワードプレスドクター"
+msgid "WP doctor"
+msgstr "WPドクター"
 
 msgid "Highlighted pattern matched rows."
 msgstr "パターンにマッチした行をハイライトしています。"
@@ -426,8 +426,8 @@ msgstr "最近1か月間での管理者権限ログイン成功IP一覧"
 msgid "Protect author information"
 msgstr "オーサー情報の保護"
 
-msgid "Prevents WordPress from outputting user information based on accesses from a particular query, such as /?author=1."
-msgstr "/?author=1等の特殊なクエリによるアクセスでワードプレスがユーザー情報を出力するのを抑制します"
+msgid "Prevents WordPress from outputting user information based on accesses from a particular query, such as /?author=1,/wp-json/wp/v2/users."
+msgstr "/?author=1,/wp-json/wp/v2/users等の特殊なクエリによるアクセスでワードプレスがユーザー情報を出力するのを抑制します"
 
 msgid "Couldn't activate author protection because of no permission to write htaccess file."
 msgstr "htaccessファイルの書き込み権限が無いためオーサー保護機能を有効にできませんでした"
@@ -471,8 +471,8 @@ msgstr "例"
 msgid "IP map of active hackers"
 msgstr "ハッキングを行っているハッカーIPマップ"
 
-msgid "These IPs are of hackers around the world detected daily by WordPress doctor. This data is updated every 24 hours."
-msgstr "このIPのデータは、ワードプレスドクターが日々検出している世界中のハッカーのIPです。24時間ごとに更新しています。"
+msgid "These IPs are of hackers around the world detected daily by WP doctor. This data is updated every 24 hours."
+msgstr "このIPのデータは、WPドクターが日々検出している世界中のハッカーのIPです。24時間ごとに更新しています。"
 
 msgid "Block this IP automatically from access to the website (Paid)"
 msgstr "自動でこのIPのサイトへのアクセスをブロックする (有料)"
@@ -510,8 +510,8 @@ msgstr "<b>有効になる機能</b>::ログインロックダウン, ワード�
 msgid "Security level: High (Recommended)"
 msgstr "セキュリティーレベル:高(推奨)"
 
-msgid "<b>Activated functions</b>: Login LockDown, Login captcha, Password reset captcha, Prevent information leak about WordPress version, Protect important files (htaccess, wp-config.php), Protect server information, Block access to wlwmanifest.xml, Block malicious query, Protect author information, Prohibit display of Index list, Prohibit WPSCAN, Prohibit Pingback, Prevent brute-force attack, Prohibit Trace & Track, Include file protection, Upload folder protection, Block danger SQL query,  Prohibit comment posting via proxy, Comment form captcha, Prohibit comment posting by spambots"
-msgstr "<b>有効になる機能</b>:ログインロックダウン, ログインキャプチャ, パスワードリセットキャプチャ, ワードプレスのバージョンの漏洩を防止, 重要(htaccess、wp-config.php)ファイルの保護, サーバー固有の情報の保護, wlwmanifest.xmlへの外部アクセスを禁止, 不正なクエリのブロック, オーサー情報の保護, Indexリストの表示を禁止, WPSCANの禁止, Pingback の禁止, ブルートフォースアタックを防止, Trace & Trackを禁止, Includeファイルの直接アクセス禁止, UploadフォルダのPHPアクセス禁止機能, 危険なSQLクエリの送信禁止機能,  プロクシ経由のコメント投稿の禁止, コメントフォームキャプチャ, スパムボットのコメント投稿の禁止"
+msgid "<b>Activated functions</b>: Login LockDown, Login captcha, Password reset captcha, Prevent information leak about WordPress version, Protect important files (htaccess, wp-config.php), Protect server information, Block access to wlwmanifest.xml, Block malicious query, Protect author information, Prohibit display of Index list, Prohibit WPSCAN, Prohibit Pingback, Prevent brute-force attack, Prohibit Trace & Track, Include file protection, Upload folder protection, Block danger SQL query,  Prohibit comment posting via proxy, Comment form captcha, Prohibit comment posting by spambots, noindex & 404 if not found searchresult page"
+msgstr "<b>有効になる機能</b>:ログインロックダウン, ログインキャプチャ, パスワードリセットキャプチャ, ワードプレスのバージョンの漏洩を防止, 重要(htaccess、wp-config.php)ファイルの保護, サーバー固有の情報の保護, wlwmanifest.xmlへの外部アクセスを禁止, 不正なクエリのブロック, オーサー情報の保護, Indexリストの表示を禁止, WPSCANの禁止, Pingback の禁止, ブルートフォースアタックを防止, Trace & Trackを禁止, Includeファイルの直接アクセス禁止, UploadフォルダのPHPアクセス禁止機能, 危険なSQLクエリの送信禁止機能,  プロクシ経由のコメント投稿の禁止, コメントフォームキャプチャ, スパムボットのコメント投稿の禁止,  検索結果が存在しない場合検索結果ページをnoindexと404にする"
 
 msgid "To enhance the security level further, it is recommended to set properly the permissions in the rows displayed in red or yellow."
 msgstr "さらにセキュリティーを向上させるには、赤または黄色で表示されている行のパーミッションを適切に設定されることをお勧めいたします。"
@@ -519,8 +519,8 @@ msgstr "さらにセキュリティーを向上させるには、赤または黄
 msgid "Security level: Highest"
 msgstr "セキュリティーレベル:最高"
 
-msgid "<b>Activated functions</b>: Login LockDown, Login captcha, Password reset captcha, Change login page URL, Prevent information leak about WordPress version, Protect important files (htaccess, wp-config.php), Protect server information, Block access to wlwmanifest.xml, Block malicious query, Protect author information, Prohibit display of Index list, Prohibit WPSCAN, Prohibit editing themes and plugins,Include file protection, Upload folder protection, Block danger SQL query, Prohibit Pingback, Prevent brute-force attack, Prohibit REST API, Prohibit Trace & Track, Prohibit comment posting via proxy, Comment form captcha, Prohibit comment posting by spambots"
-msgstr "<b>有効になる機能</b>:ログインロックダウン, ログインキャプチャ, パスワードリセットキャプチャ, ログインページURL変更, ワードプレスのバージョンの漏洩を防止, 重要(htaccess、wp-config.php)ファイルの保護, サーバー固有の情報の保護, wlwmanifest.xmlへの外部アクセスを禁止, 不正なクエリのブロック, オーサー情報の保護, Indexリストの表示を禁止, WPSCANの禁止, テーマの編集とプラグインの編集を禁止, Pingback の禁止, ブルートフォースアタックを防止, REST APIを禁止, Trace & Trackを禁止,　Includeファイルの直接アクセス禁止, UploadフォルダのPHPアクセス禁止機能, 危険なSQLクエリの送信禁止機能,  プロクシ経由のコメント投稿の禁止, コメントフォームキャプチャ, スパムボットのコメント投稿の禁止"
+msgid "<b>Activated functions</b>: Login LockDown, Login captcha, Password reset captcha, Change login page URL, Prevent information leak about WordPress version, Protect important files (htaccess, wp-config.php), Protect server information, Block access to wlwmanifest.xml, Block malicious query, Protect author information, Prohibit display of Index list, Prohibit WPSCAN, Prohibit editing themes and plugins,Include file protection, Upload folder protection, Block danger SQL query, Prohibit Pingback, Prevent brute-force attack, Prohibit REST API, Prohibit Trace & Track, Prohibit comment posting via proxy, Comment form captcha, Prohibit comment posting by spambots, noindex & 404 if not found searchresult page"
+msgstr "<b>有効になる機能</b>:ログインロックダウン, ログインキャプチャ, パスワードリセットキャプチャ, ログインページURL変更, ワードプレスのバージョンの漏洩を防止, 重要(htaccess、wp-config.php)ファイルの保護, サーバー固有の情報の保護, wlwmanifest.xmlへの外部アクセスを禁止, 不正なクエリのブロック, オーサー情報の保護, Indexリストの表示を禁止, WPSCANの禁止, テーマの編集とプラグインの編集を禁止, Pingback の禁止, ブルートフォースアタックを防止, REST APIを禁止, Trace & Trackを禁止, Includeファイルの直接アクセス禁止, UploadフォルダのPHPアクセス禁止機能, 危険なSQLクエリの送信禁止機能,  プロクシ経由のコメント投稿の禁止, コメントフォームキャプチャ, スパムボットのコメント投稿の禁止,  検索結果が存在しない場合検索結果ページをnoindexと404にする"
 
 msgid "*The login URL will be changed as follows. Make sure to take a note so as not to forget."
 msgstr "※ログインURLが下記に変更されます。必ずメモなどをお取りいただき忘れないようにされてください。"
@@ -774,8 +774,8 @@ msgstr "検査を実施できません(さらに脆弱性検査を実施いた�
 msgid "Vulnerability to check"
 msgstr "下記の脆弱性を検査"
 
-msgid "<b style='color:#337ab7'>Disclaimer</b>: We do not guarantee the accuracy of the result of WordPress Doctor: Malware Scan Plugin. In addition, we are not responsible for any damage to users, other indirect servers, any items, or data by using this tool. In order to scan the malware found by us after installation, you need to subscribe the malware definition. Please use WordPress Doctor: Malware Scan Plugin with kind understanding and acknowledgement that it acquires a part of inspection data for the purpose of accuracy improvement.<br><b style='color:#337ab7'>Prohibited matters (licensing)</b>: Many of the functions of this plug-in can be used free of charge. But using this plug-in to get compensation from customers (Providing other companies with paid malware scanning and removal services) is prohibited. If you violate this clause, you agree to charge 400 $ per site. If you are interested in doing business like this, please contact us and conclude a licensing agreement. "
-msgstr "<b style='color:#337ab7'>免責事項</b> ワードプレスドクター:マルウェアスキャン プラグインの結果について、当社はその正確性を何ら保証する物ではありません。また、このツールを使用する事によって、使用者または間接的な他のサーバーやいかなる物品やデータの損害に付いて当社は一切の責任を負いません。インストール時点以降に弊社が発見したマルウェアのスキャンを行うにはマルウェア定義の購読が必要となります。ワードプレスドクター:マルウェアスキャン プラグインは検査データの一部を精度向上のために取得していますことをご理解とご了承の上ご利用ください。<br><b style='color:#337ab7'>禁止事項(ライセンシング) </b>当プラグインの機能の多くは、無償で利用できますが、このプラグインを利用して顧客から対価を得る行為(マルウェアスキャンや駆除等、当プラグインの機能を利用したサービスとして他社に有償で提供する行為)は当社に特別なライセンシング契約を行った事業者様以外は禁止とさせていただきます。この条項に違反している事業者様には1サイトにつき4万円~のご請求とそのお支払いを頂くことに同意いただきます。 弊社と<a href='https://wp-doctor.work/WPINFECTPAY_S/_partner/register.php' target='_blank'>パートナーシップ契約</a>をしていただいた企業様は、当プラグインの機能を利用して有料でのマルウェア検査・駆除等を御社保守サービス等を介して自由にエンドユーザー向けにご提供いただけます。またプラグインを割引価格で御社の顧客にご提供することも可能となります。"
+msgid "<b style='color:#337ab7'>Disclaimer</b>: We do not guarantee the accuracy of the result of WP doctor: Malware Scan Plugin. In addition, we are not responsible for any damage to users, other indirect servers, any items, or data by using this tool. In the free version, you can only detect malware using data that is up to one month old from the time of installation. Please use WP doctor: Malware Scan Plugin with kind understanding and acknowledgement that it acquires a part of inspection data for the purpose of accuracy improvement.<br><b style='color:#337ab7'>Prohibited matters (licensing)</b>: Many of the functions of this plug-in can be used free of charge. But using this plug-in to get compensation from customers (Providing other companies with paid malware scanning and removal services) is prohibited. If you violate this clause, you agree to charge 400 $ per site. If you are interested in doing business like this, please contact us and conclude a licensing agreement."
+msgstr "<b style='color:#337ab7'>免責事項</b> WPドクター:マルウェアスキャン プラグインの結果について、当社はその正確性を何ら保証する物ではありません。また、このツールを使用する事によって、使用者または間接的な他のサーバーやいかなる物品やデータの損害に付いて当社は一切の責任を負いません。インストール時点から１か月前以降に弊社が発見した最新のマルウェアのスキャンを行うにはマルウェア検出パターンのご購読が必要となります。WPドクター:マルウェアスキャン プラグインは検査データの一部を精度向上のために取得していますことをご理解とご了承の上ご利用ください。<br><b style='color:#337ab7'>禁止事項(ライセンシング) </b>当プラグインの機能の多くは、無償で利用できますが、当プラグインの無料バージョンを利用して顧客から対価を得る行為(マルウェアスキャンや駆除等、当プラグインの機能を利用したサービスとして他社に有償で提供する行為)は当社に特別なライセンシング契約を行った事業者様以外は禁止とさせていただきます。この条項に違反している事業者様には1サイトにつき4万円~のご請求とそのお支払いを頂くことに同意いただきます。 弊社と<a href='https://wp-doctor.work/WPINFECTPAY_S/_partner/register.php' target='_blank'>パートナーシップ契約</a>をしていただいた企業様は、当プラグインの機能を利用して有料でのマルウェア検査・駆除等を御社保守サービス等を介して自由にエンドユーザー向けにご提供いただけます。またプラグインを割引価格で御社の顧客にご提供することも可能となります。"
 
 msgid "Show agreement"
 msgstr "利用許諾の表示"
@@ -873,7 +873,7 @@ msgstr "のマルウェア検出パターンがご契約日より追加されま
 msgid "Advanced blocking of hackers' IP"
 msgstr "ハッカーのIPのより高度なブロック"
 
-msgid "When hackers attack your site, they check to see if the vulnerable files are present on your site　by actually accessing them. By detecting such access and immediately blocking the hacker's IP　for 24 hours, you can reduce the risk of hacking through the vulnerability."
+msgid "When hackers attack your site, they check to see if the vulnerable files are present on your site by actually accessing them. By detecting such access and immediately blocking the hacker's IP for 24 hours, you can reduce the risk of hacking through the vulnerability."
 msgstr "ハッカーがサイトの脆弱性を狙って攻撃する際は、その脆弱性のあるファイルがあなたのサイトに存在するか、実際にアクセスすることによって調べます。このようなアクセスを検出し、そのハッカーのIPを即時24時間ブロックすることによりその後のハッキング行為を継続できなくし、脆弱性を利用したハッキングの危険性を低下させます。"
 
 msgid "Enable advanced blocking features of the hacker's IP (Paid)"
@@ -910,7 +910,7 @@ msgid "During the license period"
 msgstr "ライセンス期間中"
 
 msgid "This feature greatly reduces the possibility of tampering or malware infection with two algorithms that protect against hacker attacks before they occur<br>1 Blocks the patterns of the most commonly hacked files on the Internet for the past month.<br>2 Detects unauthorized access to programs directly in files other than those listed above, performs malware scanning, and blocks access if malware code patterns are included.<br>*This feature blocks the operation of vulnerable plug-ins and themes, and may interfere with some of their functions.<br>"
-msgstr "この機能では２つのアルゴリズムで、ハッカーの攻撃を事前に防御し改ざんやマルウェアの感染の可能性を大きく低下させます<br>１　インターネット上で過去１カ月間、最もよくハッキングされるファイルをワードプレスドクターで集計し、毎日に配信されているパターンにてブロックします<br>２　上記以外のファイルで直接プログラムにアクセスされた、不正なアクセスを検出し、マルウェア検査を実施し、マルウェアのコードパターンが含まれる場合アクセスを遮断してブロックします<br>※この機能は脆弱性のあるプラグインやテーマの動作をブロックし、機能の一部を阻害する可能性がございます<br>"
+msgstr "この機能では２つのアルゴリズムで、ハッカーの攻撃を事前に防御し改ざんやマルウェアの感染の可能性を大きく低下させます<br>１　インターネット上で過去１カ月間、最もよくハッキングされるファイルをWPドクターで集計し、毎日に配信されているパターンにてブロックします<br>２　上記以外のファイルで直接プログラムにアクセスされた、不正なアクセスを検出し、マルウェア検査を実施し、マルウェアのコードパターンが含まれる場合アクセスを遮断してブロックします<br>※この機能は脆弱性のあるプラグインやテーマの動作をブロックし、機能の一部を阻害する可能性がございます<br>"
 
 msgid "Top 10 most attacked files now"
 msgstr "現在最も攻撃を受けているファイルTOP10"
@@ -978,7 +978,7 @@ msgstr "サイトへの全アクセスの緊急停止"
 msgid "Blocks all external access except for your current login IP"
 msgstr "現在のログインIP"
 
-msgid ".　It prohibits all external access and deters the activities of the kind of malware that automatically repeats tampering. You can then remove the malware."
+msgid ". It prohibits all external access and deters the activities of the kind of malware that automatically repeats tampering. You can then remove the malware."
 msgstr "以外の全外部アクセスをブロックします。この機能は、繰り返しサイトが改ざんされる場合に、一旦全ての外部アクセスを禁止し、自動で改ざんが行われるタイプのマルウェアの活動を抑止し、改ざんを取り除いたうえでサイトを再公開するのに役に立つ機能となります。"
 
 msgid "*When this feature is enabled, all accesses except your current IP will be ignored. If you are unable to access the site due to a change of your IP address, please delete #EMERGENCY_BLOCK_START to #EMERGENCY_BLOCK_END in the HTACCESS file on the server and you will be able to access the site again."
@@ -1098,5 +1098,479 @@ msgstr "一括駆除を開始する"
 msgid "Cancel"
 msgstr "キャンセル"
 
-msgid "WordPress Doctor Malware scan and Security plugin"
-msgstr "ワードプレスドクター　マルウェアスキャナー＆セキュリティープラグイン"
+msgid "WP doctor Malware scan and Security plugin"
+msgstr "WPドクター マルウェアスキャナー＆セキュリティープラグイン"
+
+msgid "Repair and protect .htaccess and index.php"
+msgstr ".htaccessとindex.phpの修復と保護"
+
+msgid "If you have symptoms of a malware infection that causes the htaccess file or index.php to be rewritten on its own, add monitoring and auto-repair code to your WordPress configuration file to prevent these two files from being rewritten again after restoring them. If you enable this function, the contents of the htaccess file and index.php cannot be changed."
+msgstr "マルウェアの感染によって、htaccessファイルやindex.phpが勝手に書き変わってしまう症状がある場合、この2つのファイルを復元の上、また書き変わらないように、監視と自動修復のコードをワードプレスの設定ファイルに追加します。この機能を有効にすると、htaccessファイルとindex.phpの内容の変更ができなくなります。"
+
+msgid "Protect htaccess and index.php"
+msgstr "htaccessとindex.phpを保護する"
+
+msgid "Repair htaccess and index.php"
+msgstr "htaccessとindex.phpの修復を行う"
+
+msgid "Implement htaccess and index.php protection"
+msgstr "htaccessとindex.phpの保護または修復の実行"
+
+msgid "If .htaccess and index.php are rewritten on their own, we will forcibly rewrite and restore the contents of the .htaccess and index.php displayed above. In this case, a special process is executed to stop the PHP process, so PHP may temporarily stop working and the site may not be able to be displayed. In this case, it may be necessary to restart PHP on the server or the server itself."
+msgstr ".htaccessとindex.phpが勝手に書き換わる場合、強制的に上に表示されている.htaccessとindex.phpの内容に書き換え復元いたします。この際に、PHPのプロセスを停止する特殊な処理を実行しますので、PHPの動作が一時停止し、サイトの表示が出来なくなる場合がございます。この場合、サーバーのPHPの再起動や、サーバーそのものの再起動が必要になる可能性があります。ただし、Sakuraサーバー、Xserver、Conoha、Lolipop等の共用サーバーでは一般的にPHPは自動的に再起動されます。"
+
+msgid "Successfully repaired .htaccess and index.php"
+msgstr ".htaccessとindex.phpの修復に成功しました"
+
+msgid "This function is not available if 'Emergency suspension of all access to the site' is enabled."
+msgstr "※この機能は、「サイトへの全アクセスの緊急停止」が有効の場合ご利用いただけません"
+
+msgid "Contents of index.php to be protected"
+msgstr "保護するindex.phpの内容"
+
+msgid "initialisation"
+msgstr "初期化"
+
+msgid "Contents of htaccess to be protected"
+msgstr "保護するhtaccessの内容"
+
+msgid "*This function is not available if index.php or htaccess protection is enabled."
+msgstr "※この機能は「index.php,htaccessの保護機能」を有効にされている場合使用できません"
+
+msgid "Unprotect index.php,htaccess"
+msgstr "index.php,htaccessの保護を解除する"
+
+msgid "The contents of index.php and htaccess are currently protected."
+msgstr "現在index.phpとhtaccessの内容を保護しています"
+
+msgid "Failed repaire.htaccess and index.php"
+msgstr "index.phpとhtaccessの復元に失敗しました。"
+
+msgid "Correct permissions"
+msgstr "パーミッションを修正する"
+
+msgid "Working..."
+msgstr "修正しています..."
+
+msgid "Changed to optimal permissions!"
+msgstr "最適なパーミッションに変更しました"
+
+msgid "error:The permissions failed to change, we recommend that you fix this with a good connection to the server using FTP software."
+msgstr "error:パーミッションの変更に失敗しました。FTPソフトウェアでサーバーに接続の上手作業で修正いただくことをお勧めいたします。"
+
+msgid "Number of all detectable vulnerabilities:"
+msgstr "検出可能なすべての脆弱性数:"
+
+msgid "Noindexing search results page on wordpress if result not exist."
+msgstr "ワードプレス上の検索結果が存在しない場合にnoindex化する"
+
+msgid "If a WordPress search result does not exist, it will be noindexed and a status 404 will be returned. This prevents the search results in WordPress from being created and registered in search engines illegally."
+msgstr "ワードプレス上の検索結果が存在しない場合にnoindex化しステータス404を返します。このことによってワードプレスの検索結果が不正に作成され検索エンジンに登録されてしまう事を防ぎます。"
+
+msgid "Couldn't activate Noindexing search results function."
+msgstr "検索結果が存在しない場合にnoindex化する機能を有効にできませんでした"
+
+msgid "Wp-Doctor Malware scan plugin Lite has been detected; if you are using the Pro version, please stop and remove the Lite version"
+msgstr "Wp-Doctor マルウェアスキャンプラグインLiteが検出されました。Proバージョンをご利用いただく場合はLiteバージョンは停止と削除を行ってください"
+
+msgid "Brute Force Attack Resistance Testing"
+msgstr "ブルートフォース耐性検査"
+
+msgid "This test uses a list of 5,000 commonly used passwords to see if a hacker can break the site's administrator and editor passwords with a brute force attack. If a user is found to be a victim of this scan, we recommend that the user's password be changed as soon as possible to a meaningless string of 14 or more characters and containing one-byte alphanumeric symbols."
+msgstr "この検査ではサイトの管理者権限と編集者権限のパスワードをハッカーが総当たり攻撃で破ることができるかを5,000点のよく使われるパスワードリストで検査します。この検査で警告されるユーザーが発見された場合、早めにそのユーザー様のパスワードを１４文字以上の無意味な文字列かつ半角英数記号を含むパスワードに変更いただくことをお勧めいたします。"
+
+msgid "Test user password tolerance"
+msgstr "ユーザーのパスワード耐性をテストする"
+
+msgid "Investigating user password tolerance..."
+msgstr "ユーザーのパスワード耐性を調査しています..."
+
+msgid "CVSS Vulnerability check"
+msgstr "CVSS 脆弱性検査"
+
+msgid "Reinstalling the plugin that failed the inspection may correct the problem."
+msgstr "検査に失敗しましたプラグインを再インストールいただくことで修正される場合がございます。"
+
+msgid "The inspection has been completed!"
+msgstr "検査が終了しました！"
+
+msgid "No vulnerabilities"
+msgstr "脆弱性はありません"
+
+msgid "Password is weak. Password breached:"
+msgstr "パスワードが脆弱です。突破されたパスワード:"
+
+msgid "Fix now"
+msgstr "修正する"
+
+msgid "Scan malware automatically"
+msgstr "マルウェアを毎日自動スキャンする"
+
+msgid "Scan vulnerability automatically(Paid)"
+msgstr "脆弱性を毎日自動スキャンする(有料)"
+
+msgid "A vulnerability was found on the site. The vulnerabilities found are as follows"
+msgstr "サイトに脆弱性が見つかりました。見つかった脆弱性は下記のとおりです。"
+
+msgid " Please check the vulnerability detected."
+msgstr " サイトに脆弱性が見つかりました。"
+
+msgid " Please check the malware and vulnerabilities detected."
+msgstr " サイトに脆弱性もしくはマルウェアが見つかりました。"
+
+msgid "Hack monitor & IP blocker"
+msgstr "ハックモニター＆IPブロッカー"
+
+msgid "Unlimited"
+msgstr "無制限"
+
+msgid "Unblock"
+msgstr "ブロック解除"
+
+msgid "Block now"
+msgstr "IPをブロックする"
+
+msgid "Blocking IPs"
+msgstr "ブロック中のIP"
+
+msgid "Blocked time"
+msgstr "ブロック開始日時"
+
+msgid "Block time limit"
+msgstr "ブロック制限時間"
+
+msgid "Un block this IP"
+msgstr "IPのブロック解除"
+
+msgid "Enabling this feature will detect and log hackers' attacks against your site. You can also block hacker IPs from this log. Keep in mind that hackers attack WordPress sites at random, so a logged attack does not necessarily mean that the hack was successful."
+msgstr "この機能を有効にすると、あなたのサイトに対するハッカーの攻撃を検出し、ログに記録します。このログからハッカーのIPをブロックすることもできます。ハッカーはWordPressサイトを無差別に大量に攻撃するため、ログに記録された攻撃が必ずしもハッキングに成功したことを意味しないことに留意してください。"
+
+msgid "Enable Hack Monitor"
+msgstr "ハックモニターを有効にする"
+
+msgid "Number of logs to be stored"
+msgstr "ログ保存数"
+
+msgid "infinity"
+msgstr "無制限"
+
+msgid "Forever"
+msgstr "ずっと"
+
+msgid "1hour"
+msgstr "１時間"
+
+msgid "24hour"
+msgstr "１日"
+
+msgid "Block length"
+msgstr "ブロックする期間"
+
+msgid "Notice:In many cases, a one-hour block is sufficient because hackers change their attack target to the next site as soon as they fail."
+msgstr "※ハッカーはハッキングに失敗するとすぐに次のサイトに攻撃対象を変える為１時間のブロックで十分な場合が多いです。"
+
+msgid "Automatic blocking of IPs of detected vulnerability attacks (paid)"
+msgstr "検出された脆弱性攻撃のIPを自動でブロックする(有料)"
+
+msgid "Automatic blocking of detected WPSCAN IPs (paid)"
+msgstr "検出されたWPSCANのIPを自動でブロックする(有料)"
+
+msgid "Automatic blocking of detected brute force attack IPs (paid)"
+msgstr "検出されたブルートフォースアタックのIPを自動でブロックする(有料)"
+
+msgid "Hack log"
+msgstr "ハッキングされた記録"
+
+msgid "Hacking type"
+msgstr "ハッキングのタイプ"
+
+msgid "Hacker's IP(Check Abuse IP)"
+msgstr "ハッカーのIP(IPの危険性チェック)"
+
+msgid "Accessed file"
+msgstr "アクセスされたファイル"
+
+msgid "Hack count"
+msgstr "ハックの回数"
+
+msgid "Block this IP"
+msgstr "このIPをブロックする"
+
+msgid "No data found."
+msgstr "記録がありません"
+
+msgid "This Ip was auto blocked <br>till"
+msgstr "このIPは自動ブロックされました<br>期限:"
+
+msgid "Login lockdown"
+msgstr "ログインロックダウンの検出"
+
+msgid "Vulnerability hack"
+msgstr "脆弱性攻撃"
+
+msgid "Ajax action vulnerability hack"
+msgstr "admin ajaxを利用した脆弱性攻撃"
+
+msgid "Runs WPSCAN"
+msgstr "WPSCANの実行"
+
+msgid "Brute force attack"
+msgstr "ブルートフォースアタック"
+
+msgid "XMLRPC brute force attack"
+msgstr "XMLRPCブルートフォースアタック"
+
+msgid "The Hack Monitor also logs brute force attacks with weak passwords. Therefore, it cannot be enabled if there is an administrator user who is already using a weak password."
+msgstr "ハックモニターは、脆弱なパスワードでブルートフォースアタックを受けているかもログします。この為すでに脆弱なパスワードを使用している管理者ユーザーが存在する場合有効にできません。"
+
+msgid "If you have inadvertently blocked your IP, please FTP to your server's HTACCESS file and delete #WPINFECBLOCKIP_START to #WPINFECBLOCKIP_END"
+msgstr "ご自身のコンピューターのIPをブロックしてしまった場合は、FTPでサーバーのHTACCESSファイルにアクセスし、#WPINFECBLOCKIP_STARTから#WPINFECBLOCKIP_ENDまでを削除してください。"
+
+msgid "Hack monitor & Auto IP blocker"
+msgstr "ハックモニター(自動IPブロック設定)"
+
+msgid "Block failed, does the HTACCESS file exist and is it writable permissions? Or did you enter the correct IP?"
+msgstr "ブロックに失敗しました。HTACCESSファイルが存在し、書き込み可能なパーミッションになっていますか？また、正しいIPを入力しましたか？"
+
+msgid "Login log"
+msgstr "ログインログ"
+
+msgid "Brute force attack(Excessive access to WP-LOGIN, XMLRPC etc.)"
+msgstr "ブルートフォースアタック(WP-LOGIN, XMLRPC等のファイルへの過剰アクセス)"
+
+msgid "Process manager"
+msgstr "プロセスマネージャ"
+
+msgid "The Process Manager detects and displays potentially malware processes running in memory. If a process keeps executing a file that you do not recognize, and the PHP file does not exist (or is executing a file that does not exist in the WordPress core files), and the execution time is long (more than 1 hour), malware may have embedded some malware in the process. If the htaccess file or index.php is rewritten without your permission and malicious code is continuously embedded, malware may be deployed in the process."
+msgstr "プロセスマネージャでは、メモリ上で実行されているマルウェアの可能性があるプロセスを検出して表示します。プロセスが身に覚えのないファイルを実行し続けており、そのPHPファイルが存在せず(もしくはワードプレスのコアファイルに存在しないファイルを実行しており)、かつ実行時間が長め(１時間以上)の場合マルウェアがプロセスに何らかの不正なプログラムを埋め込んでいる可能性があります。htaccessファイルやindex.phpが勝手に書き変わり、不正なコードが継続的に埋め込まれている場合はプロセスで不正なプログラムが実行され続けている可能性があります。"
+
+msgid "*Processes may not be retrieved or stopped on some servers."
+msgstr "※プロセスはサーバーによっては取得できない場合や停止できない場合もございます"
+
+msgid "Refresh"
+msgstr "再読み込み"
+
+msgid "Pid process not found."
+msgstr "このIDのプロセスが見つかりませんでした"
+
+msgid "Pid error."
+msgstr "プロセスIDエラー"
+
+msgid "Exist"
+msgstr "〇"
+
+msgid "Not exist"
+msgstr "×"
+
+msgid "User ID"
+msgstr "実行ユーザーID"
+
+msgid "Process ID"
+msgstr "プロセスID"
+
+msgid "Command"
+msgstr "コマンド"
+
+msgid "Start time"
+msgstr "開始時間"
+
+msgid "File exists"
+msgstr "ファイルの存在"
+
+msgid "Code"
+msgstr "プロセスの実行コード"
+
+msgid "Kill process"
+msgstr "プロセスの停止"
+
+msgid "No php process found."
+msgstr "不審なプロセスは発見されませんでした"
+
+msgid "Kill"
+msgstr "停止"
+
+msgid "Malware Detection Power Score"
+msgstr "マルウェア検出力スコア"
+
+msgid "The free version of the plugin does not provide access to the latest malware detection patterns from the time of installation or the expiration of your paid subscription. <br>For this reason, the malware detection power of the free version will gradually decrease. <br>The malware detection power score is a calculated score based on the ratio of malware currently detected by the latest malware detection patterns that are not installed on your site. <br>If the score is 80, this means that 20% of malware is currently being detected by malware detection patterns that are not installed on your site, so we recommend that you subscribe to the paid version to maintain the plugin&#39;s strong detection power."
+msgstr "プラグインの無料バージョンでは、インストールいただいた時点(または有料契約の期限が切れた時点)以降の最新のマルウェア検出パターンがご利用いただけません。この為無料バージョンではマルウェアの検出力は徐々に低下いたします。<br>マルウェア検出力スコアは御社サイトにインストールされている時点の検出パターンでどれぐらい最新のマルウェアが検出できるかを当社システムが統計的に算出し目安としてスコア化したものです。"
+
+msgid "Automatic blocking of detected malicious cookie attack IPs (paid)"
+msgstr "COOKIE経由のハッキングを自動ブロックする(有料)"
+
+msgid "Are you sure you want to disable the plugin? Doing so will reset settings, logs, and other data."
+msgstr "プラグインを非有効化すると設定やログなどのデータが初期化されますがよろしいですか？"
+
+msgid "Malicious cookie"
+msgstr "不正なコードを含むCOOKIEの送信"
+
+msgid "Content Security Policy"
+msgstr "コンテンツセキュリティーポリシー"
+
+msgid "CSP (Content Security Policy) is a mechanism that specifies to the browser “which types of sources (such as scripts, images, stylesheets, etc.) are allowed to be loaded and from where,” helping to prevent XSS (Cross-Site Scripting: attacks that execute external scripts on a site), and even if unauthorized code is embedded due to site tampering, it can partially (though not perfectly) prevent users accessing the site from executing such malicious scripts; when enabled, it is recommended to verify the site’s display and behavior."
+msgstr "CSP Content Security Policy：コンテンツセキュリティポリシー）は 「どの種類のソース(スクリプトや画像、スタイルシートなど)を、どこから読み込んでよいか」をブラウザーに指定しておき、XSS（クロスサイトスクリプティング:外部スクリプトをサイト上で実行してしまう攻撃）を防いだり、万が一サイトの改ざんによって不正なコードが埋め込まれても、サイトにアクセスしたユーザーがそのような不正なスクリプトを実行してしまうのを確実ではないもののある程度未然に防いでくれる仕組みです。有効にした場合はサイトの表示や動作を一度検証いただくことをお勧めします。"
+
+msgid "Enable CSP settings"
+msgstr "CSP設定を有効にする"
+
+msgid "✓Check the current CSP externally"
+msgstr "※現在のCSPを外部チェックする"
+
+msgid "Basic rule setting: default-src"
+msgstr "基本ルール設定　default-src"
+
+msgid "When default-src is set, it collectively specifies various CSP settings such as script-src below; however, if script-src or other directives are additionally set, they will override default-src, so please be careful."
+msgstr "default-srcを設定すると下記のscript-src等の様々なCSP設定を一括で指定していることになります。ただし、default-srcに加えさらに下記script-src等の設定をするとdefault-srcを上書きして設定されてしまいますのでご注意ください。"
+
+msgid "Example: If default-src and script-src are both specified → only the script-src setting is applied to JavaScript."
+msgstr "例:default-srcとscript-src が指定されている場合 → JavaScriptには script-srcの設定だけが適用されます。"
+
+msgid "Global settings for allowing browser loading"
+msgstr "ブラウザーに読み込み許可する一律設定"
+
+msgid "Do not set"
+msgstr "設定しない"
+
+msgid "Allow all"
+msgstr "すべて許可"
+
+msgid "Allow only sources on the same domain (Recommended: make this strict and configure allowed domains individually in other items)"
+msgstr "自ドメインにあるソースのみ許可(推奨　※こちらを厳しくし、許可ドメインは他の項目で個別設定します)"
+
+msgid "Allow sources on the same domain and the sources entered below"
+msgstr "自ドメインにあるソースと下記に入力されたソースを許可"
+
+msgid "✓To add allowed domains, please add one per line in the text area"
+msgstr "※許可ドメインを追加するにはテキストエリアに１行に一つ追加してください"
+
+msgid "* means all subdomains are included"
+msgstr "* はすべてのサブドメインを含むという意味です"
+
+msgid "Control of inline scripts and CSS"
+msgstr "インラインスクリプトとCSSの制御"
+
+msgid "JavaScript loading settings: script-src"
+msgstr "JAVASCRIPTの読み込み設定　script-src"
+
+msgid "This setting controls the sources from which JavaScript can be loaded and executed, serving as a countermeasure against XSS and the execution of maliciously embedded scripts."
+msgstr "JavaScriptの読み込み・実行元を制御する設定となります。XSS対策や不正なスクリプト埋め込みの実行を防ぐ対策となります。"
+
+msgid "JavaScript allowed to be loaded by the browser"
+msgstr "ブラウザーに読み込み許可するJAVASCRIPT"
+
+msgid "Do not set (uses the default-src setting)"
+msgstr "設定しない（default-srcの設定になります）"
+
+msgid "Allow only sources on the same domain"
+msgstr "自ドメインにあるソースのみ許可"
+
+msgid "Allow sources on the same domain and specified external sources (Recommended)"
+msgstr "自ドメインにあるソースと指定した外部読み込みソースを許可(推奨)"
+
+msgid "Check the domains to allow"
+msgstr "許可するドメインをチェックします"
+
+msgid "✓To add more allowed domains, please add one per line in the text area"
+msgstr "※さらに許可ドメインを追加するにはテキストエリアに１行に一つ追加してください"
+
+msgid "Control of inline scripts"
+msgstr "インラインスクリプトの制御"
+
+msgid "Allow eval (Not recommended)"
+msgstr "evalも許可(非推奨)"
+
+msgid "Destination settings for connections: connect-src"
+msgstr "通信先設定　connect-src"
+
+msgid "Restricts destination URLs for communications performed by JavaScript at runtime (fetch / XHR / Beacon / WebSocket / EventSource, etc.), helping to prevent information leakage via external communications and the retrieval of malicious data from external servers."
+msgstr "JavaScript が実行時に行う通信（fetch／XHR／Beacon／WebSocket／EventSource など）の送信先URLを制限します。JavaScriptによる外部通信での情報流出や、外部サーバーの不正なデータ等の取得を抑制できます。"
+
+msgid "Settings for destinations allowed by the browser for communication"
+msgstr "ブラウザーに通信先として許可する設定"
+
+msgid "WordPress plugin/theme information, API communication"
+msgstr "WordPres　プラグイン／テーマ情報、API通信"
+
+msgid "iframe source settings: frame-src / child-src"
+msgstr "iframeの読み込み元設定　frame-src / child-src"
+
+msgid "This setting prevents loading malicious advertisements or embedded content by restricting which domains iframe elements (and their generated child content) embedded in a page can be loaded from."
+msgstr "ページ内に埋め込まれる iframe（やその中で生成される子コンテンツ）を、どのドメインから読み込んでよいかを制限することで、不正広告・悪性埋め込みコンテンツの読み込みを防ぐための設定です。"
+
+msgid "Settings for allowed iframe sources"
+msgstr "iframeの読み込み元として許可する設定"
+
+msgid "All Google services"
+msgstr "Google サービス全般"
+
+msgid "Stylesheet (CSS) source settings: style-src"
+msgstr "スタイルシート(CSS)の読み込み元設定　style-src"
+
+msgid "This CSP directive restricts which domains and formats CSS applied to a page (external CSS, inline CSS, style attributes, etc.) can be loaded from, helping to prevent information leakage or XSS via abused styles."
+msgstr "ページに適用されるCSS（外部CSS・インラインCSS・style属性など）を、どのドメイン／どの形式から読み込んでよいかを制限することで、スタイルを悪用した情報漏えいやXSSの成立を抑止するためのCSPディレクティブです。"
+
+msgid "Settings for allowed stylesheet (CSS) sources"
+msgstr "スタイルシート(CSS)の読み込み元として許可する設定"
+
+msgid "Control of inline styles"
+msgstr "インラインスタイルの制御"
+
+msgid "Restrictions on use of the base tag: base-uri"
+msgstr "baseタグの使用制限　base-uri"
+
+msgid "This CSP setting prevents attacks that redirect relative URLs to external sites or send information externally by restricting the base URL that can be specified with the HTML base tag."
+msgstr "HTML の base タグで指定できる基準URLを制限することで、相対URLの向き先を書き換えて外部サイトへ誘導したり情報を送信させたりする攻撃を防ぐためのCSP設定です。"
+
+msgid "Same domain only"
+msgstr "自ドメイン内のみ"
+
+msgid "Disallow"
+msgstr "禁止"
+
+msgid "Form submission destination settings: form-action"
+msgstr "フォーム送信先設定　form-action"
+
+msgid "This CSP setting prevents attacks where form submission destinations are changed to unauthorized external sites through XSS or tampering, resulting in stolen input data, by restricting the URLs to which HTML forms (form tags) can submit data."
+msgstr "HTML フォーム（formタグ）がデータを送信できる先のURLを制限することで、XSSや改ざんによってフォーム送信先を不正な外部サイトに変更され、入力情報が盗まれる攻撃を防ぐためのCSP設定です。"
+
+msgid "Settings for destinations to which form tags can submit data"
+msgstr "formタグがデータを送信できる先の設定"
+
+msgid "Image source settings: img-src"
+msgstr "画像読み込み先設定　img-src"
+
+msgid "img-src is a setting that restricts image loading sources to specific domains, preventing information leakage (tracking) via unauthorized external images and malicious resource loading through XSS attacks."
+msgstr "img-srcは「画像の読み込み元を特定のドメインに制限する設定」で、外部の不正な画像読み込みによる情報漏えい（トラッキング）やXSS攻撃での悪意あるリソース読み込みを防ぎます。"
+
+msgid "Settings for allowed image loading sources"
+msgstr "画像の読み許可先の設定"
+
+msgid "Allow your own domain and add additional allowed domains"
+msgstr "自ドメインを許可し許可ドメインを追加設定する"
+
+msgid "Allow images in the data: format"
+msgstr "data:形式の画像を許可"
+
+msgid "Font source settings: font-src"
+msgstr "フォントの読み許可先の設定 font-src"
+
+msgid "This CSP directive restricts which domains and formats Fonts applied to a page. Prevents tracking and information leaks caused by font loading."
+msgstr "このCSPディレクティブは、ページに適用されるフォントのドメインと形式を制限します。フォントの読み込みによる追跡や情報漏洩を防ぎます"
+
+msgid "Settings for allowed Font sources"
+msgstr "フォントの読み込み元として許可する設定"
+
+msgid "Allow font load in the data: format"
+msgstr "data:形式のフォントを許可"
+
+msgid "Use add_action (Using a cache plugin may cause it to not work.)"
+msgstr "add_actionを使用(キャッシュプラグインによって正しくCSPが出力されない場合があります)"
+
+msgid "Use htaccess"
+msgstr "htaccessを使用"
+
+msgid "*This vulnerability may be a serious one that allows tampering without requiring special privileges."
+msgstr "※この脆弱性は特別な権限不要で改ざんも可能な危険な脆弱性である可能性があります"
+
+msgid "*This vulnerability may be a dangerous one that could allow data tampering."
+msgstr "※この脆弱性は改ざんも可能な危険な脆弱性である可能性があります"

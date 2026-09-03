@@ -1003,8 +1003,18 @@ class autoptimizeStyles extends autoptimizeBase
             $type_css = 'type="text/css" ';
         }
 
-        // Inject the new stylesheets.
-        $replace_tag = array( '<title', 'before' );
+        // Inject the new stylesheets, if possible after SEO stuff, but we need to
+        // already restore script to be able to inject before ld+json instead of title
+        // this should be safe here as all has been extracted  already but behind a filter anyway.
+        if ( $this->inline && true === apply_filters( 'autoptimize_filter_css_restore_js_early', true ) ) {
+            $this->content = $this->restore_marked_content( 'SCRIPT', $this->content );
+        }
+        $_strpos_ldjson = strpos( $this->content, '<script type="application/ld+json"' );
+        if ( false !== $_strpos_ldjson && $_strpos_ldjson < strpos( $this->content, '</head' ) ) {
+            $replace_tag = array( '<script type="application/ld+json"', 'before' );            
+        } else {
+            $replace_tag = array( '<title', 'before' );
+        }
         $replace_tag = apply_filters( 'autoptimize_filter_css_replacetag', $replace_tag, $this->content );
 
         if ( $this->inline ) {
@@ -1049,14 +1059,14 @@ class autoptimizeStyles extends autoptimizeBase
                 if ( $this->defer && 'print' !== $media ) {
                     $preload_onload = autoptimizeConfig::get_ao_css_preload_onload( $media );
 
-                    $preload_css_block .= apply_filters( 'autoptimize_filter_css_single_deferred_link', '<link rel="stylesheet" media="print" href="' . $url . '" onload="' . $preload_onload . '" />' );
-                    if ( apply_filters( 'autoptimize_fitler_css_preload_and_print', false ) ) {
+                    $preload_css_block .= apply_filters( 'autoptimize_filter_css_single_deferred_link', '<link rel="stylesheet" media="print" href="' . $url . '" onload="' . $preload_onload . '">' );
+                    if ( apply_filters( 'autoptimize_filter_css_preload_and_print', false ) ) {
                         $preload_css_block = '<link rel="preload" as="stylesheet" href="' . $url . '"/>' . $preload_css_block;
                     }
-                    $noscript_css_block .= '<link ' . $type_css . 'media="' . $media . '" href="' . $url . '" rel="stylesheet" />';
+                    $noscript_css_block .= '<link ' . $type_css . 'media="' . $media . '" href="' . $url . '" rel="stylesheet">';
                 } else {
                     if ( strlen( $this->csscode[ $media ] ) > $this->cssinlinesize ) {
-                        $this->inject_in_html( apply_filters( 'autoptimize_filter_css_bodyreplacementpayload', '<link ' . $type_css . 'media="' . $media . '" href="' . $url . '" rel="stylesheet" />' ), $replace_tag );
+                        $this->inject_in_html( apply_filters( 'autoptimize_filter_css_bodyreplacementpayload', '<link ' . $type_css . 'media="' . $media . '" href="' . $url . '" rel="stylesheet">' ), $replace_tag );
                     } elseif ( strlen( $this->csscode[ $media ] ) > 0 ) {
                         $this->inject_in_html( apply_filters( 'autoptimize_filter_css_bodyreplacementpayload', '<style ' . $type_css . 'media="' . $media . '">' . $this->csscode[ $media ] . '</style>' ), $replace_tag );
                     }

@@ -27,7 +27,7 @@ if ( strpos( $original_request, 'uucss/uucss-' ) !== false ) {
 }
 
 $fallback_target  = preg_replace( '/(.*)_(?:[a-z0-9]{32})\.(js|css)$/', '${1}_fallback.${2}', $original_request );
-$ao_cache_dir     = '/usr/home/ai1448pxs2/html/cms/wp-content/cache/autoptimize/';
+$ao_cache_dir     = '/home/users/2/under.jp-wiz-test/web/yzwa/cms/wp-content/cache/autoptimize/';
 $js_or_css        = pathinfo( $original_request, PATHINFO_EXTENSION );
 
 // add multisite logic.
@@ -38,11 +38,11 @@ if ( true === $multisite ) {
     $ao_cache_dir      = $ao_root_cache_dir . $child_site_id[1] . '/';
 }
 
-$fallback_path = $ao_cache_dir . $js_or_css . '/autoptimize__fallback.' . $js_or_css;
+$fallback_path = $ao_cache_dir . $js_or_css . '/autoptimize_fallback.' . $js_or_css;
 
 if ( $original_request !== $fallback_target && file_exists( $fallback_path ) ) {
     // error_log( 'Autoptimize file ' . $original_request . ' not found, using fallback instead.' );
-    header( 'HTTP/1.1 301 Moved Permanently' );
+    header( 'HTTP/1.1 302 Found' );
     header( 'Location: ' . $fallback_target );
 } else {
     // error_log( 'Autoptimize file ' . $original_request . ' not found, sending 410 gone response.' );

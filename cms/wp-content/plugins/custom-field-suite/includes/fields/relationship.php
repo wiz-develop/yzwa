@@ -46,8 +46,17 @@ class cfs_relationship extends cfs_field
             ];
         }
 
-        if ( ! empty( $field->value ) ) {
-            $results = $wpdb->get_results( "SELECT ID, post_status, post_title FROM $wpdb->posts WHERE ID IN ($field->value) ORDER BY FIELD(ID,$field->value)" );
+        $field_value = $this->normalize_ids( $field->value );
+        $field->value = implode( ',', $field_value );
+
+        if ( ! empty( $field_value ) ) {
+            $placeholders = implode( ',', array_fill( 0, count( $field_value ), '%d' ) );
+            $results = $wpdb->get_results(
+                $wpdb->prepare(
+                    "SELECT ID, post_status, post_title FROM $wpdb->posts WHERE ID IN ($placeholders) ORDER BY FIELD(ID,$placeholders)",
+                    array_merge( $field_value, $field_value )
+                )
+            );
             foreach ( $results as $result ) {
                 $result->post_title = ( 'private' == $result->post_status ) ? '(Private) ' . $result->post_title : $result->post_title;
                 $selected_posts[ $result->ID ] = $result;
@@ -61,17 +70,17 @@ class cfs_relationship extends cfs_field
         <div class="available_posts post_list">
         <?php foreach ( $available_posts as $post ) : ?>
             <?php $class = ( isset( $selected_posts[ $post->ID ] ) ) ? ' class="used"' : ''; ?>
-            <div rel="<?php echo $post->ID; ?>"<?php echo $class; ?> title="<?php echo $post->post_type; ?>"><?php echo apply_filters( 'cfs_relationship_display', $post->post_title, $post->ID, $field ); ?></div>
+            <div rel="<?php echo absint( $post->ID ); ?>"<?php echo $class; ?> title="<?php echo esc_attr( $post->post_type ); ?>"><?php echo wp_kses_post( apply_filters( 'cfs_relationship_display', $post->post_title, $post->ID, $field ) ); ?></div>
         <?php endforeach; ?>
         </div>
 
         <div class="selected_posts post_list">
         <?php foreach ( $selected_posts as $post ) : ?>
-            <div rel="<?php echo $post->ID; ?>"><span class="remove"></span><?php echo apply_filters( 'cfs_relationship_display', $post->post_title, $post->ID, $field ); ?></div>
+            <div rel="<?php echo absint( $post->ID ); ?>"><span class="remove"></span><?php echo wp_kses_post( apply_filters( 'cfs_relationship_display', $post->post_title, $post->ID, $field ) ); ?></div>
         <?php endforeach; ?>
         </div>
         <div class="clear"></div>
-        <input type="hidden" name="<?php echo $field->input_name; ?>" class="<?php echo $field->input_class; ?>" value="<?php echo $field->value; ?>" />
+        <input type="hidden" name="<?php echo esc_attr( $field->input_name ); ?>" class="<?php echo esc_attr( $field->input_class ); ?>" value="<?php echo esc_attr( $field->value ); ?>" />
     <?php
     }
 

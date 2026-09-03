@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the Themes - Twenty Twenty package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-06-28 05:47:23+0000\n"
+"PO-Revision-Date: 2023-12-13 14:25:54+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/4.0.0-alpha.3\n"
+"X-Generator: GlotPress/4.0.0-beta.2\n"
 "Language: ja_JP\n"
 "Project-Id-Version: Themes - Twenty Twenty\n"
 
@@ -128,17 +128,17 @@ msgctxt "toggle text"
 msgid "Search"
 msgstr "検索"
 
-#: functions.php:526
+#: functions.php:538
 msgctxt "color"
 msgid "Secondary"
 msgstr "セカンダリー"
 
-#: functions.php:521
+#: functions.php:533
 msgctxt "color"
 msgid "Primary"
 msgstr "メイン"
 
-#: index.php:51
+#: index.php:54
 msgid "Nothing Found"
 msgstr "何も見つかりませんでした"
 
@@ -146,7 +146,7 @@ msgstr "何も見つかりませんでした"
 msgid "Show author bio"
 msgstr "作成者名を表示"
 
-#: template-parts/entry-author-bio.php:29
+#: template-parts/entry-author-bio.php:30
 msgid "View Archive <span aria-hidden=\"true\">&rarr;</span>"
 msgstr "アーカイブを表示 <span aria-hidden=\"true\">&rarr;</span>"
 
@@ -155,7 +155,7 @@ msgctxt "Theme starter content"
 msgid "The New UMoMA Opens its Doors"
 msgstr "現代美術館が新装オープン"
 
-#: inc/template-tags.php:414
+#: inc/template-tags.php:423
 msgctxt "A string that is output before one or more categories"
 msgid "In"
 msgstr "カテゴリー:"
@@ -255,16 +255,17 @@ msgstr "リンク、ボタン、アイキャッチ画像にカスタムカラー
 msgid "Primary Color"
 msgstr "メインカラー"
 
-#: searchform.php:28 template-parts/modal-search.php:20
+#. translators: Hidden accessibility text.
+#: searchform.php:31 template-parts/modal-search.php:20
 msgid "Search for:"
 msgstr "検索対象:"
 
-#: index.php:101
+#: index.php:104
 msgid "search again"
 msgstr "再検索"
 
 #. translators: %s: Number of search results.
-#: index.php:39
+#: index.php:42
 msgid "We found %s result for your search."
 msgid_plural "We found %s results for your search."
 msgstr[0] "検索結果が%s件見つかりました。"
@@ -312,7 +313,8 @@ msgstr "新しい<span class=\"nav-short\">投稿</span>"
 msgid "Post"
 msgstr "投稿"
 
-#: template-parts/modal-search.php:26
+#. translators: Hidden accessibility text.
+#: template-parts/modal-search.php:29
 msgid "Close search"
 msgstr "検索を閉じる"
 
@@ -333,63 +335,68 @@ msgid "Footer"
 msgstr "フッター"
 
 #. translators: %s: Author name.
-#: inc/template-tags.php:375 template-parts/entry-author-bio.php:20
+#: inc/template-tags.php:374 template-parts/entry-author-bio.php:21
 msgid "By %s"
 msgstr "作成者: %s"
 
-#: template-parts/content-cover.php:138 template-parts/content.php:48
+#: template-parts/content-cover.php:148 template-parts/content.php:48
 msgid "Pages:"
 msgstr "ページ:"
 
-#: template-parts/content-cover.php:138 template-parts/content.php:48
+#: template-parts/content-cover.php:148 template-parts/content.php:48
 msgid "Page"
 msgstr "ページ"
 
-#: template-parts/content-cover.php:88
+#. translators: Hidden accessibility text.
+#: template-parts/content-cover.php:96
 msgid "Scroll Down"
 msgstr "スクロールダウン"
 
-#: searchform.php:31
+#: searchform.php:36
 msgctxt "submit button"
 msgid "Search"
 msgstr "検索"
 
-#: searchform.php:29
+#: searchform.php:34
 msgctxt "placeholder"
 msgid "Search &hellip;"
-msgstr "検索 &hellip;"
+msgstr "検索&hellip;"
 
-#: index.php:48
+#: index.php:51
 msgid "We could not find any results for your search. You can give it another try through the search form below."
 msgstr "検索結果が見つかりませんでした。以下の検索フォームからもう一度お試しください。"
 
-#: index.php:32
+#: index.php:35
 msgid "Search:"
 msgstr "検索:"
 
 #. translators: %s: Post title. Only visible to screen readers.
-#: inc/template-tags.php:223
+#: inc/template-tags.php:219
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "編集 <span class=\"screen-reader-text\">%s</span>"
 
-#: inc/template-tags.php:466
+#: inc/template-tags.php:480
 msgid "Sticky post"
 msgstr "固定投稿"
 
-#: inc/template-tags.php:428
+#. translators: Hidden accessibility text.
+#: inc/template-tags.php:440
 msgid "Tags"
 msgstr "タグ"
 
-#: inc/template-tags.php:410 template-parts/content-cover.php:70
-#: template-parts/entry-header.php:36
+#. translators: Hidden accessibility text.
+#: inc/template-tags.php:417 template-parts/content-cover.php:73
+#: template-parts/entry-header.php:39
 msgid "Categories"
 msgstr "カテゴリー"
 
-#: inc/template-tags.php:392
+#. translators: Hidden accessibility text.
+#: inc/template-tags.php:394
 msgid "Post date"
 msgstr "投稿日"
 
-#: inc/template-tags.php:368
+#. translators: Hidden accessibility text.
+#: inc/template-tags.php:365
 msgid "Post author"
 msgstr "投稿者"
 
@@ -413,95 +420,96 @@ msgstr "検索"
 msgid "Continue reading"
 msgstr "続きを読む"
 
-#: functions.php:578
+#: functions.php:590
 msgctxt "Short name of the larger font size in the block editor."
 msgid "XL"
 msgstr "超特大"
 
-#: functions.php:577
+#: functions.php:589
 msgctxt "Name of the larger font size in the block editor"
 msgid "Larger"
 msgstr "特大"
 
-#: functions.php:572
+#: functions.php:584
 msgctxt "Short name of the large font size in the block editor."
 msgid "L"
 msgstr "大"
 
-#: functions.php:571
+#: functions.php:583
 msgctxt "Name of the large font size in the block editor"
 msgid "Large"
 msgstr "大"
 
-#: functions.php:566
+#: functions.php:578
 msgctxt "Short name of the regular font size in the block editor."
 msgid "M"
 msgstr "中"
 
-#: functions.php:565
+#: functions.php:577
 msgctxt "Name of the regular font size in the block editor"
 msgid "Regular"
 msgstr "通常"
 
-#: functions.php:560
+#: functions.php:572
 msgctxt "Short name of the small font size in the block editor."
 msgid "S"
 msgstr "小"
 
-#: functions.php:559
+#: functions.php:571
 msgctxt "Name of the small font size in the block editor"
 msgid "Small"
 msgstr "小"
 
-#: functions.php:544
+#: functions.php:556
 msgid "Background Color"
 msgstr "背景色"
 
-#: functions.php:531
+#: functions.php:543
 msgid "Subtle Background"
 msgstr "繊細な背景"
 
-#: functions.php:516
+#: functions.php:528
 msgid "Accent Color"
 msgstr "アクセント色"
 
-#: functions.php:403
+#: functions.php:407
 msgid "Widgets in this area will be displayed in the second column in the footer."
 msgstr "このエリアのウィジェットはフッターの2列目に表示されます。"
 
-#: functions.php:401
+#: functions.php:405
 msgid "Footer #2"
 msgstr "フッター2"
 
-#: functions.php:391
+#: functions.php:395
 msgid "Widgets in this area will be displayed in the first column in the footer."
 msgstr "このエリアのウィジェットはフッターの1列目に表示されます。"
 
-#: functions.php:389
+#: functions.php:393
 msgid "Footer #1"
 msgstr "フッター1"
 
-#: functions.php:362
+#. translators: Hidden accessibility text.
+#: functions.php:365
 msgid "Skip to the content"
 msgstr "コンテンツへスキップ"
 
-#: functions.php:277
+#: functions.php:279
 msgid "Social Menu"
 msgstr "ソーシャルメニュー"
 
-#: functions.php:276
+#: functions.php:278
 msgid "Footer Menu"
 msgstr "フッターメニュー"
 
-#: functions.php:275
+#: functions.php:277
 msgid "Mobile Menu"
 msgstr "モバイルメニュー"
 
-#: functions.php:274
+#: functions.php:276
 msgid "Desktop Expanded Menu"
 msgstr "デスクトップ展開メニュー"
 
-#: functions.php:273
+#: functions.php:275
 msgid "Desktop Horizontal Menu"
 msgstr "デスクトップ水平メニュー"
 
@@ -542,12 +550,13 @@ msgstr "「%s」への1件の返信"
 msgid "Leave a comment"
 msgstr "コメントを残す"
 
-#: classes/class-twentytwenty-walker-page.php:115 inc/template-tags.php:580
+#. translators: Hidden accessibility text.
+#: classes/class-twentytwenty-walker-page.php:115 inc/template-tags.php:592
 msgid "Show sub menu"
 msgstr "サブメニューを表示"
 
 #. translators: %d: ID of a post.
-#: classes/class-twentytwenty-walker-page.php:78
+#: classes/class-twentytwenty-walker-page.php:76
 msgid "#%d (no title)"
 msgstr "#%d (タイトルなし)"
 
@@ -564,11 +573,12 @@ msgid "Edit"
 msgstr "編集"
 
 #. translators: 1: Comment date, 2: Comment time.
-#: classes/class-twentytwenty-walker-comment.php:72
+#: classes/class-twentytwenty-walker-comment.php:73
 msgid "%1$s at %2$s"
 msgstr "%1$s %2$s"
 
-#: classes/class-twentytwenty-walker-comment.php:60
+#. translators: Hidden accessibility text.
+#: classes/class-twentytwenty-walker-comment.php:61
 msgid "says:"
 msgstr "の発言:"
 

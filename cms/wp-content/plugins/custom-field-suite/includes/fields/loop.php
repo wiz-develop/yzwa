@@ -2,6 +2,7 @@
 
 class cfs_loop extends cfs_field
 {
+    public $values;
 
     function __construct() {
         $this->name = 'loop';
@@ -124,13 +125,13 @@ class cfs_loop extends cfs_field
             </div>
             <div class="cfs_loop_body open">
             <?php foreach ( $results as $field ) : ?>
-                <label><?php echo $field->label; ?></label>
+                <label><?php echo esc_html( $field->label ); ?></label>
 
                 <?php if ( ! empty( $field->notes ) ) : ?>
-                <p class="notes"><?php echo $field->notes; ?></p>
+                <p class="notes"><?php echo esc_html( $field->notes ); ?></p>
                 <?php endif; ?>
 
-                <div class="field field-<?php echo $field->name; ?> cfs_<?php echo $field->type; ?>">
+                <div class="field field-<?php echo esc_attr( $field->name ); ?> cfs_<?php echo esc_attr( $field->type ); ?>">
                 <?php
                 if ( 'loop' == $field->type ) :
                     $loop_field_ids[] = $field->id;
@@ -186,9 +187,9 @@ class cfs_loop extends cfs_field
             'parent_id' => $field_id
         ] );
 
-        // Dynamically build the $values array
+        // Safely traverse the nested loop values represented by the bracket tag.
         $parent_tag = empty( $parent_tag ) ? "[$field_id]" : $parent_tag;
-        eval( "\$values = isset(\$this->values{$parent_tag} ) ? \$this->values{$parent_tag} : false;" );
+        $values = $this->get_values_by_tag( $parent_tag );
 
         // Row options
         $row_display = $this->get_option( $loop_field[ $field_id ], 'row_display', 0 );
@@ -212,13 +213,13 @@ class cfs_loop extends cfs_field
             </div>
             <div class="cfs_loop_body<?php echo $css_class; ?>">
             <?php foreach ( $results as $field ) : ?>
-                <label><?php echo $field->label; ?></label>
+                <label><?php echo esc_html( $field->label ); ?></label>
 
                 <?php if ( ! empty( $field->notes ) ) : ?>
-                <p class="notes"><?php echo $field->notes; ?></p>
+                <p class="notes"><?php echo esc_html( $field->notes ); ?></p>
                 <?php endif; ?>
 
-                <div class="field field-<?php echo $field->name; ?> cfs_<?php echo $field->type; ?>">
+                <div class="field field-<?php echo esc_attr( $field->name ); ?> cfs_<?php echo esc_attr( $field->type ); ?>">
                 <?php if ( 'loop' == $field->type ) : ?>
                     <?php $this->recursive_html( $group_id, $field->id, "{$parent_tag}[$i][$field->id]", $i ); ?>
                 <?php else : ?>
@@ -248,9 +249,38 @@ class cfs_loop extends cfs_field
         <?php endforeach; endif; ?>
 
         <div class="table_footer">
-            <input type="button" class="button-primary cfs_add_field" value="<?php echo esc_attr( $button_label ); ?>" data-loop-tag="<?php echo $parent_tag; ?>" data-rows="<?php echo ( $row_offset + 1 ); ?>" />
+            <input type="button" class="button-primary cfs_add_field" value="<?php echo esc_attr( $button_label ); ?>" data-loop-tag="<?php echo esc_attr( $parent_tag ); ?>" data-rows="<?php echo ( $row_offset + 1 ); ?>" />
         </div>
     <?php
+    }
+
+
+    /**
+     * Resolve numeric bracket notation without executing it as PHP code.
+     */
+    private function get_values_by_tag( $parent_tag ) {
+        if ( ! preg_match_all( '/\[([0-9]+)\]/', (string) $parent_tag, $matches ) ) {
+            return false;
+        }
+
+        $canonical_tag = '';
+        foreach ( $matches[1] as $segment ) {
+            $canonical_tag .= '[' . $segment . ']';
+        }
+        if ( $canonical_tag !== $parent_tag ) {
+            return false;
+        }
+
+        $values = $this->values;
+        foreach ( $matches[1] as $segment ) {
+            $key = (int) $segment;
+            if ( ! is_array( $values ) || ! array_key_exists( $key, $values ) ) {
+                return false;
+            }
+            $values = $values[ $key ];
+        }
+
+        return $values;
     }
 
 

@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
+"Last-Translator: \n"
 "Language-Team: \n"
+"Language: nl_NL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4\n"
-"Last-Translator: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: nl_NL\n"
+"X-Generator: Poedit 3.4.1\n"
 
 msgid "All files are continuously scanned every 10 minutes after designated time."
 msgstr "Alle bestanden worden continu gescand, elke 10 minuten na de aangegeven tijd."
@@ -79,7 +79,7 @@ msgid "Definitive diagnosis"
 msgstr "Definitieve diagnose"
 
 msgid "Display infected files"
-msgstr "Geïnfecteerde bestanden weergeven"
+msgstr "Geinfecteerde bestanden weergeven"
 
 msgid "Not detected any malware in this website."
 msgstr "Geen malware gedetecteerd op deze website."
@@ -114,7 +114,7 @@ msgstr "*De begintijd van automatisch scannen kan anders zijn bij gebruik van Wo
 msgid "Scanning completed!"
 msgstr "Scannen voltooid!"
 
-msgid "WordPress doctor"
+msgid "WP doctor"
 msgstr "WordPress dokter"
 
 msgid "Highlighted pattern matched rows."
@@ -126,8 +126,8 @@ msgstr "Sluiten"
 msgid "The directory was not applicable:"
 msgstr "De map was niet van toepassing:"
 
-msgid "Please check the malware detected."
-msgstr "Controleer de gedetecteerde malware."
+msgid " Please check the malware detected."
+msgstr " Controleer de gedetecteerde malware."
 
 msgid "Inspection result"
 msgstr "Inspectieresultaat"
@@ -426,8 +426,8 @@ msgstr "Lijst van IP's die erin geslaagd zijn om in te loggen met beheerderstoes
 msgid "Protect author information"
 msgstr "Bescherm auteursinformatie"
 
-msgid "Prevents WordPress from outputting user information based on accesses from a particular query, such as /?author=1."
-msgstr "Voorkomt dat WordPress gebruikersinformatie uitvoert op basis van toegangen vanuit een bepaalde query, zoals /?author=1."
+msgid "Prevents WordPress from outputting user information based on accesses from a particular query, such as /?author=1,/wp-json/wp/v2/users."
+msgstr "Voorkomt dat WordPress gebruikersinformatie uitvoert op basis van toegangen vanuit een bepaalde query, zoals /?author=1,/wp-json/wp/v2/users."
 
 msgid "Couldn't activate author protection because of no permission to write htaccess file."
 msgstr "Kan auteursbescherming niet activeren wegens geen toelating om htaccess bestand te schrijven."
@@ -471,8 +471,8 @@ msgstr "Voorbeeld"
 msgid "IP map of active hackers"
 msgstr "IP kaart van actieve hackers"
 
-msgid "These IPs are of hackers around the world detected daily by WordPress doctor. This data is updated every 24 hours."
-msgstr "Deze IP's zijn van hackers over de hele wereld die dagelijks worden gedetecteerd door WordPress doctor. Deze gegevens worden elke 24 uur bijgewerkt."
+msgid "These IPs are of hackers around the world detected daily by WP doctor. This data is updated every 24 hours."
+msgstr "Deze IP's zijn van hackers over de hele wereld die dagelijks worden gedetecteerd door WP doctor. Deze gegevens worden elke 24 uur bijgewerkt."
 
 msgid "Block this IP automatically from access to the website (Paid)"
 msgstr "Blokkeer dit IP automatisch van toegang tot de website (Betaald)"
@@ -652,10 +652,10 @@ msgid "Notifications upon removal or deletion of malware files"
 msgstr "Meldingen bij verwijderen of wissen van malware bestanden"
 
 msgid "<h4>Infected files</h4><p>Removal of malwares requires technical knowledge. It is recommended to ask an expert, but pay attention especially to the following points when you manage it by yourself.<br></p><ul style='list-style:disc !important;margin:20px;'><li>If the malware is infesting the file originally consists WordPress, please delete only <b>the tampered parts </b>carefully.</li><li> If the file is not a regular file of WordPress, the entire file can be deleted without any problem.</li></ul><p>However, if the tampered file is read by <b>another tampered file </b>, deletion of the tampered file may cause errors to the caller and may lead to malfunction such as undisplayable website. In that case, investigation of the caller and deletion of its tampering are required.</p>"
-msgstr "<h4>Geïnfecteerde bestanden</h4><p>Verwijdering van malware vereist technische kennis. Het is raadzaam een expert te vragen, maar let vooral op de volgende punten als u het zelf doet.<br></p><ul style='list-style:disc !important;margin:20px;'><li>Als de malware het bestand aantast dat oorspronkelijk uit WordPress bestaat, verwijder dan <b>alleen de aangetaste delen </b>voorzichtig. </li><li>Als het bestand geen regulier bestand van WordPress is, kan het hele bestand zonder probleem worden verwijderd.</li></ul><p>Als het gemanipuleerde bestand echter wordt gelezen door <b>een ander gemanipuleerd bestand </b>, kan het verwijderen van het gemanipuleerde bestand fouten veroorzaken bij de beller en leiden tot storingen, zoals een website die niet meer kan worden weergegeven. In dat geval is onderzoek van de oproeper en verwijdering van het gemanipuleerde bestand vereist.</p>"
+msgstr "<h4>Geinfecteerde bestanden</h4><p>Verwijdering van malware vereist technische kennis. Het is raadzaam een expert te vragen, maar let vooral op de volgende punten als u het zelf doet.<br></p><ul style='list-style:disc !important;margin:20px;'><li>Als de malware het bestand aantast dat oorspronkelijk uit WordPress bestaat, verwijder dan <b>alleen de aangetaste delen </b>voorzichtig. </li><li>Als het bestand geen regulier bestand van WordPress is, kan het hele bestand zonder probleem worden verwijderd.</li></ul><p>Als het gemanipuleerde bestand echter wordt gelezen door <b>een ander gemanipuleerd bestand </b>, kan het verwijderen van het gemanipuleerde bestand fouten veroorzaken bij de beller en leiden tot storingen, zoals een website die niet meer kan worden weergegeven. In dat geval is onderzoek van de oproeper en verwijdering van het gemanipuleerde bestand vereist.</p>"
 
 msgid "<h4>Infected database</h4><p>Database infections often result in Javascript code embedded in posts and widgets. It is often possible to make it harmless by removing only the part of the malware contained in the content without removing it line by line.</p>"
-msgstr "<h4>Geïnfecteerde database</h4><p>Database-infecties resulteren vaak in Javascript-code die is ingebed in berichten en widgets. Het is vaak mogelijk om deze onschadelijk te maken door alleen het deel van de malware te verwijderen dat in de inhoud is opgenomen zonder deze regel voor regel te verwijderen.</p>"
+msgstr "<h4>Geinfecteerde database</h4><p>Database-infecties resulteren vaak in Javascript-code die is ingebed in berichten en widgets. Het is vaak mogelijk om deze onschadelijk te maken door alleen het deel van de malware te verwijderen dat in de inhoud is opgenomen zonder deze regel voor regel te verwijderen.</p>"
 
 msgid "Couldn't activate Include file protection because of no permission to write htaccess file."
 msgstr "Kon Include bestandsbeveiliging niet activeren vanwege geen toestemming om htaccess bestand te schrijven."
@@ -774,8 +774,8 @@ msgstr "Niet beschikbaar (Gelieve een malware-abonnement te kopen om de bruikbaa
 msgid "Vulnerability to check"
 msgstr "Kwetsbaarheid te controleren"
 
-msgid "<b style='color:#337ab7'>Disclaimer</b>: We do not guarantee the accuracy of the result of WordPress Doctor: Malware Scan Plugin. In addition, we are not responsible for any damage to users, other indirect servers, any items, or data by using this tool. In order to scan the malware found by us after installation, you need to subscribe the malware definition. Please use WordPress Doctor: Malware Scan Plugin with kind understanding and acknowledgement that it acquires a part of inspection data for the purpose of accuracy improvement.<br><b style='color:#337ab7'>Prohibited matters (licensing)</b>: Many of the functions of this plug-in can be used free of charge. But using this plug-in to get compensation from customers (Providing other companies with paid malware scanning and removal services) is prohibited. If you violate this clause, you agree to charge 400 $ per site. If you are interested in doing business like this, please contact us and conclude a licensing agreement."
-msgstr "<b style='color:#337ab7'>Disclaimer</b>: Wij garanderen niet de juistheid van het resultaat van WordPress Doctor: Malware Scan Plugin. Daarnaast zijn wij niet verantwoordelijk voor enige schade aan gebruikers, andere indirecte servers, items of data door het gebruik van deze tool. Om de door ons gevonden malware na installatie te scannen, moet u zich abonneren op de malware definitie. Gelieve te gebruiken WordPress Doctor: Malware Scan Plugin met vriendelijk begrip en erkenning dat het een deel van de inspectiegegevens verwerft met als doel de nauwkeurigheid te verbeteren.<br><b style='color:#337ab7'>Verboden zaken (licenties)</b>: Veel van de functies van deze plug-in kunnen gratis worden gebruikt. Maar het gebruik van deze plug-in om compensatie te krijgen van klanten (Het leveren van andere bedrijven met betaalde malware scanning en verwijdering diensten) is verboden. Als u deze clausule overtreedt, gaat u akkoord met een vergoeding van 400 $ per site. Als u geïnteresseerd bent om op deze manier zaken te doen, neem dan contact met ons op en sluit een licentieovereenkomst af."
+msgid "<b style='color:#337ab7'>Disclaimer</b>: We do not guarantee the accuracy of the result of WP doctor: Malware Scan Plugin. In addition, we are not responsible for any damage to users, other indirect servers, any items, or data by using this tool. In the free version, you can only detect malware using data that is up to one month old from the time of installation. Please use WP doctor: Malware Scan Plugin with kind understanding and acknowledgement that it acquires a part of inspection data for the purpose of accuracy improvement.<br><b style='color:#337ab7'>Prohibited matters (licensing)</b>: Many of the functions of this plug-in can be used free of charge. But using this plug-in to get compensation from customers (Providing other companies with paid malware scanning and removal services) is prohibited. If you violate this clause, you agree to charge 400 $ per site. If you are interested in doing business like this, please contact us and conclude a licensing agreement."
+msgstr "<b style='color:#337ab7'>Disclaimer</b>: Wij garanderen de nauwkeurigheid van de resultaten van WP Doctor: Malware Scan Plugin niet. Daarnaast zijn wij niet verantwoordelijk voor schade aan gebruikers, andere indirecte servers, voorwerpen of gegevens door het gebruik van deze tool. In de gratis versie kunt u malware alleen detecteren met gegevens die maximaal één maand oud zijn vanaf het moment van installatie. Gebruik WP Doctor: Malware Scan Plugin met het begrip en de erkenning dat een deel van de inspectiegegevens wordt verzameld om de nauwkeurigheid te verbeteren.<br><b style='color:#337ab7'>Verboden handelingen (licentie)</b>: Veel functies van deze plug-in kunnen gratis worden gebruikt. Het is echter verboden om deze plug-in te gebruiken om vergoeding van klanten te ontvangen (bijvoorbeeld het leveren van betaalde malware-scanning en verwijderingsdiensten aan andere bedrijven). Als u deze bepaling overtreedt, stemt u ermee in $400 per site te betalen. Als u geïnteresseerd bent in dit soort activiteiten, neem dan contact met ons op en sluit een licentieovereenkomst af."
 
 msgid "Show agreement"
 msgstr "Overeenkomst tonen"
@@ -873,7 +873,7 @@ msgstr "patronen toegevoegd sinds aankoop"
 msgid "Advanced blocking of hackers' IP"
 msgstr "Geavanceerde blokkering van IP van hackers"
 
-msgid "When hackers attack your site, they check to see if the vulnerable files are present on your site　by actually accessing them. By detecting such access and immediately blocking the hacker's IP　for 24 hours, you can reduce the risk of hacking through the vulnerability."
+msgid "When hackers attack your site, they check to see if the vulnerable files are present on your site by actually accessing them. By detecting such access and immediately blocking the hacker's IP for 24 hours, you can reduce the risk of hacking through the vulnerability."
 msgstr "Wanneer hackers uw site aanvallen, controleren ze of de kwetsbare bestanden op uw site aanwezig zijn door ze daadwerkelijk te openen. Door dergelijke toegang te detecteren en onmiddellijk het IP-adres van de hacker gedurende 24 uur te blokkeren, kunt u het risico van hacken via de kwetsbaarheid verkleinen."
 
 msgid "Enable advanced blocking features of the hacker's IP (Paid)"
@@ -895,7 +895,7 @@ msgid "Enable access"
 msgstr "Toegang mogelijk maken"
 
 msgid "Block ended"
-msgstr "Blokkeren beëindigd"
+msgstr "Blokkeren beeindigd"
 
 msgid "Do you want to delete the record of this IP and unblock it?"
 msgstr "Wilt u het record van dit IP verwijderen en de blokkering opheffen?"
@@ -978,7 +978,7 @@ msgstr "Noodstop van de site"
 msgid "Blocks all external access except for your current login IP"
 msgstr "Blokkeert alle externe toegang behalve voor uw huidige login IP"
 
-msgid ".　It prohibits all external access and deters the activities of the kind of malware that automatically repeats tampering. You can then remove the malware."
+msgid ". It prohibits all external access and deters the activities of the kind of malware that automatically repeats tampering. You can then remove the malware."
 msgstr ".　Het verbiedt alle toegang van buitenaf en ontmoedigt de activiteiten van het soort malware dat automatisch de sabotage herhaalt. Vervolgens kunt u de malware verwijderen."
 
 msgid "*When this feature is enabled, all accesses except your current IP will be ignored. If you are unable to access the site due to a change of your IP address, please delete #EMERGENCY_BLOCK_START to #EMERGENCY_BLOCK_END in the HTACCESS file on the server and you will be able to access the site again."
@@ -1015,7 +1015,7 @@ msgid "Automatic Restore"
 msgstr "Automatisch Herstellen"
 
 msgid "Replace the infected file with the same version of the file distributed from the official WordPress website. Files that do not exist in the official directory will be deleted. Database data and configuration files cannot be disinfected automatically. Please note that if you have customized the target files, the customized parts will be lost."
-msgstr "Vervang het geïnfecteerde bestand door dezelfde versie van het bestand dat gedistribueerd wordt vanaf de officiële WordPress website. Bestanden die niet bestaan in de officiële directory zullen worden verwijderd. Databasegegevens en configuratiebestanden kunnen niet automatisch worden gedesinfecteerd. Houd er rekening mee dat als u de doelbestanden hebt aangepast, de aangepaste delen verloren zullen gaan."
+msgstr "Vervang het geinfecteerde bestand door dezelfde versie van het bestand dat gedistribueerd wordt vanaf de officiele WordPress website. Bestanden die niet bestaan in de officiele directory zullen worden verwijderd. Databasegegevens en configuratiebestanden kunnen niet automatisch worden gedesinfecteerd. Houd er rekening mee dat als u de doelbestanden hebt aangepast, de aangepaste delen verloren zullen gaan."
 
 msgid "Display and edit"
 msgstr "Weergeven en bewerken"
@@ -1039,7 +1039,7 @@ msgid "Cannot be automatically disinfected because it is data in the database"
 msgstr "Kan niet automatisch gedesinfecteerd worden omdat het gegevens in de database zijn"
 
 msgid "Automatic disinfection failed. It did not exist in the official directory. Possibly an original theme or plugin."
-msgstr "Automatische desinfectie is mislukt. Het bestond niet in de officiële directory. Mogelijk een origineel thema of plugin."
+msgstr "Automatische desinfectie is mislukt. Het bestond niet in de officiele directory. Mogelijk een origineel thema of plugin."
 
 msgid "Automatic extermination failed. There is a possibility that the file could not be rewritten due to a write permission problem."
 msgstr "Automatische desinfectie mislukt. Het bestand kon mogelijk niet worden herschreven vanwege een probleem met de schrijftoestemmingen."
@@ -1048,7 +1048,7 @@ msgid "Database data not exists."
 msgstr "Database gegevens bestaan niet."
 
 msgid "The official directory is down or shomething went wrong for restoring file."
-msgstr "De officiële directory is down of er is iets fout gegaan bij het terugzetten van het bestand."
+msgstr "De officiele directory is down of er is iets fout gegaan bij het terugzetten van het bestand."
 
 msgid "Processing..."
 msgstr "Verwerking..."
@@ -1090,7 +1090,7 @@ msgid "Bulk Delete"
 msgstr "Batch-ontsmetting"
 
 msgid "This function will replace all files detected as malware with legitimate files that are publicly available in the official WordPress directory. Please note that some files that are not in the official directory may not be replaced. <br><br>Please note that if a malware-detected file contains any customizations, the customizations in that file will be overwritten and deleted. We recommend that you back up your site prior to implementation."
-msgstr "Deze functie vervangt in één batch voortdurend bestanden die als malware zijn gedetecteerd door legitieme bestanden die in de officiële WordPress-directory zijn gepubliceerd.Merk op dat sommige bestanden die niet in de officiële directory staan mogelijk niet worden vervangen.<br><br>Merk op dat als een door malware gedetecteerd bestand maatwerk heeft, het maatwerk van dat bestand wordt overschreven en verdwijnt.Wij raden u aan vóór de implementatie een back-up van uw site te maken."
+msgstr "Deze functie vervangt in een batch voortdurend bestanden die als malware zijn gedetecteerd door legitieme bestanden die in de officiele WordPress-directory zijn gepubliceerd.Merk op dat sommige bestanden die niet in de officiele directory staan mogelijk niet worden vervangen.<br><br>Merk op dat als een door malware gedetecteerd bestand maatwerk heeft, het maatwerk van dat bestand wordt overschreven en verdwijnt.Wij raden u aan voor de implementatie een back-up van uw site te maken."
 
 msgid "Start batch extermination"
 msgstr "Start partijontsmetting"
@@ -1098,5 +1098,479 @@ msgstr "Start partijontsmetting"
 msgid "Cancel"
 msgstr "Annuleren"
 
-msgid "WordPress Doctor Malware scan and Security plugin"
-msgstr "WordPress Doctor Malware Scanner & Beveiligingsplug-in"
+msgid "WP doctor Malware scan and Security plugin"
+msgstr "WP doctor Malware Scanner & Beveiligingsplug-in"
+
+msgid "Repair and protect .htaccess and index.php"
+msgstr "Repareer en bescherm .htaccess en index.php"
+
+msgid "If you have symptoms of a malware infection that causes the htaccess file or index.php to be rewritten on its own, add monitoring and auto-repair code to your WordPress configuration file to prevent these two files from being rewritten again after restoring them. If you enable this function, the contents of the htaccess file and index.php cannot be changed."
+msgstr "Als je symptomen hebt van een malware-infectie die ervoor zorgt dat het htaccess-bestand of index.php op eigen houtje wordt herschreven, voeg dan monitoring en auto-repair code toe aan je WordPress-configuratiebestand om te voorkomen dat deze twee bestanden opnieuw worden herschreven nadat ze zijn hersteld. Als je deze functie inschakelt, kan de inhoud van het htaccess bestand en index.php niet worden gewijzigd."
+
+msgid "Protect htaccess and index.php"
+msgstr "Bescherm htaccess en index.php"
+
+msgid "Repair htaccess and index.php"
+msgstr "Herstel htaccess en index.php"
+
+msgid "Implement htaccess and index.php protection"
+msgstr "Implementeer htaccess en index.php bescherming"
+
+msgid "If .htaccess and index.php are rewritten on their own, we will forcibly rewrite and restore the contents of the .htaccess and index.php displayed above. In this case, a special process is executed to stop the PHP process, so PHP may temporarily stop working and the site may not be able to be displayed. In this case, it may be necessary to restart PHP on the server or the server itself."
+msgstr "Als .htaccess en index.php afzonderlijk worden herschreven, zullen we de inhoud van de hierboven weergegeven .htaccess en index.php met geweld herschrijven en herstellen. In dit geval wordt een speciaal proces uitgevoerd om het PHP-proces te stoppen, waardoor PHP mogelijk tijdelijk niet meer werkt en de site mogelijk niet kan worden weergegeven. In dit geval kan het nodig zijn om PHP opnieuw op te starten op de server of de server zelf."
+
+msgid "Successfully repaired .htaccess and index.php"
+msgstr "Succesvol gerepareerd .htaccess en index.php"
+
+msgid "This function is not available if 'Emergency suspension of all access to the site' is enabled."
+msgstr "Deze functie is niet beschikbaar als 'Noodopschorting van alle toegang tot de site' is ingeschakeld."
+
+msgid "Contents of index.php to be protected"
+msgstr "Inhoud van index.php moet worden beschermd"
+
+msgid "initialisation"
+msgstr "initialisatie"
+
+msgid "Contents of htaccess to be protected"
+msgstr "Inhoud van htaccess moet worden beschermd"
+
+msgid "*This function is not available if index.php or htaccess protection is enabled."
+msgstr "*Deze functie is niet beschikbaar als index.php- of htaccess-beveiliging is ingeschakeld."
+
+msgid "Unprotect index.php,htaccess"
+msgstr "Beveilig index.php,htaccess"
+
+msgid "The contents of index.php and htaccess are currently protected."
+msgstr "De inhoud van index.php en htaccess is momenteel beveiligd."
+
+msgid "Failed repaire.htaccess and index.php"
+msgstr "Reparatie van.htaccess en index.php mislukt"
+
+msgid "Correct permissions"
+msgstr "Juiste machtigingen"
+
+msgid "Working..."
+msgstr "Werkt..."
+
+msgid "Changed to optimal permissions!"
+msgstr "Veranderd naar optimale machtigingen!"
+
+msgid "error:The permissions failed to change, we recommend that you fix this with a good connection to the server using FTP software."
+msgstr "error:De rechten zijn niet gewijzigd, we raden je aan om dit te herstellen met een goede verbinding met de server via FTP-software."
+
+msgid "Number of all detectable vulnerabilities:"
+msgstr "Aantal detecteerbare kwetsbaarheden:"
+
+msgid "<b>Activated functions</b>: Login LockDown, Login captcha, Password reset captcha, Prevent information leak about WordPress version, Protect important files (htaccess, wp-config.php), Protect server information, Block access to wlwmanifest.xml, Block malicious query, Protect author information, Prohibit display of Index list, Prohibit WPSCAN, Prohibit Pingback, Prevent brute-force attack, Prohibit Trace & Track, Include file protection, Upload folder protection, Block danger SQL query,  Prohibit comment posting via proxy, Comment form captcha, Prohibit comment posting by spambots, noindex & 404 if not found searchresult page"
+msgstr "<b>Geactiveerde functies</b>: Login LockDown, Login captcha, Wachtwoord opnieuw instellen captcha, Voorkom informatielekken over de WordPress-versie, Bescherm belangrijke bestanden (htaccess, wp-config.php), Bescherm serverinformatie, Blokkeer de toegang tot wlwmanifest.xml , Kwaadwillige zoekopdracht blokkeren, auteursinformatie beschermen, weergave van indexlijst verbieden, WPSCAN verbieden, Pingback verbieden, brute-force-aanval voorkomen, Trace & Track verbieden, bestandsbeveiliging opnemen, mapbeveiliging uploaden, SQL-query voor gevaar blokkeren, plaatsen van commentaar via proxy verbieden , Commentaarformulier captcha, Verbied het plaatsen van reacties door spambots, noindex & 404 indien niet gevonden zoekresultatenpagina"
+
+msgid "<b>Activated functions</b>: Login LockDown, Login captcha, Password reset captcha, Change login page URL, Prevent information leak about WordPress version, Protect important files (htaccess, wp-config.php), Protect server information, Block access to wlwmanifest.xml, Block malicious query, Protect author information, Prohibit display of Index list, Prohibit WPSCAN, Prohibit editing themes and plugins,Include file protection, Upload folder protection, Block danger SQL query, Prohibit Pingback, Prevent brute-force attack, Prohibit REST API, Prohibit Trace & Track, Prohibit comment posting via proxy, Comment form captcha, Prohibit comment posting by spambots, noindex & 404 if not found searchresult page"
+msgstr "<b>Geactiveerde functies</b>: Login LockDown, Login captcha, Wachtwoord opnieuw instellen captcha, Wijzig de URL van de inlogpagina, Voorkom informatielekken over de WordPress-versie, Bescherm belangrijke bestanden (htaccess, wp-config.php), Bescherm serverinformatie, Blokkeer toegang tot wlwmanifest.xml, kwaadaardige zoekopdracht blokkeren, auteursinformatie beschermen, weergave van indexlijst verbieden, WPSCAN verbieden, bewerken van thema's en plug-ins verbieden, bestandsbeveiliging opnemen, mapbeveiliging uploaden, SQL-query met gevaar blokkeren, Pingback verbieden, brute-force-aanval voorkomen , Verbied REST API, Verbied Trace & Track, Verbied het plaatsen van reacties via proxy, Captcha van commentaarformulier, Verbied het plaatsen van reacties door spambots, noindex & 404 indien niet gevonden zoekresultatenpagina"
+
+msgid "Noindexing search results page on wordpress if result not exist."
+msgstr "Geen indexering van de zoekresultatenpagina op WordPress als het resultaat niet bestaat."
+
+msgid "If a WordPress search result does not exist, it will be noindexed and a status 404 will be returned. This prevents the search results in WordPress from being created and registered in search engines illegally."
+msgstr "Als een WordPress-zoekresultaat niet bestaat, wordt het niet geindexeerd en wordt de status 404 geretourneerd. Dit voorkomt dat de zoekresultaten in WordPress illegaal worden aangemaakt en geregistreerd in zoekmachines."
+
+msgid "Couldn't activate Noindexing search results function."
+msgstr "Kan de functie voor zoekresultaten zonder indexering niet activeren."
+
+msgid "Wp-Doctor Malware scan plugin Lite has been detected; if you are using the Pro version, please stop and remove the Lite version"
+msgstr "Wp-Doctor Malware scan plugin Lite is gedetecteerd; als je de Pro versie gebruikt, stop dan en verwijder de Lite versie."
+
+msgid "Brute Force Attack Resistance Testing"
+msgstr "Test op weerstand tegen brute krachtaanvallen"
+
+msgid "This test uses a list of 5,000 commonly used passwords to see if a hacker can break the site's administrator and editor passwords with a brute force attack. If a user is found to be a victim of this scan, we recommend that the user's password be changed as soon as possible to a meaningless string of 14 or more characters and containing one-byte alphanumeric symbols."
+msgstr "Deze test gebruikt een lijst van 5,000 veelgebruikte wachtwoorden om te zien of een hacker de wachtwoorden van de beheerder en redacteur van de site kan kraken met een brute force aanval. Als een gebruiker het slachtoffer blijkt te zijn van deze scan, raden we aan om het wachtwoord van de gebruiker zo snel mogelijk te wijzigen in een betekenisloze reeks van 14 of meer tekens met alfanumerieke symbolen van een byte."
+
+msgid "Test user password tolerance"
+msgstr "Tolerantie gebruikerswachtwoord testen"
+
+msgid "Investigating user password tolerance..."
+msgstr "Gebruikerswachtwoordtolerantie onderzoeken..."
+
+msgid "CVSS Vulnerability check"
+msgstr "CVSS-kwetsbaarheidscontrole"
+
+msgid "Reinstalling the plugin that failed the inspection may correct the problem."
+msgstr "Het opnieuw installeren van de plugin die de inspectie niet heeft doorstaan, kan het probleem verhelpen"
+
+msgid "The inspection has been completed!"
+msgstr "De inspectie is voltooid!"
+
+msgid "No vulnerabilities"
+msgstr "Geen kwetsbaarheden"
+
+msgid "Password is weak. Password breached:"
+msgstr "Wachtwoord is zwak. Wachtwoord geschonden:"
+
+msgid "Fix now"
+msgstr "Nu repareren"
+
+msgid "Scan malware automatically"
+msgstr "Automatisch malware scannen"
+
+msgid "Scan vulnerability automatically(Paid)"
+msgstr "Kwetsbaarheid automatisch scannen(Betaald)"
+
+msgid "A vulnerability was found on the site. The vulnerabilities found are as follows"
+msgstr "Er is een kwetsbaarheid gevonden op de site. De gevonden kwetsbaarheden zijn als volgt"
+
+msgid " Please check the vulnerability detected."
+msgstr " Controleer de gedetecteerde kwetsbaarheden."
+
+msgid " Please check the malware and vulnerabilities detected."
+msgstr " Controleer de gedetecteerde malware en kwetsbaarheden."
+
+msgid "Hack monitor & IP blocker"
+msgstr "Hack monitor & IP blocker"
+
+msgid "Unlimited"
+msgstr "Onbeperkt"
+
+msgid "Unblock"
+msgstr "Deblokkeren"
+
+msgid "Block now"
+msgstr "Nu blokkeren"
+
+msgid "Blocking IPs"
+msgstr "IP's blokkeren"
+
+msgid "Blocked time"
+msgstr "Geblokkeerde tijd"
+
+msgid "Block time limit"
+msgstr "Tijdslimiet blokkeren"
+
+msgid "Un block this IP"
+msgstr "Deblokkeren van dit IP"
+
+msgid "Enabling this feature will detect and log hackers' attacks against your site. You can also block hacker IPs from this log. Keep in mind that hackers attack WordPress sites at random, so a logged attack does not necessarily mean that the hack was successful."
+msgstr "Als u deze functie inschakelt, worden aanvallen van hackers op uw site gedetecteerd en vastgelegd. U kunt ook hacker-IP's blokkeren in dit logboek. Houd er rekening mee dat hackers willekeurig WordPress-sites aanvallen, dus een geregistreerde aanval betekent niet per se dat de hack succesvol was."
+
+msgid "Enable Hack Monitor"
+msgstr "Hack Monitor inschakelen"
+
+msgid "Number of logs to be stored"
+msgstr "Aantal op te slaan logs"
+
+msgid "infinity"
+msgstr "oneindig"
+
+msgid "Forever"
+msgstr "Voor altijd"
+
+msgid "1hour"
+msgstr "1 uur"
+
+msgid "24hour"
+msgstr "24 uur"
+
+msgid "Block length"
+msgstr "Bloklengte"
+
+msgid "Notice:In many cases, a one-hour block is sufficient because hackers change their attack target to the next site as soon as they fail."
+msgstr "Let op: in veel gevallen is een blok van één uur voldoende, omdat hackers hun aanvalsdoel veranderen naar de volgende site zodra ze falen."
+
+msgid "Automatic blocking of IPs of detected vulnerability attacks (paid)"
+msgstr "Automatische blokkering van IP's van gedetecteerde kwetsbaarheidsaanvallen (betaald)"
+
+msgid "Automatic blocking of detected WPSCAN IPs (paid)"
+msgstr "Automatische blokkering van gedetecteerde WPSCAN IP's (betaald)"
+
+msgid "Automatic blocking of detected brute force attack IPs (paid)"
+msgstr "Automatische blokkering van gedetecteerde brute force-aanvals-IP's (betaald)"
+
+msgid "Hack log"
+msgstr "Hacklog"
+
+msgid "Hacking type"
+msgstr "Hackingtype"
+
+msgid "Hacker's IP(Check Abuse IP)"
+msgstr "IP van hacker (controleer misbruik-IP)"
+
+msgid "Accessed file"
+msgstr "Bestand geopend"
+
+msgid "Hack count"
+msgstr "Hackaantal"
+
+msgid "Block this IP"
+msgstr "Blokkeer dit IP"
+
+msgid "No data found."
+msgstr "Geen gegevens gevonden."
+
+msgid "This Ip was auto blocked <br>till"
+msgstr "Dit IP-adres werd automatisch geblokkeerd <br>tot"
+
+msgid "Login lockdown"
+msgstr "Loginvergrendeling"
+
+msgid "Vulnerability hack"
+msgstr "Kwetsbaarheidshack"
+
+msgid "Ajax action vulnerability hack"
+msgstr "Ajax-actie kwetsbaarheidshack"
+
+msgid "Runs WPSCAN"
+msgstr "Voert WPSCAN uit"
+
+msgid "Brute force attack"
+msgstr "Brute force-aanval"
+
+msgid "XMLRPC brute force attack"
+msgstr "XMLRPC brute force-aanval"
+
+msgid "The Hack Monitor also logs brute force attacks with weak passwords. Therefore, it cannot be enabled if there is an administrator user who is already using a weak password."
+msgstr "De Hack Monitor registreert ook brute force-aanvallen met zwakke wachtwoorden. Daarom kan het niet worden ingeschakeld als er een beheerder is die al een zwak wachtwoord gebruikt."
+
+msgid "If you have inadvertently blocked your IP, please FTP to your server's HTACCESS file and delete #WPINFECBLOCKIP_START to #WPINFECBLOCKIP_END"
+msgstr "Als u per ongeluk uw IP hebt geblokkeerd, FTP dan naar het HTACCESS-bestand van uw server en verwijder #WPINFECBLOCKIP_START naar #WPINFECBLOCKIP_END"
+
+msgid "Hack monitor & Auto IP blocker"
+msgstr "Hackmonitor & Auto IP-blokkering"
+
+msgid "Block failed, does the HTACCESS file exist and is it writable permissions? Or did you enter the correct IP?"
+msgstr "Blokkeren mislukt, bestaat het HTACCESS-bestand en heeft het schrijfrechten? Of hebt u het juiste IP-adres ingevoerd?"
+
+msgid "Login log"
+msgstr "Inloglogboek"
+
+msgid "Brute force attack(Excessive access to WP-LOGIN, XMLRPC etc.)"
+msgstr "Brute force aanval (Overmatige toegang tot WP-LOGIN, XMLRPC enz.)"
+
+msgid "Process manager"
+msgstr "Procesmanager"
+
+msgid "The Process Manager detects and displays potentially malware processes running in memory. If a process keeps executing a file that you do not recognize, and the PHP file does not exist (or is executing a file that does not exist in the WordPress core files), and the execution time is long (more than 1 hour), malware may have embedded some malware in the process. If the htaccess file or index.php is rewritten without your permission and malicious code is continuously embedded, malware may be deployed in the process."
+msgstr "De Procesmanager detecteert en toont mogelijk malwareprocessen die in het geheugen worden uitgevoerd. Als een proces een bestand blijft uitvoeren dat je niet herkent, en het PHP-bestand niet bestaat (of een bestand uitvoert dat niet bestaat in de kernbestanden van WordPress), en de uitvoeringstijd lang is (meer dan 1 uur), kan er malware in het proces zijn ingesloten. Als het htaccess-bestand of index.php zonder uw toestemming wordt herschreven en er voortdurend kwaadaardige code wordt ingesloten, kan er tijdens het proces malware worden geïmplementeerd."
+
+msgid "*Processes may not be retrieved or stopped on some servers."
+msgstr "*Op sommige servers worden processen mogelijk niet opgehaald of gestopt."
+
+msgid "Refresh"
+msgstr "Vernieuwen"
+
+msgid "Pid process not found."
+msgstr "Pid-proces niet gevonden."
+
+msgid "Pid error."
+msgstr "Pid-fout."
+
+msgid "Exist"
+msgstr "Bestaan"
+
+msgid "Not exist"
+msgstr "Bestaat niet"
+
+msgid "User ID"
+msgstr "Gebruikers-ID"
+
+msgid "Process ID"
+msgstr "Proces-ID"
+
+msgid "Command"
+msgstr "Opdracht"
+
+msgid "Start time"
+msgstr "Starttijd"
+
+msgid "File exists"
+msgstr "Bestand bestaat"
+
+msgid "Code"
+msgstr "Code"
+
+msgid "Kill process"
+msgstr "Dood proces"
+
+msgid "No php process found."
+msgstr "Geen php proces gevonden."
+
+msgid "Kill"
+msgstr "Dood"
+
+msgid "The free version of the plugin does not provide access to the latest malware detection patterns from the time of installation or the expiration of your paid subscription. <br>For this reason, the malware detection power of the free version will gradually decrease. <br>The malware detection power score is a calculated score based on the ratio of malware currently detected by the latest malware detection patterns that are not installed on your site. <br>If the score is 80, this means that 20% of malware is currently being detected by malware detection patterns that are not installed on your site, so we recommend that you subscribe to the paid version to maintain the plugin&#39;s strong detection power."
+msgstr "De gratis versie van de plugin biedt geen toegang tot de nieuwste malwaredetectiepatronen vanaf het moment van installatie of het verlopen van uw betaalde abonnement. <br>Daarom zal het malwaredetectievermogen van de gratis versie geleidelijk afnemen. <br>De malwaredetectievermogenscore is een berekende score op basis van de verhouding van malware die momenteel wordt gedetecteerd door de nieuwste malwaredetectiepatronen die niet op uw site zijn geïnstalleerd. <br>Als de score 80 is, betekent dit dat 20% van de malware momenteel wordt gedetecteerd door malwaredetectiepatronen die niet op uw site zijn geïnstalleerd. Daarom raden we u aan om u te abonneren op de betaalde versie om het sterke detectievermogen van de plugin te behouden."
+
+msgid "Automatic blocking of detected malicious cookie attack IPs (paid)"
+msgstr "Automatyczne blokowanie ataków przez pliki cookie (płatne)"
+
+msgid "Are you sure you want to disable the plugin? Doing so will reset settings, logs, and other data."
+msgstr "Czy na pewno chcesz wyłączyć wtyczkę? Spowoduje to zresetowanie ustawień, logów i innych danych."
+
+msgid "Content Security Policy"
+msgstr "Content Security Policy"
+
+msgid "CSP (Content Security Policy) is a mechanism that specifies to the browser “which types of sources (such as scripts, images, stylesheets, etc.) are allowed to be loaded and from where,” helping to prevent XSS (Cross-Site Scripting: attacks that execute external scripts on a site), and even if unauthorized code is embedded due to site tampering, it can partially (though not perfectly) prevent users accessing the site from executing such malicious scripts; when enabled, it is recommended to verify the site’s display and behavior."
+msgstr "CSP (Content Security Policy) is een mechanisme dat aan de browser aangeeft „welke soorten bronnen (zoals scripts, afbeeldingen, stylesheets, enz.) mogen worden geladen en van waar“. Dit helpt XSS (Cross-Site Scripting: aanvallen waarbij externe scripts op een website worden uitgevoerd) te voorkomen. Zelfs als door manipulatie van de website ongeautoriseerde code wordt ingesloten, kan CSP – zij het niet volledig – gedeeltelijk voorkomen dat gebruikers die de site bezoeken dergelijke kwaadaardige scripts uitvoeren. Na activering wordt aanbevolen de weergave en het gedrag van de website te controleren."
+
+msgid "Enable CSP settings"
+msgstr "CSP-instellingen inschakelen"
+
+msgid "✓Check the current CSP externally"
+msgstr "※ Huidige CSP extern controleren"
+
+msgid "Basic rule setting: default-src"
+msgstr "Basisregelinstelling: default-src"
+
+msgid "When default-src is set, it collectively specifies various CSP settings such as script-src below; however, if script-src or other directives are additionally set, they will override default-src, so please be careful."
+msgstr "Wanneer default-src is ingesteld, worden hiermee verschillende CSP-instellingen zoals script-src gezamenlijk gespecificeerd. Als echter daarnaast script-src of andere directives worden ingesteld, zullen deze default-src overschrijven. Let hier dus op."
+
+msgid "Example: If default-src and script-src are both specified → only the script-src setting is applied to JavaScript."
+msgstr "Voorbeeld: als zowel default-src als script-src zijn opgegeven → wordt voor JavaScript alleen de instelling van script-src toegepast."
+
+msgid "Global settings for allowing browser loading"
+msgstr "Globale instellingen voor het toestaan van laden door de browser"
+
+msgid "Do not set"
+msgstr "Niet instellen"
+
+msgid "Allow all"
+msgstr "Alles toestaan"
+
+msgid "Allow only sources on the same domain (Recommended: make this strict and configure allowed domains individually in other items)"
+msgstr "Alleen bronnen van hetzelfde domein toestaan (Aanbevolen: deze instelling strikt houden en toegestane domeinen afzonderlijk configureren in andere onderdelen)"
+
+msgid "Allow sources on the same domain and the sources entered below"
+msgstr "Bronnen van hetzelfde domein en de hieronder ingevoerde bronnen toestaan"
+
+msgid "✓To add allowed domains, please add one per line in the text area"
+msgstr "※ Om toegestane domeinen toe te voegen, voeg er één per regel toe in het tekstveld"
+
+msgid "* means all subdomains are included"
+msgstr "* betekent dat alle subdomeinen zijn inbegrepen"
+
+msgid "Control of inline scripts and CSS"
+msgstr "Beheer van inline scripts en CSS"
+
+msgid "JavaScript loading settings: script-src"
+msgstr "Instellingen voor het laden van JavaScript: script-src"
+
+msgid "This setting controls the sources from which JavaScript can be loaded and executed, serving as a countermeasure against XSS and the execution of maliciously embedded scripts."
+msgstr "Deze instelling bepaalt van welke bronnen JavaScript mag worden geladen en uitgevoerd. Ze dient als maatregel tegen XSS en tegen de uitvoering van kwaadaardig ingesloten scripts."
+
+msgid "JavaScript allowed to be loaded by the browser"
+msgstr "JavaScript dat door de browser mag worden geladen"
+
+msgid "Do not set (uses the default-src setting)"
+msgstr "Niet instellen (gebruikt de instelling default-src)"
+
+msgid "Allow only sources on the same domain"
+msgstr "Alleen bronnen van hetzelfde domein toestaan"
+
+msgid "Allow sources on the same domain and specified external sources (Recommended)"
+msgstr "Bronnen van hetzelfde domein en opgegeven externe bronnen toestaan (Aanbevolen)"
+
+msgid "Check the domains to allow"
+msgstr "Selecteer de toe te staan domeinen"
+
+msgid "✓To add more allowed domains, please add one per line in the text area"
+msgstr "※ Om meer toegestane domeinen toe te voegen, voeg er één per regel toe in het tekstveld"
+
+msgid "Control of inline scripts"
+msgstr "Beheer van inline scripts"
+
+msgid "Allow eval (Not recommended)"
+msgstr "eval toestaan (Niet aanbevolen)"
+
+msgid "Destination settings for connections: connect-src"
+msgstr "Instellingen voor verbindingsdoelen: connect-src"
+
+msgid "Restricts destination URLs for communications performed by JavaScript at runtime (fetch / XHR / Beacon / WebSocket / EventSource, etc.), helping to prevent information leakage via external communications and the retrieval of malicious data from external servers."
+msgstr "Beperkt de doel-URL’s voor communicatie die door JavaScript tijdens runtime wordt uitgevoerd (fetch / XHR / Beacon / WebSocket / EventSource, enz.), en helpt zo informatielekken via externe communicatie en het ophalen van kwaadaardige gegevens van externe servers te voorkomen."
+
+msgid "Settings for destinations allowed by the browser for communication"
+msgstr "Instellingen voor communicatiebestemmingen die door de browser zijn toegestaan"
+
+msgid "WordPress plugin/theme information, API communication"
+msgstr "Informatie over WordPress-plugins/-thema’s, API-communicatie"
+
+msgid "iframe source settings: frame-src / child-src"
+msgstr "Instellingen voor iframe-bronnen: frame-src / child-src"
+
+msgid "This setting prevents loading malicious advertisements or embedded content by restricting which domains iframe elements (and their generated child content) embedded in a page can be loaded from."
+msgstr "Deze instelling voorkomt het laden van kwaadaardige advertenties of ingesloten inhoud door te beperken van welke domeinen iframe-elementen (en de daarin gegenereerde inhoud) in een pagina mogen worden geladen."
+
+msgid "Settings for allowed iframe sources"
+msgstr "Instellingen voor toegestane iframe-bronnen"
+
+msgid "All Google services"
+msgstr "Alle Google-diensten"
+
+msgid "Stylesheet (CSS) source settings: style-src"
+msgstr "Instellingen voor stylesheet-(CSS)-bronnen: style-src"
+
+msgid "This CSP directive restricts which domains and formats CSS applied to a page (external CSS, inline CSS, style attributes, etc.) can be loaded from, helping to prevent information leakage or XSS via abused styles."
+msgstr "Deze CSP-richtlijn beperkt van welke domeinen en in welke vormen CSS die op een pagina wordt toegepast (externe CSS, inline CSS, style-attributen, enz.) mag worden geladen, en helpt zo informatielekken of XSS via misbruikte stijlen te voorkomen."
+
+msgid "Settings for allowed stylesheet (CSS) sources"
+msgstr "Instellingen voor toegestane stylesheet-(CSS)-bronnen"
+
+msgid "Control of inline styles"
+msgstr "Beheer van inline stijlen"
+
+msgid "Restrictions on use of the base tag: base-uri"
+msgstr "Beperkingen op het gebruik van de base-tag: base-uri"
+
+msgid "This CSP setting prevents attacks that redirect relative URLs to external sites or send information externally by restricting the base URL that can be specified with the HTML base tag."
+msgstr "Deze CSP-instelling voorkomt aanvallen waarbij relatieve URL’s naar externe sites worden omgeleid of informatie extern wordt verzonden, door de basis-URL te beperken die met de HTML base-tag kan worden ingesteld."
+
+msgid "Same domain only"
+msgstr "Alleen hetzelfde domein"
+
+msgid "Disallow"
+msgstr "Niet toestaan"
+
+msgid "Form submission destination settings: form-action"
+msgstr "Instellingen voor bestemmingen van formulierverzending: form-action"
+
+msgid "This CSP setting prevents attacks where form submission destinations are changed to unauthorized external sites through XSS or tampering, resulting in stolen input data, by restricting the URLs to which HTML forms (form tags) can submit data."
+msgstr "Deze CSP-instelling voorkomt aanvallen waarbij via XSS of manipulatie de bestemmingen van formulierverzending worden gewijzigd naar ongeautoriseerde externe sites, wat leidt tot het stelen van ingevoerde gegevens, door de URL’s te beperken waarnaar HTML-formulieren (form-tags) gegevens mogen verzenden."
+
+msgid "Settings for destinations to which form tags can submit data"
+msgstr "Instellingen voor bestemmingen waarnaar formulieren gegevens mogen verzenden"
+
+msgid "Image source settings: img-src"
+msgstr "Instellingen voor afbeeldingsbronnen: img-src"
+
+msgid "img-src is a setting that restricts image loading sources to specific domains, preventing information leakage (tracking) via unauthorized external images and malicious resource loading through XSS attacks."
+msgstr "img-src is een instelling die de bronnen voor het laden van afbeeldingen beperkt tot specifieke domeinen, en zo informatielekken (tracking) via ongeautoriseerde externe afbeeldingen en het laden van kwaadaardige resources via XSS-aanvallen voorkomt."
+
+msgid "Settings for allowed image loading sources"
+msgstr "Instellingen voor toegestane afbeeldingsbronnen"
+
+msgid "Allow your own domain and add additional allowed domains"
+msgstr "Eigen domein toestaan en extra toegestane domeinen toevoegen"
+
+msgid "Allow images in the data: format"
+msgstr "Afbeeldingen in het data:-formaat toestaan"
+
+msgid "Font source settings: font-src"
+msgstr "Instellingen voor lettertypebronnen: font-src"
+
+msgid "This CSP directive restricts which domains and formats Fonts applied to a page. Prevents tracking and information leaks caused by font loading."
+msgstr "Deze CSP-richtlijn beperkt uit welke domeinen en in welke formaten lettertypen op een pagina mogen worden toegepast. Dit voorkomt tracking en informatielekken door het laden van lettertypen."
+
+msgid "Settings for allowed Font sources"
+msgstr "Instellingen voor toegestane lettertypebronnen"
+
+msgid "Allow font load in the data: format"
+msgstr "Het laden van lettertypen in het data:-formaat toestaan"
+
+msgid "Use add_action (Using a cache plugin may cause it to not work.)"
+msgstr "Gebruik add_action (Het gebruik van een cacheplug-in kan ervoor zorgen dat dit niet werkt.)"
+
+msgid "Use htaccess"
+msgstr "Gebruik htaccess"
+
+msgid "*This vulnerability may be a serious one that allows tampering without requiring special privileges."
+msgstr "*Deze kwetsbaarheid kan een gevaarlijke kwetsbaarheid zijn die manipulatie mogelijk maakt zonder dat hiervoor speciale rechten nodig zijn."
+
+msgid "*This vulnerability may be a dangerous one that could allow data tampering."
+msgstr "*Deze kwetsbaarheid kan een gevaarlijke kwetsbaarheid zijn die gegevensmanipulatie mogelijk maakt."

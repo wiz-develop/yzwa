@@ -8,7 +8,6 @@
  */
 
 $parts = $args['parts'];
-$parent_cats = get_categories($parent_cat_args);
 
 ?>
 <nav id="site-navigation" class="text-center <?php if ($parts === 'header') echo 'main-navigation';?><?php if ($parts === 'footer') echo 'search-navigation';?>" aria-label="Top Menu">
@@ -177,7 +176,7 @@ $parent_cats = get_categories($parent_cat_args);
 			</li>
 			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-recruit d-flex align-items-center">
 				<?php // if ($parts === 'header') : ?>
-					<a href="/recruit/" target="_blank">
+					<a href="/recruit/">
 						<div class="parent-name">
 							<p class="mb-0">採用情報</p>
 						</div>
@@ -343,7 +342,7 @@ $parent_cats = get_categories($parent_cat_args);
 				<div>
 					<section class="food-product_content ac-list">
 						<div class="sp-nav">
-							<a href="/recruit/" target="_blank">
+							<a href="/recruit/">
 								<h2 class="d-flex align-items-center mb-0">採用情報</h2>
 							</a>
 						</div>

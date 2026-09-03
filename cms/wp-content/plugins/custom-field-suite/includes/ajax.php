@@ -19,7 +19,7 @@ class cfs_ajax
             post_title LIKE '%s'
         ORDER BY post_type, post_title
         LIMIT 10",
-        '%'.$options['q'].'%' );
+        '%' . $wpdb->esc_like( $options['q'] ) . '%' );
 
         $results = $wpdb->get_results( $sql );
 
@@ -40,7 +40,7 @@ class cfs_ajax
                 'text' => "($result->post_type) $parent $result->post_title (#$result->ID)"
             ];
         }
-        return json_encode( $output );
+        return $output;
     }
 
 

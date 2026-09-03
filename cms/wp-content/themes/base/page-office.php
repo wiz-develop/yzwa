@@ -12,7 +12,7 @@
 
 get_header();
 
-$page_tit_en = CFS()->get('page_tit_en', $get_page_id);
+$page_tit_en = CFS()->get('page_tit_en', get_queried_object_id());
 
 ?>
 <div id="splash"></div>
@@ -34,14 +34,14 @@ $page_tit_en = CFS()->get('page_tit_en', $get_page_id);
 								<?php
 									$bases = CFS()->get('bases');
 									foreach ($bases as $base) :
-										$base_image = $base['base_image'];
-										$base_name = $base['base_name'];
-										$base_address = $base['base_address'];
-										$base_tel = $base['base_tel'];
-										$base_fax = $base['base_fax'];
-										$base_map = $base['base_map'];
-										$base_access = $base['base_access'];
-										$base_id = $base['base_id'];
+											$base_image = $base['base_image'] ?? '';
+											$base_name = $base['base_name'] ?? '';
+											$base_address = $base['base_address'] ?? '';
+											$base_tel = $base['base_tel'] ?? '';
+											$base_fax = $base['base_fax'] ?? '';
+											$base_map = $base['base_map'] ?? '';
+											$base_access = $base['base_access'] ?? '';
+											$base_id = $base['base_id'] ?? '';
 								?>
 								<article id="<?php echo $base_id; ?>" class="company__section anime-scroll">
 									<h2 class="title-mid"><?php echo $base_name; ?></h2>

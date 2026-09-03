@@ -45,8 +45,12 @@ class cfs_term extends cfs_field
             $query = get_terms( $args );
         }
 
+        $query = is_wp_error( $query ) ? [] : $query;
         foreach ( $query as $term_id ) {
             $term = get_term( $term_id );
+            if ( ! $term || is_wp_error( $term ) ) {
+                continue;
+            }
             $available_posts[] = (object) [
                 'term_id'  => $term->term_id,
                 'taxonomy' => $term->taxonomy,
@@ -54,8 +58,17 @@ class cfs_term extends cfs_field
             ];
         }
 
-        if ( ! empty( $field->value ) ) {
-            $results = $wpdb->get_results( "SELECT term_id, name FROM $wpdb->terms WHERE term_id IN ($field->value) ORDER BY FIELD(term_id,$field->value)" );
+        $field_value = $this->normalize_ids( $field->value );
+        $field->value = implode( ',', $field_value );
+
+        if ( ! empty( $field_value ) ) {
+            $placeholders = implode( ',', array_fill( 0, count( $field_value ), '%d' ) );
+            $results = $wpdb->get_results(
+                $wpdb->prepare(
+                    "SELECT term_id, name FROM $wpdb->terms WHERE term_id IN ($placeholders) ORDER BY FIELD(term_id,$placeholders)",
+                    array_merge( $field_value, $field_value )
+                )
+            );
             foreach ( $results as $result ) {
                 $selected_posts[ $result->term_id ] = $result;
             }
@@ -68,17 +81,17 @@ class cfs_term extends cfs_field
         <div class="available_posts post_list">
         <?php foreach ( $available_posts as $term ) : ?>
             <?php $class = ( isset( $selected_posts[ $term->term_id ] ) ) ? ' class="used"' : ''; ?>
-            <div rel="<?php echo $term->term_id; ?>"<?php echo $class; ?> title="<?php echo $term->name; ?>"><?php echo apply_filters( 'cfs_term_display', $term->name, $term->term_id, $field ); ?></div>
+            <div rel="<?php echo absint( $term->term_id ); ?>"<?php echo $class; ?> title="<?php echo esc_attr( $term->name ); ?>"><?php echo wp_kses_post( apply_filters( 'cfs_term_display', $term->name, $term->term_id, $field ) ); ?></div>
         <?php endforeach; ?>
         </div>
 
         <div class="selected_posts post_list">
         <?php foreach ( $selected_posts as $term ) : ?>
-            <div rel="<?php echo $term->term_id; ?>"><span class="remove"></span><?php echo apply_filters( 'cfs_term_display', $term->name, $term->term_id, $field ); ?></div>
+            <div rel="<?php echo absint( $term->term_id ); ?>"><span class="remove"></span><?php echo wp_kses_post( apply_filters( 'cfs_term_display', $term->name, $term->term_id, $field ) ); ?></div>
         <?php endforeach; ?>
         </div>
         <div class="clear"></div>
-        <input type="hidden" name="<?php echo $field->input_name; ?>" class="<?php echo $field->input_class; ?>" value="<?php echo $field->value; ?>" />
+        <input type="hidden" name="<?php echo esc_attr( $field->input_name ); ?>" class="<?php echo esc_attr( $field->input_class ); ?>" value="<?php echo esc_attr( $field->value ); ?>" />
     <?php
     }
 

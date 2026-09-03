@@ -7,7 +7,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/4.0.0-alpha.1\n"
+"X-Generator: GlotPress/4.0.0-beta.2\n"
 "Language: ja_JP\n"
 "Project-Id-Version: Themes - Twenty Nineteen\n"
 
@@ -145,15 +145,15 @@ msgstr "2014年以来、企業と起業家をサポート"
 msgid "About"
 msgstr "概要"
 
-#: classes/class-twentynineteen-walker-comment.php:98
+#: classes/class-twentynineteen-walker-comment.php:97
 msgid "Your comment is awaiting moderation. This is a preview; your comment will be visible after it has been approved."
 msgstr "あなたのコメントは管理者の承認待ちです。これはプレビューで、コメントは承認後に表示されます。"
 
-#: functions.php:154
+#: functions.php:147
 msgid "Dark Blue"
 msgstr "ダークブルー"
 
-#: functions.php:149
+#: functions.php:142
 msgid "Blue"
 msgstr "青"
 
@@ -162,7 +162,7 @@ msgstr "青"
 msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%s</span>"
 msgstr "<span class=\"meta-nav\">公開: </span><span class=\"post-title\">%s</span>"
 
-#: image.php:87
+#: image.php:89
 msgctxt "Parent post link"
 msgid "<span class=\"meta-nav\">Published in</span><br><span class=\"post-title\">%title</span>"
 msgstr "<span class=\"meta-nav\">投稿:</span><br><span class=\"post-title\">%title</span>"
@@ -178,11 +178,11 @@ msgstr "おすすめ"
 msgid "Twenty Nineteen requires at least WordPress version 4.7. You are running version %s. Please upgrade and try again."
 msgstr "Twenty Nineteen テーマには WordPress version 4.7以降が必須ですが、現在バージョン%sをお使いです。アップグレードしてもう一度お試しください。"
 
-#: inc/template-functions.php:144
+#: inc/template-functions.php:146
 msgid "Back"
 msgstr "戻る"
 
-#: inc/template-functions.php:137
+#: inc/template-functions.php:139
 msgid "More"
 msgstr "続き"
 
@@ -204,68 +204,70 @@ msgctxt "primary color"
 msgid "Default"
 msgstr "デフォルト"
 
-#: functions.php:169
+#: functions.php:162
 msgid "White"
 msgstr "白"
 
-#: functions.php:164
+#: functions.php:157
 msgid "Light Gray"
 msgstr "ライトグレー"
 
-#: functions.php:159
+#: functions.php:152
 msgid "Dark Gray"
 msgstr "ダークグレー"
 
-#: functions.php:137
+#: functions.php:130
 msgid "XL"
 msgstr "XL"
 
-#: functions.php:136
+#: functions.php:129
 msgid "Huge"
 msgstr "特大"
 
-#: functions.php:131
+#: functions.php:124
 msgid "L"
 msgstr "L"
 
-#: functions.php:130
+#: functions.php:123
 msgid "Large"
 msgstr "大"
 
-#: functions.php:125
+#: functions.php:118
 msgid "M"
 msgstr "M"
 
-#: functions.php:124
+#: functions.php:117
 msgid "Normal"
 msgstr "通常"
 
-#: functions.php:119
+#: functions.php:112
 msgid "S"
 msgstr "S"
 
-#: functions.php:118
+#: functions.php:111
 msgid "Small"
 msgstr "小"
 
-#: footer.php:37 functions.php:60
+#: footer.php:37 functions.php:53
 msgid "Footer Menu"
 msgstr "フッターメニュー"
 
-#: image.php:70
+#. translators: Hidden accessibility text.
+#: image.php:72
 msgctxt "Used before full size attachment link."
 msgid "Full size"
 msgstr "フルサイズ"
 
-#: image.php:56
+#. translators: Hidden accessibility text.
+#: image.php:57
 msgid "Page"
 msgstr "固定ページ"
 
-#: functions.php:210
+#: functions.php:203
 msgid "Add widgets here to appear in your footer."
 msgstr "フッターに表示させるにはここにウィジェットを追加してください。"
 
-#: functions.php:208 template-parts/footer/footer-widgets.php:12
+#: functions.php:201 template-parts/footer/footer-widgets.php:13
 msgid "Footer"
 msgstr "フッター"
 
@@ -283,12 +285,12 @@ msgid "%d Comment"
 msgid_plural "%d Comments"
 msgstr[0] "%d件のコメント"
 
-#: template-parts/post/author-bio.php:26
+#: template-parts/post/author-bio.php:27
 msgid "View more posts"
 msgstr "他の投稿を表示"
 
 #. translators: %s: Post author.
-#: template-parts/post/author-bio.php:17
+#: template-parts/post/author-bio.php:18
 msgid "Published by %s"
 msgstr "投稿者: %s"
 
@@ -297,7 +299,7 @@ msgid "Top Menu"
 msgstr "トップメニュー"
 
 #. translators: %s: Post title. Only visible to screen readers.
-#: functions.php:239 template-parts/content/content-single.php:27
+#: functions.php:231 template-parts/content/content-single.php:27
 #: template-parts/content/content.php:36
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "<span class=\"screen-reader-text\">\"%s\" の</span>続きを読む"
@@ -325,15 +327,17 @@ msgstr "最初の投稿を公開する準備はできましたか ? <a href=\"%s
 msgid "Nothing Found"
 msgstr "何も見つかりませんでした"
 
-#: single.php:42
+#. translators: Hidden accessibility text.
+#: single.php:44
 msgid "Previous post:"
 msgstr "前の投稿:"
 
-#: single.php:41
+#: single.php:42
 msgid "Previous Post"
 msgstr "前の投稿"
 
-#: single.php:39
+#. translators: Hidden accessibility text.
+#: single.php:40
 msgid "Next post:"
 msgstr "次の投稿:"
 
@@ -345,98 +349,102 @@ msgstr "次の投稿"
 msgid "Search results for: "
 msgstr "検索結果:"
 
-#: inc/template-tags.php:231
+#: inc/template-tags.php:234
 msgid "Older posts"
 msgstr "過去の投稿"
 
-#: inc/template-tags.php:227
+#: inc/template-tags.php:230
 msgid "Newer posts"
 msgstr "新しい投稿"
 
-#: inc/template-tags.php:102
+#. translators: Hidden accessibility text.
+#: inc/template-tags.php:105
 msgid "Tags:"
 msgstr "タグ:"
 
-#: inc/template-tags.php:91
+#. translators: Hidden accessibility text.
+#: inc/template-tags.php:93
 msgid "Posted in"
 msgstr "カテゴリー:"
 
 #. translators: Used between list items, there is a space after the comma.
-#: functions.php:195
+#: functions.php:188
 msgid ", "
 msgstr "、"
 
 #. translators: %s: Post title. Only visible to screen readers.
-#: inc/template-tags.php:63
+#: inc/template-tags.php:64
 msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "コメントをどうぞ<span class=\"screen-reader-text\"> (%s)</span>"
 
-#: inc/template-tags.php:46
+#. translators: Hidden accessibility text.
+#: inc/template-tags.php:47
 msgid "Posted by"
 msgstr "投稿者:"
 
-#: inc/template-functions.php:82
+#: inc/template-functions.php:84
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "Y年n月"
 
-#: inc/template-functions.php:80
+#: inc/template-functions.php:82
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr "Y年"
 
-#: inc/template-functions.php:92
+#: inc/template-functions.php:94
 msgid "Archives:"
 msgstr "アーカイブ:"
 
 #. translators: %s: Taxonomy singular name.
-#: inc/template-functions.php:90
+#: inc/template-functions.php:92
 msgid "%s Archives:"
 msgstr "%sのアーカイブ:"
 
-#: inc/template-functions.php:86
+#: inc/template-functions.php:88
 msgid "Post Type Archives: "
 msgstr "投稿タイプアーカイブ: "
 
-#: inc/template-functions.php:84
+#: inc/template-functions.php:86
 msgid "Daily Archives: "
 msgstr "日別アーカイブ: "
 
-#: inc/template-functions.php:82
+#: inc/template-functions.php:84
 msgid "Monthly Archives: "
 msgstr "月別アーカイブ: "
 
-#: inc/template-functions.php:80
+#: inc/template-functions.php:82
 msgid "Yearly Archives: "
 msgstr "年別アーカイブ: "
 
-#: inc/template-functions.php:78
+#: inc/template-functions.php:80
 msgid "Author Archives: "
 msgstr "投稿者アーカイブ: "
 
-#: inc/template-functions.php:76
+#: inc/template-functions.php:78
 msgid "Tag Archives: "
 msgstr "タグアーカイブ: "
 
-#: inc/template-functions.php:74
+#: inc/template-functions.php:76
 msgid "Category Archives: "
 msgstr "カテゴリーアーカイブ: "
 
 #. translators: %s: Post title. Only visible to screen readers.
-#: inc/template-tags.php:118 template-parts/content/content-page.php:41
-#: template-parts/header/entry-header.php:32
+#: inc/template-tags.php:121 template-parts/content/content-page.php:41
+#: template-parts/header/entry-header.php:34
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "編集 <span class=\"screen-reader-text\">%s</span>"
 
-#: header.php:25
+#. translators: Hidden accessibility text.
+#: header.php:28
 msgid "Skip to content"
 msgstr "コンテンツへスキップ"
 
-#: functions.php:61 template-parts/header/site-branding.php:46
+#: functions.php:54 template-parts/header/site-branding.php:46
 msgid "Social Links Menu"
 msgstr "﻿ソーシャルリンクメニュー"
 
-#: functions.php:59
+#: functions.php:52
 msgid "Primary"
 msgstr "メイン"
 
@@ -445,21 +453,9 @@ msgstr "メイン"
 msgid "Proudly powered by %s."
 msgstr "Proudly powered by %s."
 
-#: comments.php:115
+#: comments.php:124
 msgid "Comments are closed."
 msgstr "コメントは受け付けていません。"
-
-#: comments.php:96
-msgid "Next"
-msgstr "次"
-
-#: comments.php:95
-msgid "Previous"
-msgstr "前"
-
-#: comments.php:92 comments.php:95 comments.php:96
-msgid "Comments"
-msgstr "コメント"
 
 #. translators: 1: Number of comments, 2: Post title.
 #: comments.php:44
@@ -474,7 +470,7 @@ msgctxt "comments title"
 msgid "One reply on &ldquo;%s&rdquo;"
 msgstr "「%s」への1件の返信"
 
-#: comments.php:35 comments.php:105
+#: comments.php:35 comments.php:114
 msgid "Leave a comment"
 msgstr "コメントをどうぞ"
 
@@ -482,11 +478,11 @@ msgstr "コメントをどうぞ"
 msgid "Join the Conversation"
 msgstr "ディスカッションに参加"
 
-#: classes/class-twentynineteen-walker-comment.php:96
+#: classes/class-twentynineteen-walker-comment.php:95
 msgid "Your comment is awaiting moderation."
 msgstr "あなたのコメントは承認待ちです。"
 
-#: classes/class-twentynineteen-walker-comment.php:89
+#: classes/class-twentynineteen-walker-comment.php:88
 msgid "Edit"
 msgstr "編集"
 

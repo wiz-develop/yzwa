@@ -187,6 +187,11 @@
 		'use strict';
 
 		var siteBranding            = document.getElementsByClassName( 'site-branding' )[0];
+
+		if ( ! siteBranding ) {
+			return;
+		}
+
 		var getFocusedElements      = siteBranding.querySelectorAll(':hover, :focus, :focus-within');
 		var getFocusedClassElements = siteBranding.querySelectorAll('.is-focused');
 		var i;

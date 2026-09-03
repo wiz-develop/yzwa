@@ -2,24 +2,24 @@
 
 class SiteGuard_LoginHistory extends SiteGuard_Base {
 
-	function __construct( ) {
+	function __construct() {
 		define( 'SITEGUARD_TABLE_HISTORY', 'siteguard_history' );
 		add_action( 'wp_login', array( $this, 'handler_wp_login' ), 1, 2 );
 		add_action( 'wp_login_failed', array( $this, 'handler_wp_login_failed' ), 30 );
 		add_action( 'xmlrpc_call', array( $this, 'handler_xmlrpc_call' ), 10, 1 );
 	}
-	function init( ) {
+	function init() {
 		global $wpdb;
-		# operation
-		#  0: Login failure
-		#  1: Login success
-		#  2: Fail once
-		#  3: Login lock
-		# type
-		#  0: login page
-		#  1: xmlrpc
+		// operation
+		// 0: Login failure
+		// 1: Login success
+		// 2: Fail once
+		// 3: Login lock
+		// type
+		// 0: login page
+		// 1: xmlrpc
 		$table_name = $wpdb->prefix . SITEGUARD_TABLE_HISTORY;
-		$sql = "CREATE TABLE $table_name  (
+		$sql        = "CREATE TABLE $table_name  (
 		  id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
 		  login_name VARCHAR(40) NOT NULL DEFAULT '',
 		  ip_address VARCHAR(40) NOT NULL DEFAULT '',
@@ -29,10 +29,10 @@ class SiteGuard_LoginHistory extends SiteGuard_Base {
 		  UNIQUE KEY id (id)
 		  )
 		  CHARACTER SET 'utf8';";
-		require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+		require_once ABSPATH . 'wp-admin/includes/upgrade.php';
 		dbDelta( $sql );
 	}
-	function get_type( ) {
+	function get_type() {
 		$type = SITEGUARD_LOGIN_TYPE_NORMAL;
 		if ( basename( $_SERVER['SCRIPT_NAME'] ) == 'xmlrpc.php' ) {
 			$type = SITEGUARD_LOGIN_TYPE_XMLRPC;
@@ -58,14 +58,14 @@ class SiteGuard_LoginHistory extends SiteGuard_Base {
 		if ( '' == $current_user->user_login ) {
 			return;
 		}
-		$this->add_operation( SITEGUARD_LOGIN_SUCCESS, $current_user->user_login, $this->get_type( ) );
+		$this->add_operation( SITEGUARD_LOGIN_SUCCESS, $current_user->user_login, $this->get_type() );
 	}
 	function handler_wp_login_failed( $username ) {
 		global $siteguard_loginlock;
-		$this->add_operation( $siteguard_loginlock->get_status( ), $username, $this->get_type( ) );
+		$this->add_operation( $siteguard_loginlock->get_status(), $username, $this->get_type() );
 	}
 	function handler_xmlrpc_call( $method ) {
-		$current_user = wp_get_current_user( );
+		$current_user = wp_get_current_user();
 		if ( '' == $current_user->user_login ) {
 			return;
 		}
@@ -79,23 +79,22 @@ class SiteGuard_LoginHistory extends SiteGuard_Base {
 		}
 
 		$table_name = $wpdb->prefix . SITEGUARD_TABLE_HISTORY;
-		$ip_address = $this->get_ip( );
-		$now = current_time( 'mysql' );
-		$id = $wpdb->get_var( $wpdb->prepare( "SELECT id FROM $table_name WHERE ip_address = %s AND login_name = %s AND operation = %d AND time BETWEEN %s - INTERVAL %d SECOND AND %s - INTERVAL %d SECOND; ", $ip_address, $user, $operation, $now, $less_sec, $now, $after_sec ) );
+		$ip_address = $this->get_ip();
+		$now        = current_time( 'mysql' );
+		$id         = $wpdb->get_var( $wpdb->prepare( "SELECT id FROM $table_name WHERE ip_address = %s AND login_name = %s AND operation = %d AND time BETWEEN %s - INTERVAL %d SECOND AND %s - INTERVAL %d SECOND; ", $ip_address, $user, $operation, $now, $less_sec, $now, $after_sec ) );
 		if ( null == $id ) {
 			return false;
 		}
 		return true;
 	}
 	function add_operation( $operation, $user_login, $type = SITEGUARD_LOGIN_TYPE_NORMAL ) {
-		global $current_user;
 		global $wpdb;
 
 		if ( '' != $user_login ) {
 			$user = $user_login;
 		} else {
-			get_currentuserinfo();
-			$user = $current_user->user_login;
+			$current_user = wp_get_current_user();
+			$user         = $current_user->user_login;
 		}
 		$table_name = $wpdb->prefix . SITEGUARD_TABLE_HISTORY;
 
@@ -105,8 +104,8 @@ class SiteGuard_LoginHistory extends SiteGuard_Base {
 		if ( null != $id ) {
 			$wpdb->query( $wpdb->prepare( "DELETE FROM $table_name WHERE id <= %d;", $id ) );
 		}
-		$ip_address = $this->get_ip( );
-		$data = array(
+		$ip_address = $this->get_ip();
+		$data       = array(
 			'operation'  => $operation,
 			'login_name' => $user,
 			'ip_address' => $ip_address,
@@ -127,7 +126,7 @@ class SiteGuard_LoginHistory extends SiteGuard_Base {
 				$result = esc_html__( 'Success', 'siteguard' );
 				break;
 			case SITEGUARD_LOGIN_FAIL_ONCE:
-				$result = esc_html__( 'Fail once', 'siteguard' );
+				$result = esc_html__( 'Fail Once', 'siteguard' );
 				break;
 			case SITEGUARD_LOGIN_LOCKED:
 				$result = esc_html__( 'Locked', 'siteguard' );
@@ -144,7 +143,7 @@ class SiteGuard_LoginHistory extends SiteGuard_Base {
 				$result = esc_html__( 'Login Page', 'siteguard' );
 				break;
 			case SITEGUARD_LOGIN_TYPE_XMLRPC:
-				$result = esc_html__( 'XMLRPC', 'siteguard' );
+				$result = esc_html__( 'XML-RPC', 'siteguard' );
 				break;
 			default:
 				$result = esc_html__( 'Unknown', 'siteguard' );
@@ -153,8 +152,8 @@ class SiteGuard_LoginHistory extends SiteGuard_Base {
 	}
 	function get_history( $operation, $login_name, $ip_address, $type, $login_name_not, $ip_address_not ) {
 		global $wpdb;
-		$where = '';
-		$values = array( );
+		$where  = '';
+		$values = array();
 		if ( true === $this->check_operation( $operation ) ) {
 			$where = 'operation = %d';
 			array_push( $values, $operation );
@@ -180,7 +179,6 @@ class SiteGuard_LoginHistory extends SiteGuard_Base {
 				$where .= 'ip_address = %s';
 			}
 			array_push( $values, $ip_address );
-			
 		}
 		if ( true === $this->check_type( $type ) ) {
 			if ( ! empty( $where ) ) {
@@ -192,12 +190,12 @@ class SiteGuard_LoginHistory extends SiteGuard_Base {
 		if ( ! empty( $where ) ) {
 			$where = 'WHERE ' . $where;
 		} else {
-			$where = "WHERE operation >= %d";
+			$where = 'WHERE operation >= %d';
 			array_push( $values, '0' );
 		}
 		$table_name = $wpdb->prefix . SITEGUARD_TABLE_HISTORY;
-		$prepare = array( );
-		$prepare[] = "SELECT id, operation, login_name, ip_address, time, type FROM $table_name $where";
+		$prepare    = array();
+		$prepare[]  = "SELECT id, operation, login_name, ip_address, time, type FROM $table_name $where";
 		foreach ( $values as $v ) {
 			$prepare[] = $v;
 		}

@@ -225,7 +225,7 @@ function twentynineteen_scripts() {
 
 	if ( has_nav_menu( 'menu-1' ) ) {
 		// wp_enqueue_script( 'twentynineteen-priority-menu', get_theme_file_uri( '/js/priority-menu.js' ), array(), '20181214', true );
-		wp_enqueue_script( 'twentynineteen-touch-navigation', get_theme_file_uri( '/js/touch-keyboard-navigation.js' ), array(), '20181231', true );
+		wp_enqueue_script( 'twentynineteen-touch-navigation', get_theme_file_uri( '/js/touch-keyboard-navigation.js' ), array(), filemtime( get_theme_file_path( '/js/touch-keyboard-navigation.js' ) ), true );
 	}
 
 	wp_enqueue_style( 'twentynineteen-print-style', get_template_directory_uri() . '/print.css', array(), wp_get_theme()->get( 'Version' ), 'print' );
@@ -358,6 +358,10 @@ function add_wp_footer_custom(){ ?>
 	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/bootstrap.bundle.js?ver=5.0.2"></script>
 	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/slick.min.js"></script>
 	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/script.js"></script>
+	<script type="text/javascript">window.tmp_path = <?php echo wp_json_encode(array(
+		'temp_uri' => get_template_directory_uri(),
+		'home_url' => home_url(),
+	), JSON_UNESCAPED_SLASHES); ?>;</script>
 	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/common.js?ver=<?php echo update_date(get_stylesheet_directory()."/assets/js/common.js"); ?>"></script>
 <?php }
 add_action( 'wp_footer', 'add_wp_footer_custom', 99);
@@ -370,16 +374,6 @@ function enqueue_post_styles() {
   }
 }
 add_action( 'admin_enqueue_scripts', 'enqueue_post_styles' );
-
-/*-------------------------------------------*/
-/*  common.jsでサイトのURL・テーマURLを使えるようにする
-/*-------------------------------------------*/
-$tmp_path_arr = array(
-	'temp_uri' => get_template_directory_uri(),
-	'home_url' => home_url()
-);
-wp_enqueue_script( 'common', get_template_directory_uri() . '/assets/js/common.js', '', update_date((get_stylesheet_directory()."/assets/js/common.js")), true );
-wp_localize_script( 'common', 'tmp_path', $tmp_path_arr );
 
 // 記事の自動整形を無効化
 remove_filter('the_content', 'wpautop');
@@ -413,10 +407,10 @@ function breadcrumb() {
 		echo $home;
 		the_archive_title('<li>', '</li>');
     }
-    else if ( is_single() ) {
-		// 投稿ページの場合
-		$cat = get_the_category();
-        if( isset($cat[0]->cat_ID) ) $cat_id = $cat[0]->cat_ID;
+	    else if ( is_single() ) {
+			// 投稿ページの場合
+			$cat = get_the_category();
+	        $cat_id = isset( $cat[0]->cat_ID ) ? (int) $cat[0]->cat_ID : 0;
         $cat_list = array();
         while ($cat_id != 0){
             $cat = get_category( $cat_id );
@@ -430,10 +424,10 @@ function breadcrumb() {
         }
         the_title('<li>', '</li>');
     }
-    else if( is_page() ) {
-		// 固定ページの場合
-		echo $home;
-		$ancestors_ids = array_reverse(get_post_ancestors( $post ));
+	    else if( is_page() ) {
+			// 固定ページの場合
+			echo $home;
+			$ancestors_ids = array_reverse( get_post_ancestors( get_queried_object_id() ) );
 		foreach($ancestors_ids as $ancestors_id){
 			echo '<li>'.get_page($ancestors_id)->post_title.'</a></li>';
 		}

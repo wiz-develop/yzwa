@@ -8,9 +8,7 @@
         $('#ao_uninstall_feedback_popup').appendTo($(targetElement).parent());
 
         $(targetElement).on('click', function (e) {
-            if ( false == e.target.href.includes('https://wordpress.org/') && false == e.target.href.includes('https://blog.futtta.be/') ) {
-                e.preventDefault();
-            } 
+			e.preventDefault();
             $('#ao_uninstall_feedback_popup ').addClass('active');
             $('body').addClass('ao-feedback-open');
             $('.ao-feedback-overlay').on('click', function () {

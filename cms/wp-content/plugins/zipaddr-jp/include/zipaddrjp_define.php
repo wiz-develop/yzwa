@@ -13,4 +13,5 @@ if( !defined('ABSPATH') ) exit;
 	$sys_plce= "";
 	$sys_drct= "";
 	$sys_dyna= "";
+	$sys_gide= "";
 ?>

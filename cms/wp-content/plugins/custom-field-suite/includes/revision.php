@@ -113,7 +113,11 @@ class cfs_revision
     function wp_delete_post_revision( $revision_id ) {
         global $wpdb;
 
-        $revision_id = (int) $revision_id;
-        $wpdb->query( "DELETE FROM {$wpdb->prefix}cfs_values WHERE post_id = $revision_id" );
+        $wpdb->query(
+            $wpdb->prepare(
+                "DELETE FROM {$wpdb->prefix}cfs_values WHERE post_id = %d",
+                absint( $revision_id )
+            )
+        );
     }
 }

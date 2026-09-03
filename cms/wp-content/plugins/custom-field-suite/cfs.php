@@ -2,7 +2,8 @@
 /*
 Plugin Name: Custom Field Suite
 Description: Visually add custom fields to your WordPress edit pages.
-Version: 2.6.2
+Version: 2.6.8-wiz.2
+Update URI: https://github.com/wiz-develop/yzwa
 Author: Matt Gibbs
 Text Domain: cfs
 Domain Path: /languages/
@@ -15,13 +16,15 @@ class Custom_Field_Suite
     public $form;
     public $fields;
     public $field_group;
+    public $group_ids = [];
+    public $validators = [];
     private static $instance;
 
 
     function __construct() {
 
         // setup variables
-        define( 'CFS_VERSION', '2.6.2' );
+        define( 'CFS_VERSION', '2.6.8-wiz.2' );
         define( 'CFS_DIR', dirname( __FILE__ ) );
         define( 'CFS_URL', plugins_url( '', __FILE__ ) );
 
