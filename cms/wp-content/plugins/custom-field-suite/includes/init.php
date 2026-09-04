@@ -139,7 +139,7 @@ class cfs_init
     function show_credits() {
         $screen = get_current_screen();
 
-        if ( 'edit' == $screen->base && 'cfs' == $screen->post_type ) {
+        if ( is_object( $screen ) && 'edit' == $screen->base && 'cfs' == $screen->post_type ) {
             include( CFS_DIR . '/templates/credits.php' );
         }
     }
@@ -190,7 +190,9 @@ class cfs_init
             return;
         }
 
-        if ( ! isset( $_POST['cfs']['save'] ) ) {
+        $cfs_post = isset( $_POST['cfs'] ) && is_array( $_POST['cfs'] ) ? wp_unslash( $_POST['cfs'] ) : [];
+
+        if ( ! isset( $cfs_post['save'] ) ) {
             return;
         }
 
@@ -198,10 +200,16 @@ class cfs_init
             return;
         }
 
-        if ( wp_verify_nonce( $_POST['cfs']['save'], 'cfs_save_fields' ) ) {
-            $fields = isset( $_POST['cfs']['fields'] ) ? $_POST['cfs']['fields'] : [];
-            $rules = isset( $_POST['cfs']['rules'] ) ? $_POST['cfs']['rules'] : [];
-            $extras = isset( $_POST['cfs']['extras'] ) ? $_POST['cfs']['extras'] : [];
+        if ( 'cfs' !== get_post_type( $post_id ) || ! current_user_can( 'edit_post', $post_id ) ) {
+            return;
+        }
+
+        $nonce = sanitize_text_field( $cfs_post['save'] );
+
+        if ( wp_verify_nonce( $nonce, 'cfs_save_fields' ) ) {
+            $fields = isset( $cfs_post['fields'] ) ? $this->sanitize_recursive_textarea( $cfs_post['fields'] ) : [];
+            $rules = isset( $cfs_post['rules'] ) ? $this->sanitize_recursive_textarea( $cfs_post['rules'] ) : [];
+            $extras = isset( $cfs_post['extras'] ) ? $this->sanitize_recursive_textarea( $cfs_post['extras'] ) : [];
 
             CFS()->field_group->save( [
                 'post_id'   => $post_id,
@@ -221,8 +229,12 @@ class cfs_init
         global $wpdb;
 
         if ( 'cfs' != get_post_type( $post_id ) ) {
-            $post_id = (int) $post_id;
-            $wpdb->query( "DELETE FROM {$wpdb->prefix}cfs_values WHERE post_id = $post_id" );
+            $wpdb->query(
+                $wpdb->prepare(
+                    "DELETE FROM {$wpdb->prefix}cfs_values WHERE post_id = %d",
+                    absint( $post_id )
+                )
+            );
         }
 
         return true;
@@ -241,7 +253,8 @@ class cfs_init
             exit;
         }
 
-        $ajax_method = isset( $_POST['action_type'] ) ? $_POST['action_type'] : false;
+        $cfs_post = isset( $_POST ) && is_array( $_POST ) ? wp_unslash( $_POST ) : [];
+        $ajax_method = isset( $cfs_post['action_type'] ) ? sanitize_key( $cfs_post['action_type'] ) : '';
 
         if ( $ajax_method && is_admin() ) {
             include( CFS_DIR . '/includes/ajax.php' );
@@ -249,24 +262,46 @@ class cfs_init
 
             if ( 'import' == $ajax_method ) {
                 $options = [
-                    'import_code' => json_decode( stripslashes( $_POST['import_code'] ), true ),
+                    'import_code' => isset( $cfs_post['import_code'] ) ? json_decode( (string) $cfs_post['import_code'], true ) : [],
                 ];
-                echo CFS()->field_group->import( $options );
+                echo wp_kses_post( CFS()->field_group->import( $options ) );
             }
             elseif ('export' == $ajax_method) {
-                echo json_encode( CFS()->field_group->export( $_POST ) );
+                $options = [
+                    'field_groups' => isset( $cfs_post['field_groups'] ) ? array_map( 'absint', (array) $cfs_post['field_groups'] ) : [],
+                ];
+                echo wp_json_encode( CFS()->field_group->export( $options ) );
             }
             elseif ('reset' == $ajax_method) {
                 $ajax->reset();
                 deactivate_plugins( plugin_basename( __FILE__ ) );
                 echo admin_url( 'plugins.php' );
             }
-            elseif ( method_exists( $ajax, $ajax_method ) ) {
-                echo $ajax->$ajax_method( $_POST );
+            elseif ( 'search_posts' == $ajax_method ) {
+                $options = [ 'q' => isset( $cfs_post['q'] ) ? sanitize_text_field( $cfs_post['q'] ) : '' ];
+                echo wp_json_encode( $ajax->search_posts( $options ) );
             }
         }
 
         exit;
+    }
+
+
+    private function sanitize_recursive_textarea( $value ) {
+        if ( is_array( $value ) ) {
+            $sanitized = [];
+            foreach ( $value as $key => $item ) {
+                $sanitized_key = is_int( $key ) ? $key : sanitize_key( (string) $key );
+                $sanitized[ $sanitized_key ] = $this->sanitize_recursive_textarea( $item );
+            }
+            return $sanitized;
+        }
+
+        if ( is_scalar( $value ) || null === $value ) {
+            return sanitize_textarea_field( (string) $value );
+        }
+
+        return '';
     }
 
 
@@ -307,9 +342,13 @@ class cfs_init
             }
 
             foreach ( $rules as $criteria => $data ) {
+                if ( ! isset( $labels[ $criteria ] ) || ! is_array( $data ) ) {
+                    continue;
+                }
+
                 $label = $labels[ $criteria ];
-                $values = $data['values'];
-                $operator = ( '==' == $data['operator'] ) ? '=' : '!=';
+                $values = isset( $data['values'] ) ? (array) $data['values'] : [];
+                $operator = ( isset( $data['operator'] ) && '==' == $data['operator'] ) ? '=' : '!=';
 
                 // Get post titles
                 if ( 'post_ids' == $criteria ) {
@@ -320,7 +359,7 @@ class cfs_init
                     $values = $temp;
                 }
 
-                echo "<div><strong>$label</strong> " . $operator . ' ' . implode( ', ', $values ) . '</div>';
+                echo '<div><strong>' . esc_html( $label ) . '</strong> ' . esc_html( $operator ) . ' ' . esc_html( implode( ', ', $values ) ) . '</div>';
             }
         }
     }

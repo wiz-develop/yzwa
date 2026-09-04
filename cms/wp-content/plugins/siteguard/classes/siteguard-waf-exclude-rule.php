@@ -5,18 +5,18 @@ define( 'SITEGUARD_WAF_EXCLUDE_RULE', 'waf_exclude_rule' );
 class SiteGuard_WAF_Exclude_Rule extends SiteGuard_Base {
 	const HTACCESS_MARK = '#==== SITEGUARD_SG_WHITE_LIST_SETTINGS';
 
-	function __construct( ) {
+	function __construct() {
 	}
-	static function get_mark( ) {
+	static function get_mark() {
 		return self::HTACCESS_MARK;
 	}
-	function init( ) {
+	function init() {
 		global $siteguard_config;
 		$siteguard_config->set( 'waf_exclude_rule_enable', '0' );
-		$this->clear_rules( );
-		$siteguard_config->update( );
+		$this->clear_rules();
+		$siteguard_config->update();
 	}
-	function get_enable( ) {
+	function get_enable() {
 		global $siteguard_config;
 		$enable = $siteguard_config->get( 'waf_exclude_rule_enable' );
 		return $enable;
@@ -28,7 +28,7 @@ class SiteGuard_WAF_Exclude_Rule extends SiteGuard_Base {
 			return false;
 		}
 		$siteguard_config->set( 'waf_exclude_rule_enable', $enable );
-		$siteguard_config->update( );
+		$siteguard_config->update();
 		return true;
 	}
 	function cvt_exclude( $exclude ) {
@@ -47,7 +47,7 @@ class SiteGuard_WAF_Exclude_Rule extends SiteGuard_Base {
 		return $result;
 	}
 	function input_check( $id, $filename, &$sig, $comment ) {
-		$errors = new WP_Error( );
+		$errors = new WP_Error();
 		if ( ! is_numeric( $id ) ) {
 			$errors->add( 'white_list_error', esc_html__( 'ERROR: Invalid input value.', 'siteguard' ) );
 		}
@@ -80,30 +80,30 @@ class SiteGuard_WAF_Exclude_Rule extends SiteGuard_Base {
 		if ( is_wp_error( $errors ) ) {
 			return $errors;
 		}
-		$sig = str_ireplace( 'SiteGuard_User_ExcludeSig', '', $sig );
-		$sig = str_replace( ' ', '', $sig );
+		$sig   = str_ireplace( 'SiteGuard_User_ExcludeSig', '', $sig );
+		$sig   = str_replace( ' ', '', $sig );
 		$rules = $siteguard_config->get( SITEGUARD_WAF_EXCLUDE_RULE );
-		$rule = array(
-			'ID' => $this->get_max_id( $rules ) + 1,
+		$rule  = array(
+			'ID'       => $this->get_max_id( $rules ) + 1,
 			'filename' => $filename,
-			'sig' => $sig,
-			'comment' => $comment,
+			'sig'      => $sig,
+			'comment'  => $comment,
 		);
 		if ( ! is_array( $rules ) ) {
 			$rules = (array) $rules;
 		}
 		array_push( $rules, $rule );
 		$siteguard_config->set( SITEGUARD_WAF_EXCLUDE_RULE, $rules );
-		$siteguard_config->update( );
+		$siteguard_config->update();
 		return true;
 	}
-	function clear_rules( ) {
+	function clear_rules() {
 		global $siteguard_config;
 		$empty = array();
 		$siteguard_config->set( SITEGUARD_WAF_EXCLUDE_RULE, $empty );
-		$siteguard_config->update( );
+		$siteguard_config->update();
 	}
-	function get_rules( ) {
+	function get_rules() {
 		global $siteguard_config;
 		$rules = $siteguard_config->get( SITEGUARD_WAF_EXCLUDE_RULE );
 		return $rules;
@@ -111,13 +111,13 @@ class SiteGuard_WAF_Exclude_Rule extends SiteGuard_Base {
 	function get_rule( $id, &$offset ) {
 		global $siteguard_config;
 		$rules = $siteguard_config->get( SITEGUARD_WAF_EXCLUDE_RULE );
-		$idx = 0;
+		$idx   = 0;
 		foreach ( $rules as $rule ) {
 			if ( isset( $rule['ID'] ) && $rule['ID'] == $id ) {
 				$offset = $idx;
 				return $rule;
 			}
-			$idx ++;
+			++$idx;
 		}
 		$offset = -1;
 		return false;
@@ -130,14 +130,14 @@ class SiteGuard_WAF_Exclude_Rule extends SiteGuard_Base {
 		}
 		foreach ( $ids as $id ) {
 			$offset = 0;
-			$rule = $this->get_rule( $id, $offset );
+			$rule   = $this->get_rule( sanitize_text_field( $id ), $offset );
 			if ( false === $rule ) {
 				continue;
 			}
 			array_splice( $rules, $offset, 1 );
 			$siteguard_config->set( SITEGUARD_WAF_EXCLUDE_RULE, $rules );
 		}
-		$siteguard_config->update( );
+		$siteguard_config->update();
 		return true;
 	}
 	function update_rule_itr( $new_rule ) {
@@ -152,14 +152,14 @@ class SiteGuard_WAF_Exclude_Rule extends SiteGuard_Base {
 			return $errors;
 		}
 		$offset = 0;
-		$rule = $this->get_rule( $id, $offset );
+		$rule   = $this->get_rule( $id, $offset );
 		if ( false === $rule ) {
 			$errors->add( 'white_list_error', esc_html__( 'ERROR: Invalid input value.', 'siteguard' ) );
 			return $errors;
 		}
 		array_splice( $rules, $offset, 1, array( $new_rule ) );
 		$siteguard_config->set( SITEGUARD_WAF_EXCLUDE_RULE, $rules );
-		$siteguard_config->update( );
+		$siteguard_config->update();
 		return true;
 	}
 	function update_rule( $id, $filename, $sig, $comment ) {
@@ -170,10 +170,10 @@ class SiteGuard_WAF_Exclude_Rule extends SiteGuard_Base {
 		}
 
 		$new_rule = array(
-			'ID' => (int) $id,
+			'ID'       => (int) $id,
 			'filename' => $filename,
-			'sig' => $sig,
-			'comment' => $comment,
+			'sig'      => $sig,
+			'comment'  => $comment,
 		);
 		return $this->update_rule_itr( $new_rule );
 	}
@@ -185,28 +185,28 @@ class SiteGuard_WAF_Exclude_Rule extends SiteGuard_Base {
 		$result = str_replace( "\n", ',', $result );
 		return $result;
 	}
-	// for SiteGuard Lite Ver1.x
+	// for SiteGuard Ver1.x
 	function output_exclude_sig_1( $sig_str ) {
 		$result = '';
-		$csv = $this->cvt_csrf2comma( $sig_str );
-		$sigs = preg_split( '/,/', $csv );
+		$csv    = $this->cvt_csrf2comma( $sig_str );
+		$sigs   = preg_split( '/,/', $csv );
 		foreach ( $sigs as $sig ) {
 			$sig = str_replace( ' ', '', $sig );
 			if ( strlen( $sig ) > 0 ) {
-				$result .= '        SiteGuard_User_ExcludeSig '. $sig . "\n";
+				$result .= '        SiteGuard_User_ExcludeSig ' . $sig . "\n";
 			}
 		}
 		return $result;
 	}
-	// for SiteGuard Lite Ver2.x
+	// for SiteGuard Ver2.x
 	function output_exclude_sig_2( $sig_str ) {
-		return '        SiteGuard_User_ExcludeSig '. $this->cvt_csrf2comma( $sig_str ) . "\n";
+		return '        SiteGuard_User_ExcludeSig ' . $this->cvt_csrf2comma( $sig_str ) . "\n";
 	}
-	function update_settings( ) {
-		global $siteguard_config;
+	function update_settings() {
+		global $siteguard_config, $siteguard_server_type;
 		$htaccess_str = '';
-		$rules = $siteguard_config->get( SITEGUARD_WAF_EXCLUDE_RULE );
-		if ( '' === $rules ) {
+		$rules        = $siteguard_config->get( SITEGUARD_WAF_EXCLUDE_RULE );
+		if ( '' === $rules || ! is_array( $rules ) ) {
 			return;
 		}
 
@@ -214,7 +214,7 @@ class SiteGuard_WAF_Exclude_Rule extends SiteGuard_Base {
 		foreach ( $rules as $rule ) {
 			if ( isset( $rule['filename'] ) && isset( $rule['sig'] ) ) {
 				$filename = $rule['filename'];
-				$sig    = $rule['sig'];
+				$sig      = $rule['sig'];
 				if ( ! empty( $filename ) ) {
 					$htaccess_str .= "    <Files \"$filename\" >\n";
 					$htaccess_str .= $this->output_exclude_sig_1( $sig );
@@ -228,17 +228,17 @@ class SiteGuard_WAF_Exclude_Rule extends SiteGuard_Base {
 
 		return $htaccess_str;
 	}
-	function feature_on( ) {
+	function feature_on() {
 		global $siteguard_htaccess;
-		if ( false === SiteGuard_Htaccess::check_permission( ) ) {
+		if ( false === SiteGuard_Htaccess::check_permission() ) {
 			return false;
 		}
-		$data = $this->update_settings( );
-		$mark = $this->get_mark( );
+		$data = $this->update_settings();
+		$mark = $this->get_mark();
 		return $siteguard_htaccess->update_settings( $mark, $data );
 	}
-	static function feature_off( ) {
-		$mark = SiteGuard_WAF_Exclude_Rule::get_mark( );
+	static function feature_off() {
+		$mark = self::get_mark();
 		return SiteGuard_Htaccess::clear_settings( $mark );
 	}
 }

@@ -221,7 +221,7 @@ jQuery(function($){
   $(document).on('click','.modal_close , .modal_bg', function(){
     $('.modal_box').fadeOut(); // モーダルを非表示にする
     $('body').removeClass('overflow-hidden');
-    $('.business_carousel').slick('unslick'); // slick解除
+    $('.business_carousel.slick-initialized').slick('unslick'); // slick解除
   });
 
   // メニュー用

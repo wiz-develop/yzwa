@@ -82,7 +82,8 @@ class cfs_hyperlink extends cfs_field
 
 
     function prepare_value( $value, $field = null ) {
-        return unserialize( $value[0] );
+        $output = isset( $value[0] ) ? @unserialize( $value[0], [ 'allowed_classes' => false ] ) : [];
+        return is_array( $output ) ? $output : [];
     }
 
 
@@ -101,7 +102,9 @@ class cfs_hyperlink extends cfs_field
         if ( 'html' == $format ) {
             $output = '';
             if ( ! empty( $url ) ) {
-                $output = '<a class="cfs-hyperlink" href="' . esc_url( $url ) . '" target="' . $target . '"><span class="text">' . esc_html( $text ) . '</span></a>';
+                $allowed_targets = [ '_blank', '_self', '_top' ];
+                $target = in_array( $target, $allowed_targets, true ) ? $target : '';
+                $output = '<a class="cfs-hyperlink" href="' . esc_url( $url ) . '" target="' . esc_attr( $target ) . '"><span class="text">' . esc_html( $text ) . '</span></a>';
             }
         }
 

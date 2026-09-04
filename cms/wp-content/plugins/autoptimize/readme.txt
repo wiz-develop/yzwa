@@ -1,21 +1,26 @@
 === Autoptimize ===
 Contributors: futtta, optimizingmatters, zytzagoo, turl
-Tags: optimize, minify, performance, images, core web vitals, lazy-load, pagespeed, google fonts
+Tags: optimize, performance, images, core web vitals, pagespeed
 Donate link: http://blog.futtta.be/2013/10/21/do-not-donate-to-me/
-Requires at least: 4.9
-Tested up to: 6.0
-Requires PHP: 5.6
-Stable tag: 3.1.1.1
+License: GPLv3
+License URI: [https://www.gnu.org/licenses/gpl-3.0.html](https://www.gnu.org/licenses/gpl-3.0.html)
+Requires at least: 5.3
+Tested up to: 6.9
+Requires PHP: 7.1
+Stable tag: 3.1.15.1
 
 Autoptimize speeds up your website by optimizing JS, CSS, images (incl. lazy-load), HTML and Google Fonts, asyncing JS, removing emoji cruft and more.
 
 == Description ==
 
 Autoptimize makes optimizing your site really easy. It can aggregate, minify and cache scripts and styles, injects CSS in the page head by default but can also inline critical CSS and defer the aggregated full CSS, moves and defers scripts to the footer and minifies HTML. You can optimize and lazy-load images (with support for WebP and AVIF formats), optimize Google Fonts, async non-aggregated JavaScript, remove WordPress core emoji cruft and more. As such it can improve your site's performance even when already on HTTP/2! There is extensive API available to enable you to tailor Autoptimize to each and every site's specific needs.
-If you consider performance important, you really should use one of the many caching plugins to do page caching. Some good candidates to complement Autoptimize that way are e.g. [Speed Booster pack](https://wordpress.org/plugins/speed-booster-pack/), [KeyCDN's Cache Enabler](https://wordpress.org/plugins/cache-enabler), [WP Super Cache](http://wordpress.org/plugins/wp-super-cache/) or if you use Cloudflare [WP Cloudflare Super Page Cache](https://wordpress.org/plugins/wp-cloudflare-page-cache/).
+If you think performance indeed is important, you should at least consider one of the many free page caching plugins (e.g. [Speed Booster pack](https://wordpress.org/plugins/speed-booster-pack/) or [KeyCDN's Cache Enabler](https://wordpress.org/plugins/cache-enabler)) to complement Autoptimize or even [consider Autoptimize Pro](https://misc.optimizingmatters.com/partners/?from=partnertab&partner=aopro) which not only has page caching but also image optimization, CDN, critical CSS and more!
+
+> <strong>Autoptimize Pro</strong><br>
+> [Autoptimize Pro is a premium Power-Up](https://misc.optimizingmatters.com/partners/?from=partnertab&partner=aopro), adding image optimization, CDN, page caching, automatic critical CSS rules and extra “booster” options, all in one handy subscription to [make your site even faster!](https://misc.optimizingmatters.com/partners/?from=partnertab&partner=aopro)!
 
 > <strong>Premium Support</strong><br>
-> We provide great [Autoptimize Pro Support and Web Performance Optimization services](https://misc.optimizingmatters.com/partners/?from=partnertab&partner=autoptimizepro), check out our offering on [https://accelera.autoptimize.com/](https://misc.optimizingmatters.com/partners/?from=partnertab&partner=autoptimizepro)!
+> We provide great [Premium Support and Web Performance Optimization services](https://misc.optimizingmatters.com/partners/?from=partnertab&partner=autoptimizepro) with Accelera, check out our offering on [https://accelerawp.com/](https://misc.optimizingmatters.com/partners/?from=partnertab&partner=autoptimizepro)!
 
 (Speed-surfing image under creative commons [by LL Twistiti](https://www.flickr.com/photos/twistiti/818552808/))
 
@@ -298,6 +303,7 @@ The following great open source projects are used in Autoptimize in some form or
 * [jQuery unslider](https://github.com/idiot/unslider/) for the mini-slider in the top right corner on the main settings page (repo gone)
 * [JavaScript-md5](https://github.com/blueimp/JavaScript-MD5) for critical CSS rules editing
 * [Speed Booster Pack](https://wordpress.org/plugins/speed-booster-pack/) for advanced JS deferring
+* [Disable Remove Google Fonts](https://wordpress.org/plugins/disable-remove-google-fonts/) for additional Google Font removal
 
 = Where can I get help? =
 
@@ -314,6 +320,96 @@ You can get help on the [wordpress.org support forum](http://wordpress.org/suppo
 Just [fork Autoptimize on Github](https://github.com/futtta/autoptimize) and code away!
 
 == Changelog ==
+
+= 3.1.15.1 =
+* fix for "Uncaught Error: Using $this when not in object context" when preloads are set
+
+= 3.1.15 =
+* also add fetchpriority=high to preload set on Extra tab
+* improve exit survey display in RTL languages
+* security enhancements for 2 authenticated stored XSS issues responsibly reported by stealhcopter and bashu
+* multiple minor changes/ improvements/ bugfixes, see the [GitHub commit log](https://github.com/futtta/autoptimize/commits/beta).
+
+= 3.1.14 =
+* improve HTML output for <link rel="preload" images (based on report by Muhammad)
+* let the 404-handler issue a 302 iso 301 HTTP response (as mentioned by thefitrv)
+* small improvement in critical CSS cron job handling in case of an empty "time limit" (thanks for the help Jason)
+* fix bug in "domain binding" in critical CSS advanced options (reported by Hazel)
+* catch and report (exceptional) JS optimization issues causing preg_replace_callback to crash out (in case of a huge amount of JS code), thanks siliconforks
+* confirmed OK with WordPress 6.9
+
+= 3.1.13 =
+* multiple minor changes/ improvements/ bugfixes, see the [GitHub commit log](https://github.com/futtta/autoptimize/commits/beta).
+
+= 3.1.12 =
+* image optimization: improvements to the favicon regex
+* javascript optimization: integrate most recent version of jsmin.php
+* critical CSS: improve blocklist (url/ paths that should not be added to the job queue)
+* some other minor changes/ improvements/ filters, see the [GitHub commit log](https://github.com/futtta/autoptimize/commits/beta).
+
+= 3.1.11 =
+* code quality improvements see the [GitHub commit log](https://github.com/futtta/autoptimize/commits/beta).
+* some other minor changes/ improvements/ filters, see the [GitHub commit log](https://github.com/futtta/autoptimize/commits/beta).
+
+= 3.1.10 =
+* improvement: with "don't aggregate but defer" and "also defer inline JS" on, also defer JS that had the async flag to avoid the (previously) asynced JS from executing before the inline JS has ran.
+* improvement: show option to disable the default on "compatibility logic".
+* fix for regression in  3.1.9 which caused JetPack Image optimization not working even if image optimization was off in AO.
+* API: some extra hooks in critical CSS to enable others (and AOPro) to act on changes in critical CSS rules
+* some other minor changes/ improvements/ filters, see the [GitHub commit log](https://github.com/futtta/autoptimize/commits/beta).
+
+= 3.1.9 =
+* improvement: activate JS, CSS & HTML optimization upon plugin activation (hat tip to Adam Silverstein (developer relations engineer at Google))
+* improvement: also defer asynced JS (to ensure execution order remains intact; asynced JS should not execute before deferred inline JS which it might depend upon)
+* improvement: exclude images from being lazyloaded if they have fetchpriority attribute set to high (as done by WordPress core since 6.3)
+* bugfix: disable spellcheck on CSS textarea's (above the fold CSS/ critical CSS) which in some cases caused browser issues
+* add tab to explain Autoptimize Pro.
+* confirmed working with WordPress 6.4 (beta 3)
+* some other minor changes/ improvements/ filters, see the [GitHub commit log](https://github.com/futtta/autoptimize/commits/beta).
+
+= 3.1.8.1 =
+* urgent fix for PHP error, sorry about that!
+
+= 3.1.8 =
+* Images: improve optmization logic for background images
+* Critical CSS: don't trigger custom_post rule if not is_singular + adding debug logging for rule selection
+* some other minor changes/ improvements/ filters, see the [GitHub commit log](https://github.com/futtta/autoptimize/commits/beta).
+
+= 3.1.7 =
+* security: improve validation (import) and sanitization (output) of critical CSS rules, to fix a medium severity Admin+ Stored Cross-Site Scripting vulnerability as reported by WP Scan Security.
+
+= 3.1.6 =
+* CSS: removing trailing slashes in <link tags for more W3 HTML validation love
+* Extra: also dequeue WooCommerce block CSS if "remove WordPress block CSS" option is active
+* imgopt: also act on non-aggregated inline CSS
+* imgopt: added logic to warn users if Shortpixel can't reach their site
+* backend: AO toolbar JS/ CSS is finally minified as well.
+* explicitly disable optimization of login pages
+* some other minor changes/ improvements/ filters, see the [GitHub commit log](https://github.com/futtta/autoptimize/commits/beta).
+
+= 3.1.5 =
+* improvements to JSMin by Robert Ehrenleitner (big thanks Robert!).
+* do not consider jquery.js as minified any more (WordPress now uses jquery.min.js by default and jquery.js is the unminified version).
+* fix for "undefined array key" PHP errors in autoptimizeCriticalCSSCron.php
+* some other minor changes/ improvements/ filters, see the [GitHub commit log](https://github.com/futtta/autoptimize/commits/beta).
+
+= 3.1.4 =
+* Improvement: when all CSS is inlined, try doing so after SEO meta-tags (just before ld+json script tag which most SEO plugins add as last item on their list).
+* Img opt: also optimize images set in data-background and data-retina attributes (+ filter to easily add other attributes)
+* CSS opt: filter to enable AO to skip minification of calc formulas in CSS (as the CSS minifier on rare occasions breaks those)
+* Multiple other filters added
+* Some other minor changes/ improvements/ filters, see the [GitHub commit log](https://github.com/futtta/autoptimize/commits/beta).
+
+= 3.1.3 =
+* Multiple fixes for metabox LCP image preloads (thanks [Kishorchand](https://foxscribbler.com/) for notifying & providing a staging environment to debug on).
+* Fix in revslider compatibility (hat tip [Waqar Ahmed for reporting & helping out](https://wordpress.org/support/topic/issue-with-latest-version-of-slider-revolution/) ).
+* No image optimization or criticalcss attempts on localhost installations any more + notification of that fact if localhost detected.
+* Some other minor changes/ improvements/ filters, see the [GitHub commit log](https://github.com/futtta/autoptimize/commits/beta).
+
+= 3.1.2 =
+* Google Fonts: some more removal logic
+* fix for 404 fallback bug (hat tip to Asif for finding & reporting)
+* Some other minor changes/ improvements/ filters, see the [GitHub commit log](https://github.com/futtta/autoptimize/commits/beta).
 
 = 3.1.1.1 =
 * Quick workaround for an autoload conflict with JetFormBuilder (and maybe other Crocoblock plugins?) that causes a critical error on the AO settings page.

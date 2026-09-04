@@ -10,8 +10,9 @@
  * @since Twenty Nineteen 1.0
  */
 $category = get_the_category();
-$cat_name = $category[0]->name; //TODO:投稿にカテゴリーが複数登録されている場合はどれを表示する？
-$cat_acf = 'category_'.$category[0]->cat_ID;
+$primary_category = reset( $category );
+$cat_name = $primary_category ? $primary_category->name : '';
+$cat_acf = $primary_category ? 'category_' . $primary_category->cat_ID : '';
 ?>
 <div id="splash"></div>
 <div class="splashbg"></div>
@@ -37,11 +38,12 @@ $cat_acf = 'category_'.$category[0]->cat_ID;
 									<?php the_content();?>
 										<div class="next-link anime_hover-up text-center pt-3">
 											<?php
-												$referer = $_SERVER['HTTP_REFERER'];
-												$url = parse_url($referer);
-												$refer_slug = str_replace('/', '', $url['path']);
-												if (in_category($refer_slug)) {
-													$back_url = $url['path'];
+											$referer = isset( $_SERVER['HTTP_REFERER'] ) ? wp_unslash( $_SERVER['HTTP_REFERER'] ) : '';
+											$url = $referer ? wp_parse_url( $referer ) : array();
+											$refer_path = isset( $url['path'] ) ? $url['path'] : '';
+											$refer_slug = str_replace( '/', '', $refer_path );
+											if ( $refer_slug && in_category( $refer_slug ) ) {
+												$back_url = $refer_path;
 												} else {
 													$back_url = '/news';
 												}

@@ -11,11 +11,16 @@ class cfs_session
      * Constructor
      */
     public function __construct() {
-        if ( isset( $_POST['cfs']['session_id'] ) && $this->is_valid( $_POST['cfs']['session_id'] ) ) {
-            $this->session_id = $_POST['cfs']['session_id'];
+        $session_id = '';
+        if ( isset( $_POST['cfs']['session_id'] ) ) {
+            $session_id = sanitize_text_field( wp_unslash( $_POST['cfs']['session_id'] ) );
+        }
+
+        if ( $this->is_valid( $session_id ) ) {
+            $this->session_id = $session_id;
         }
         else {
-            $this->session_id = md5( uniqid() );
+            $this->session_id = $this->generate_session_id();
         }
     }
 
@@ -29,9 +34,16 @@ class cfs_session
 
         $now = time();
         $output = [];
-        $session_data = $wpdb->get_var( "SELECT data FROM {$wpdb->prefix}cfs_sessions WHERE id = '$this->session_id' AND expires > '$now'" );
+        $session_data = $wpdb->get_var(
+            $wpdb->prepare(
+                "SELECT data FROM {$wpdb->prefix}cfs_sessions WHERE id = %s AND expires > %d",
+                $this->session_id,
+                $now
+            )
+        );
         if ( ! empty( $session_data ) ) {
-            $output = unserialize( $session_data );
+            $output = @unserialize( $session_data, [ 'allowed_classes' => false ] );
+            $output = is_array( $output ) ? $output : [];
         }
 
         return $output;
@@ -45,7 +57,12 @@ class cfs_session
     public function set( $session_data ) {
         global $wpdb;
 
-        $wpdb->query( "DELETE FROM {$wpdb->prefix}cfs_sessions WHERE id = '$this->session_id' LIMIT 1" );
+        $wpdb->query(
+            $wpdb->prepare(
+                "DELETE FROM {$wpdb->prefix}cfs_sessions WHERE id = %s LIMIT 1",
+                $this->session_id
+            )
+        );
 
         $wpdb->query(
             $wpdb->prepare(
@@ -63,7 +80,12 @@ class cfs_session
         global $wpdb;
 
         $now = time();
-        $wpdb->query( "DELETE FROM {$wpdb->prefix}cfs_sessions WHERE expires <= '$now'" );
+        $wpdb->query(
+            $wpdb->prepare(
+                "DELETE FROM {$wpdb->prefix}cfs_sessions WHERE expires <= %d",
+                $now
+            )
+        );
     }
 
 
@@ -74,5 +96,15 @@ class cfs_session
      */
     public function is_valid( $session_id ) {
         return preg_match( "/^([a-f0-9]{32})$/", $session_id ) ? true : false;
+    }
+
+
+    private function generate_session_id() {
+        try {
+            return bin2hex( random_bytes( 16 ) );
+        }
+        catch ( Exception $error ) {
+            return md5( wp_generate_uuid4() . microtime( true ) );
+        }
     }
 }

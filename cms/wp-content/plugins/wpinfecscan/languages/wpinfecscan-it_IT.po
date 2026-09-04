@@ -3,20 +3,20 @@ msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
+"Last-Translator: \n"
 "Language-Team: \n"
+"Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4\n"
-"Last-Translator: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: it_IT\n"
+"X-Generator: Poedit 3.4.1\n"
 
 msgid "All files are continuously scanned every 10 minutes after designated time."
 msgstr "Tutti i file sono continuamente scansionati ogni 10 minuti dopo il tempo designato."
 
 msgid "The definition file of WordPress malware scanner is not the latest version. Please update from [Malware Scan] in the administration display."
-msgstr "Il file di definizione di WordPress malware scanner non è l'ultima versione. Si prega di aggiornare da [Malware Scan] nel display di amministrazione."
+msgstr "Il file di definizione di WordPress malware scanner non e l'ultima versione. Si prega di aggiornare da [Malware Scan] nel display di amministrazione."
 
 msgid "Detected malware infection. Please check from [Malware Scan] in the administration display."
 msgstr "Rilevata infezione da malware. Si prega di controllare da [Malware Scan] nel display di amministrazione."
@@ -37,7 +37,7 @@ msgid "Purchase"
 msgstr "Acquisto"
 
 msgid "*This file is subjected to a detailed inspection."
-msgstr "*Questo file è sottoposto a un controllo dettagliato."
+msgstr "*Questo file e sottoposto a un controllo dettagliato."
 
 msgid "Pattern matched"
 msgstr "Modello abbinato"
@@ -85,7 +85,7 @@ msgid "Not detected any malware in this website."
 msgstr "Non ha rilevato alcun malware in questo sito web."
 
 msgid "*Pattern matched signifies the file matches to malware in its characteristics, and definitive diagnosis signifies the file is judged as containing harmful code by detailed inspection."
-msgstr "*Pattern matched significa che il file corrisponde al malware nelle sue caratteristiche, e diagnosi definitiva significa che il file è giudicato come contenente codice dannoso da un'ispezione dettagliata."
+msgstr "*Pattern matched significa che il file corrisponde al malware nelle sue caratteristiche, e diagnosi definitiva significa che il file e giudicato come contenente codice dannoso da un'ispezione dettagliata."
 
 msgid "Scan automatically"
 msgstr "Scansione automatica"
@@ -106,15 +106,15 @@ msgid "Hide detection alert on the administration display"
 msgstr "Nascondere l'avviso di rilevamento sul display dell'amministrazione"
 
 msgid "*E-mail notification is only once in 24 hours even if detected multiple times."
-msgstr "*La notifica via e-mail è solo una volta in 24 ore anche se rilevata più volte."
+msgstr "*La notifica via e-mail e solo una volta in 24 ore anche se rilevata piu volte."
 
 msgid "*The beginning time of auto scanning may be different when using WordPress cron."
-msgstr "*L'ora di inizio della scansione automatica può essere diversa quando si usa WordPress cron."
+msgstr "*L'ora di inizio della scansione automatica puo essere diversa quando si usa WordPress cron."
 
 msgid "Scanning completed!"
 msgstr "Scansione completata!"
 
-msgid "WordPress doctor"
+msgid "WP doctor"
 msgstr "Medico di WordPress"
 
 msgid "Highlighted pattern matched rows."
@@ -126,8 +126,8 @@ msgstr "Chiudi"
 msgid "The directory was not applicable:"
 msgstr "La directory non era applicabile:"
 
-msgid "Please check the malware detected."
-msgstr "Si prega di controllare il malware rilevato."
+msgid " Please check the malware detected."
+msgstr " Si prega di controllare il malware rilevato."
 
 msgid "Inspection result"
 msgstr "Risultato dell'ispezione"
@@ -178,7 +178,7 @@ msgid "The number of malwares detected:"
 msgstr "Il numero di malware rilevati:"
 
 msgid "A new pattern has added."
-msgstr "È stato aggiunto un nuovo modello."
+msgstr "E stato aggiunto un nuovo modello."
 
 msgid "(Subscription of definition"
 msgstr "(Sottoscrizione della definizione"
@@ -214,16 +214,16 @@ msgid "Couldn't activate protection of important files because of no permission 
 msgstr "Impossibile attivare la protezione dei file importanti a causa del mancato permesso di scrivere il file htaccess."
 
 msgid "Couldn't activate server security function because of no permission to write htaccess file."
-msgstr "Impossibile attivare la funzione di sicurezza del server perché non c'è il permesso di scrivere il file htaccess."
+msgstr "Impossibile attivare la funzione di sicurezza del server perche non c'e il permesso di scrivere il file htaccess."
 
 msgid "Couldn't activate disable function of INDEX list because of no permission to write htaccess file."
-msgstr "Impossibile attivare la funzione di disabilitazione della lista INDEX perché non si ha il permesso di scrivere il file htaccess."
+msgstr "Impossibile attivare la funzione di disabilitazione della lista INDEX perche non si ha il permesso di scrivere il file htaccess."
 
 msgid "Couldn't activate disable function of Proxy comments because of no permission to write htaccess file."
-msgstr "Impossibile attivare la funzione di disabilitazione dei commenti proxy perché non c'è il permesso di scrivere il file htaccess."
+msgstr "Impossibile attivare la funzione di disabilitazione dei commenti proxy perche non c'e il permesso di scrivere il file htaccess."
 
 msgid "The new login URL should be consist of more than 6 half-width integers."
-msgstr "Il nuovo URL di login dovrebbe essere composto da più di 6 interi di mezza larghezza."
+msgstr "Il nuovo URL di login dovrebbe essere composto da piu di 6 interi di mezza larghezza."
 
 msgid "The login and wp-login are unavailable."
 msgstr "Il login e wp-login non sono disponibili."
@@ -235,7 +235,7 @@ msgid "Couldn't activate disable function of WPSCAN because of no permission to 
 msgstr "Impossibile attivare la funzione di disabilitazione di WPSCAN a causa del mancato permesso di scrivere il file htaccess."
 
 msgid "Couldn't activate Track Trace function because of no permission to write htaccess file."
-msgstr "Impossibile attivare la funzione Track Trace perché non c'è il permesso di scrivere il file htaccess."
+msgstr "Impossibile attivare la funzione Track Trace perche non c'e il permesso di scrivere il file htaccess."
 
 msgid "Security"
 msgstr "Sicurezza"
@@ -259,13 +259,13 @@ msgid "Login LockDown"
 msgstr "Blocco del login"
 
 msgid "Blocks login for 10 minutes after 3 repeated login failures. This function can reduce the risk of hacker incursion by a brute-force attack on the login display."
-msgstr "Blocca il login per 10 minuti dopo 3 fallimenti ripetuti del login. Questa funzione può ridurre il rischio di incursione degli hacker con un attacco brute-force sul display del login."
+msgstr "Blocca il login per 10 minuti dopo 3 fallimenti ripetuti del login. Questa funzione puo ridurre il rischio di incursione degli hacker con un attacco brute-force sul display del login."
 
 msgid "Login captcha"
 msgstr "Login captcha"
 
 msgid "Displays captcha on the login display. Adding questionnaire on the login display can reduce the risk of hacker incursion and prevent administrative rights from being deprived."
-msgstr "Visualizza il captcha sul display di login. L'aggiunta del captcha sul display di login può ridurre il rischio di incursione degli hacker e impedire la privazione dei diritti amministrativi."
+msgstr "Visualizza il captcha sul display di login. L'aggiunta del captcha sul display di login puo ridurre il rischio di incursione degli hacker e impedire la privazione dei diritti amministrativi."
 
 msgid "Change login page URL"
 msgstr "Cambia l'URL della pagina di login"
@@ -286,7 +286,7 @@ msgid "Prevent information leak about WordPress version"
 msgstr "Previene la fuga di informazioni sulla versione di WordPress"
 
 msgid "Hackers try to find out WordPress version to utilize the fragility. Hides the information by disabling meta generator output and query (numeric variable of the version which is given to CSS or JS read into HTML)."
-msgstr "Gli hacker cercano di scoprire la versione di WordPress per utilizzare la fragilità. Nasconde le informazioni disabilitando l'output del meta generatore e la query (variabile numerica della versione che viene data ai CSS o JS letti in HTML)."
+msgstr "Gli hacker cercano di scoprire la versione di WordPress per utilizzare la fragilita. Nasconde le informazioni disabilitando l'output del meta generatore e la query (variabile numerica della versione che viene data ai CSS o JS letti in HTML)."
 
 msgid "Protect important files"
 msgstr "Proteggere i file importanti"
@@ -310,7 +310,7 @@ msgid "Prohibit WPSCAN"
 msgstr "Proibire WPSCAN"
 
 msgid "WPSCAN is a fragility checker for WordPress which is used by many hackers for a pre-survey. Hides version information or block certain IP for a while when the IP tried to access specified file, to disable WPSCAN."
-msgstr "WPSCAN è un controllo di fragilità per WordPress che è usato da molti hacker per una pre-analisi. Nasconde le informazioni sulla versione o blocca certi IP per un po' quando l'IP ha cercato di accedere al file specificato, per disabilitare WPSCAN."
+msgstr "WPSCAN e un controllo di fragilita per WordPress che e usato da molti hacker per una pre-analisi. Nasconde le informazioni sulla versione o blocca certi IP per un po' quando l'IP ha cercato di accedere al file specificato, per disabilitare WPSCAN."
 
 msgid "Permission (write permission of files)"
 msgstr "Permesso (permesso di scrittura dei file)"
@@ -322,7 +322,7 @@ msgid "Recommended permission"
 msgstr "Permesso raccomandato"
 
 msgid "<small>Write permission of files is fragile. Please replace the particulars indicated in red or yellow in the left table with recommended permission.</small>"
-msgstr "<small>Il permesso di scrittura dei file è fragile. Si prega di sostituire i particolari indicati in rosso o in giallo nella tabella di sinistra con il permesso raccomandato.</small>"
+msgstr "<small>Il permesso di scrittura dei file e fragile. Si prega di sostituire i particolari indicati in rosso o in giallo nella tabella di sinistra con il permesso raccomandato.</small>"
 
 msgid "<small>Permission (write permission of files) are properly set.</small>"
 msgstr "<small>I permessi (permesso di scrittura dei file) sono impostati correttamente.</small"
@@ -340,13 +340,13 @@ msgid "Prohibit Pingback"
 msgstr "Proibire il Pingback"
 
 msgid "Disables Pingback; notification function of WordPress, which has a risk of being utilized for high-intensity attack with multiple accesses or of information leak about username, etc."
-msgstr "Disabilita Pingback; funzione di notifica di WordPress, che ha il rischio di essere utilizzata per un attacco ad alta intensità con accessi multipli o di fuga di informazioni sul nome utente, ecc."
+msgstr "Disabilita Pingback; funzione di notifica di WordPress, che ha il rischio di essere utilizzata per un attacco ad alta intensita con accessi multipli o di fuga di informazioni sul nome utente, ecc."
 
 msgid "Prohibit REST API"
 msgstr "Proibire REST API"
 
 msgid "REST API is loaded into WordPress 4.7 or later which enables outside posting, information aquisition, modification and addition of posts, etc. However, it has great fragility in some versions and may be subjected to other misuse in future.<br>Its function is utilized in some famous plugins such as Jetpack and ContactForm7, therefore disables all Jetpack and ContactForm7 functions except REST API.<br>If enables its function while using REST API in other plugins, some kind of malfunction may occur."
-msgstr "L'API REST è caricata in WordPress 4.7 o più tardi e permette la pubblicazione esterna, l'acquisizione di informazioni, la modifica e l'aggiunta di post, ecc. Tuttavia, ha una grande fragilità in alcune versioni e può essere soggetto ad altri usi impropri in futuro.<br>La sua funzione è utilizzata in alcuni famosi plugin come Jetpack e ContactForm7, quindi disabilita tutte le funzioni di Jetpack e ContactForm7 tranne REST API.<br>Se abilita la sua funzione mentre si utilizza REST API in altri plugin, potrebbe verificarsi qualche tipo di malfunzionamento."
+msgstr "L'API REST e caricata in WordPress 4.7 o piu tardi e permette la pubblicazione esterna, l'acquisizione di informazioni, la modifica e l'aggiunta di post, ecc. Tuttavia, ha una grande fragilita in alcune versioni e puo essere soggetto ad altri usi impropri in futuro.<br>La sua funzione e utilizzata in alcuni famosi plugin come Jetpack e ContactForm7, quindi disabilita tutte le funzioni di Jetpack e ContactForm7 tranne REST API.<br>Se abilita la sua funzione mentre si utilizza REST API in altri plugin, potrebbe verificarsi qualche tipo di malfunzionamento."
 
 msgid "Prohibit Trace & Track"
 msgstr "Proibire il Trace & Track"
@@ -373,7 +373,7 @@ msgid "Prohibit comment posting by spambots"
 msgstr "Proibisce la pubblicazione di commenti da parte dello spam bot"
 
 msgid "Spambot is a program which posts comments automatically and does not have any referrer. Prevents comment posting by spambots by disabling posting from viewers who have no referrers."
-msgstr "Lo spambot è un programma che pubblica commenti automaticamente e non ha alcun referrer. Impedisce la pubblicazione di commenti da parte degli spambot disabilitando la pubblicazione da parte dei visitatori che non hanno referrer."
+msgstr "Lo spambot e un programma che pubblica commenti automaticamente e non ha alcun referrer. Impedisce la pubblicazione di commenti da parte degli spambot disabilitando la pubblicazione da parte dei visitatori che non hanno referrer."
 
 msgid "*Security function may not work appropriately on multi-site."
 msgstr "*La funzione di sicurezza potrebbe non funzionare in modo appropriato su multi-sito."
@@ -388,22 +388,22 @@ msgid "List of IPs blocking"
 msgstr "Elenco degli IP che bloccano"
 
 msgid "Disables accessing for 3 hours of the IP which tried to access XMLRPC or wp-login for more than 50 times in 10 minutes. Since this function detects only excessive access, it can be used with Jetpack and also reduces the load of the website by preventing brute-force attack."
-msgstr "Disabilita l'accesso per 3 ore dell'IP che ha cercato di accedere a XMLRPC o wp-login per più di 50 volte in 10 minuti. Poiché questa funzione rileva solo gli accessi eccessivi, può essere utilizzata con Jetpack e riduce anche il carico del sito web impedendo l'attacco brute-force."
+msgstr "Disabilita l'accesso per 3 ore dell'IP che ha cercato di accedere a XMLRPC o wp-login per piu di 50 volte in 10 minuti. Poiche questa funzione rileva solo gli accessi eccessivi, puo essere utilizzata con Jetpack e riduce anche il carico del sito web impedendo l'attacco brute-force."
 
 msgid "Password reset captcha"
 msgstr "Ripristino della password captcha"
 
 msgid "Displays captcha on the password reset display to prevent hacking that utilizes fragility of mail transmission program on the display."
-msgstr "Visualizza il captcha sul display di reset della password per prevenire l'hacking che utilizza la fragilità del programma di trasmissione della posta sul display."
+msgstr "Visualizza il captcha sul display di reset della password per prevenire l'hacking che utilizza la fragilita del programma di trasmissione della posta sul display."
 
 msgid "Attention!: Use of malware scanner through localhost or IP is restricted to inspection of 100 malware patterns."
-msgstr "Attenzione! L'uso dello scanner di malware attraverso localhost o IP è limitato all'ispezione di 100 modelli di malware."
+msgstr "Attenzione! L'uso dello scanner di malware attraverso localhost o IP e limitato all'ispezione di 100 modelli di malware."
 
 msgid "Couldn't get malware pattern. Is the website public and operating with WordPress?"
-msgstr "Impossibile ottenere un modello di malware. Il sito web è pubblico e funziona con WordPress?"
+msgstr "Impossibile ottenere un modello di malware. Il sito web e pubblico e funziona con WordPress?"
 
 msgid "Scanning is currently unavailable because the latest malware pattern is unobtainable. Please try again manually after checked that [The website is public and is operating with WordPress], [The plugins used are the latest version]."
-msgstr "La scansione non è attualmente disponibile perché l'ultimo modello di malware non è ottenibile. Si prega di riprovare manualmente dopo aver verificato che [Il sito web è pubblico e funziona con WordPress], [I plugin utilizzati sono l'ultima versione]."
+msgstr "La scansione non e attualmente disponibile perche l'ultimo modello di malware non e ottenibile. Si prega di riprovare manualmente dopo aver verificato che [Il sito web e pubblico e funziona con WordPress], [I plugin utilizzati sono l'ultima versione]."
 
 msgid "Definition of malware patterns"
 msgstr "Definizione dei modelli di malware"
@@ -426,8 +426,8 @@ msgstr "Elenco degli IP che sono riusciti ad accedere con il permesso di amminis
 msgid "Protect author information"
 msgstr "Proteggere le informazioni dell'autore"
 
-msgid "Prevents WordPress from outputting user information based on accesses from a particular query, such as /?author=1."
-msgstr "Impedisce a WordPress di produrre informazioni sull'utente in base agli accessi da una particolare query, come /?author=1."
+msgid "Prevents WordPress from outputting user information based on accesses from a particular query, such as /?author=1,/wp-json/wp/v2/users."
+msgstr "Impedisce a WordPress di produrre informazioni sull'utente in base agli accessi da una particolare query, come /?author=1,/wp-json/wp/v2/users."
 
 msgid "Couldn't activate author protection because of no permission to write htaccess file."
 msgstr "Impossibile attivare la protezione dell'autore a causa del mancato permesso di scrivere il file htaccess."
@@ -457,7 +457,7 @@ msgid "IP blocker"
 msgstr "Blocco IP"
 
 msgid "Vulnerability"
-msgstr "Vulnerabilità"
+msgstr "Vulnerabilita"
 
 msgid "Block IPs manually"
 msgstr "Bloccare gli IP manualmente"
@@ -471,7 +471,7 @@ msgstr "Esempio"
 msgid "IP map of active hackers"
 msgstr "Mappa degli IP degli hacker attivi"
 
-msgid "These IPs are of hackers around the world detected daily by WordPress doctor. This data is updated every 24 hours."
+msgid "These IPs are of hackers around the world detected daily by WP doctor. This data is updated every 24 hours."
 msgstr "Questi IP sono di hacker di tutto il mondo rilevati quotidianamente dal medico di WordPress. Questi dati vengono aggiornati ogni 24 ore."
 
 msgid "Block this IP automatically from access to the website (Paid)"
@@ -481,13 +481,13 @@ msgid "Hacker's IP</td><td>country, region"
 msgstr "IP dell'hacker</td><td>Paese, regione"
 
 msgid "This function is exclusive for subscription (paid) members of malware."
-msgstr "Questa funzione è esclusiva per i membri in abbonamento (a pagamento) di malware."
+msgstr "Questa funzione e esclusiva per i membri in abbonamento (a pagamento) di malware."
 
 msgid "This infection will be displayed after purchased the latest malware definition file from <a href='Javascript:void(0);' onclick='showsubscribetab()'>here</a>.<br><small>*Please scan again after purchased.</small>"
-msgstr "Questa infezione verrà visualizzata dopo aver acquistato l'ultimo file di definizione del malware da <a href='Javascript:void(0);' onclick='showsubscribetab()'>qui</a>.<br><small>*Si prega di eseguire nuovamente la scansione dopo l'acquisto.</small>"
+msgstr "Questa infezione verra visualizzata dopo aver acquistato l'ultimo file di definizione del malware da <a href='Javascript:void(0);' onclick='showsubscribetab()'>qui</a>.<br><small>*Si prega di eseguire nuovamente la scansione dopo l'acquisto.</small>"
 
 msgid "This infection will be displayed after purchased the latest malware definition file."
-msgstr "Questa infezione verrà visualizzata dopo l'acquisto dell'ultimo file di definizione del malware."
+msgstr "Questa infezione verra visualizzata dopo l'acquisto dell'ultimo file di definizione del malware."
 
 msgid "Security measures"
 msgstr "Misure di sicurezza"
@@ -496,7 +496,7 @@ msgid "Settings of security functions to protect login and files, to prevent bru
 msgstr "Impostazioni delle funzioni di sicurezza per proteggere il login e i file, per prevenire attacchi brute-force e spam, ecc. Vai a<b>impostazioni dettagliate</b> per attivare ogni funzione singolarmente."
 
 msgid "*Higher security settings may interfere with site operations when the website is equipped with several plugins or is customized."
-msgstr "*Impostazioni di sicurezza più elevate possono interferire con le operazioni del sito quando il sito è dotato di diversi plugin o è personalizzato."
+msgstr "*Impostazioni di sicurezza piu elevate possono interferire con le operazioni del sito quando il sito e dotato di diversi plugin o e personalizzato."
 
 msgid "Disable security functions"
 msgstr "Disattivare le funzioni di sicurezza"
@@ -523,7 +523,7 @@ msgid "<b>Activated functions</b>: Login LockDown, Login captcha, Password reset
 msgstr "<b>Funzioni attivate</b>: Login LockDown, Login captcha, Password reset captcha, Cambia l'URL della pagina di login, Impedisci la fuga di informazioni sulla versione di WordPress, Proteggi i file importanti (htaccess, wp-config. php), Proteggere le informazioni del server, Bloccare le query dannose, Proteggere le informazioni sull'autore, Proibire la visualizzazione della lista dell'indice, Proibire WPSCAN, Proibire la modifica di temi e plugin, Includere la protezione dei file, Caricare la protezione della cartella, Bloccare le query SQL pericolose, Proibire Pingback, Prevenire gli attacchi brute-force, Proibire REST API, Proibire Trace & Track, Proibire la pubblicazione di commenti via proxy, Form di commento captcha, Proibire la pubblicazione di commenti dallo spam bot"
 
 msgid "*The login URL will be changed as follows. Make sure to take a note so as not to forget."
-msgstr "*L'URL di accesso sarà modificato come segue. Assicurati di prendere nota per non dimenticare."
+msgstr "*L'URL di accesso sara modificato come segue. Assicurati di prendere nota per non dimenticare."
 
 msgid "Security level: Detailed"
 msgstr "Livello di sicurezza: Dettagliato"
@@ -550,19 +550,19 @@ msgid "Real-time block of website tampering"
 msgstr "Blocco in tempo reale della manomissione del sito web"
 
 msgid "This function is to block and record hacking activities before website tampering. <b>Since this function monitors all accesses except for page display, it may reduce the browsing speed up to 50% and inhibit particular functions of plugins.</b> It is recommended that you don't activate the function except when the website is repeatedly threatened with tampering. <br>*A particular symbolic query is conferred when activating the function, which is not due to a malfunction."
-msgstr "Questa funzione serve a bloccare e registrare le attività di hacking prima della manomissione del sito web. <b>Siccome questa funzione controlla tutti gli accessi tranne la visualizzazione della pagina, può ridurre la velocità di navigazione fino al 50% e inibire particolari funzioni dei plugin.</b> Si raccomanda di non attivare la funzione se non quando il sito web è ripetutamente minacciato di manomissione. <br>*All'attivazione della funzione viene conferita una particolare interrogazione simbolica, che non è dovuta a un malfunzionamento."
+msgstr "Questa funzione serve a bloccare e registrare le attivita di hacking prima della manomissione del sito web. <b>Siccome questa funzione controlla tutti gli accessi tranne la visualizzazione della pagina, puo ridurre la velocita di navigazione fino al 50% e inibire particolari funzioni dei plugin.</b> Si raccomanda di non attivare la funzione se non quando il sito web e ripetutamente minacciato di manomissione. <br>*All'attivazione della funzione viene conferita una particolare interrogazione simbolica, che non e dovuta a un malfunzionamento."
 
 msgid "Enable function"
 msgstr "Attivare la funzione"
 
 msgid "What if you catch hacking activities with real-time block?"
-msgstr "Cosa succede se si catturano le attività di hacking con il blocco in tempo reale?"
+msgstr "Cosa succede se si catturano le attivita di hacking con il blocco in tempo reale?"
 
 msgid "1. Block hacker's IP permanently by this <a href='Javascript:void(0);' style='color:black;text-decoration: underline;' onClick='showipblocktab()'>IP blocker</a>."
 msgstr "1. Blocca l'IP dell'hacker in modo permanente con questo <a href='Javascript:void(0);' style='color:black;text-decoration: underline;' onClick='showipblocktab()'>IP blocker</a>."
 
 msgid "2. There is a possibility of fragility of the files displayed in the column [Files accessed by hacker\", or backdoor. Take preventive measures, such as deleting the file, solving the fragility, etc."
-msgstr "2. Esiste la possibilità di fragilità dei file visualizzati nella colonna [Files accessed by hacker\", o backdoor. Prendete misure preventive, come cancellare il file, risolvere la fragilità, ecc."
+msgstr "2. Esiste la possibilita di fragilita dei file visualizzati nella colonna [Files accessed by hacker\", o backdoor. Prendete misure preventive, come cancellare il file, risolvere la fragilita, ecc."
 
 msgid "What if the website causes a malfunction?"
 msgstr "Cosa succede se il sito web causa un malfunzionamento?"
@@ -589,7 +589,7 @@ msgid "Delete all records"
 msgstr "Cancellare tutti i record"
 
 msgid "Couldn't activate the function. Please confirm the htaccess file is writeable."
-msgstr "Impossibile attivare la funzione. Si prega di confermare che il file htaccess è scrivibile."
+msgstr "Impossibile attivare la funzione. Si prega di confermare che il file htaccess e scrivibile."
 
 msgid "Failed to real-time block of malwares. Please disable and re-activate the function from the plugin, or delete #SERVER_REALTIMEBLOCK_START ~ #SERVER_REALTIMEBLOCK_END of htaccess file."
 msgstr "Fallito il blocco in tempo reale dei malware. Si prega di disattivare e riattivare la funzione dal plugin, o cancellare #SERVER_REALTIMEBLOCK_START ~ #SERVER_REALTIMEBLOCK_END del file htaccess."
@@ -613,13 +613,13 @@ msgid "- Save changes of the file."
 msgstr "- Salva le modifiche del file."
 
 msgid "Note that file editing may cause errors of the website."
-msgstr "Nota che la modifica del file può causare errori del sito web."
+msgstr "Nota che la modifica del file puo causare errori del sito web."
 
 msgid "- Delete the file."
 msgstr "- Cancellare il file."
 
 msgid "Note that file deletion may cause errors of the website."
-msgstr "Si noti che la cancellazione del file può causare errori del sito web."
+msgstr "Si noti che la cancellazione del file puo causare errori del sito web."
 
 msgid "Failed to change the file."
 msgstr "Impossibile modificare il file."
@@ -643,7 +643,7 @@ msgid "Close this window"
 msgstr "Chiudi questa finestra"
 
 msgid "*Note that editing or deleting malware files may cause errors due to the related programs, and may lead to malfunction such as undisplayable website."
-msgstr "*Nota che la modifica o l'eliminazione di file malware può causare errori dovuti ai programmi correlati, e può portare a malfunzionamenti come il sito web non visualizzabile."
+msgstr "*Nota che la modifica o l'eliminazione di file malware puo causare errori dovuti ai programmi correlati, e puo portare a malfunzionamenti come il sito web non visualizzabile."
 
 msgid "Make sure to read <a href='javascript:void(0);' onClick='showexptalert()'>this notifications </a>upon removal or deletion of malware files."
 msgstr "Assicurati di leggere <a href='javascript:void(0);' onClick='showexptalert()'>questa notifica </a>alla rimozione o all'eliminazione dei file malware."
@@ -652,19 +652,19 @@ msgid "Notifications upon removal or deletion of malware files"
 msgstr "Notifiche su rimozione o eliminazione di file malware"
 
 msgid "<h4>Infected files</h4><p>Removal of malwares requires technical knowledge. It is recommended to ask an expert, but pay attention especially to the following points when you manage it by yourself.<br></p><ul style='list-style:disc !important;margin:20px;'><li>If the malware is infesting the file originally consists WordPress, please delete only <b>the tampered parts </b>carefully.</li><li> If the file is not a regular file of WordPress, the entire file can be deleted without any problem.</li></ul><p>However, if the tampered file is read by <b>another tampered file </b>, deletion of the tampered file may cause errors to the caller and may lead to malfunction such as undisplayable website. In that case, investigation of the caller and deletion of its tampering are required.</p>"
-msgstr "<h4>File infetti</h4><p>La rimozione di malwares richiede conoscenze tecniche. Si consiglia di chiedere a un esperto, ma prestare attenzione soprattutto ai seguenti punti quando si gestisce da soli.<br></p><ul style='list-style:disc !important;margin:20px;'><li>Se il malware sta infestando il file originariamente consiste WordPress, si prega di eliminare solo <b>le parti manomesse </b>con attenzione. </li><li>Se il file non è un file regolare di WordPress, l'intero file può essere eliminato senza alcun problema.</li></ul><p>Tuttavia, se il file manomesso viene letto da <b>un altro file manomesso </b>, l'eliminazione del file manomesso può causare errori al chiamante e può portare a malfunzionamenti come il sito web non visualizzabile. In tal caso, sono necessarie indagini sul chiamante e la cancellazione della sua manomissione.</p>"
+msgstr "<h4>File infetti</h4><p>La rimozione di malwares richiede conoscenze tecniche. Si consiglia di chiedere a un esperto, ma prestare attenzione soprattutto ai seguenti punti quando si gestisce da soli.<br></p><ul style='list-style:disc !important;margin:20px;'><li>Se il malware sta infestando il file originariamente consiste WordPress, si prega di eliminare solo <b>le parti manomesse </b>con attenzione. </li><li>Se il file non e un file regolare di WordPress, l'intero file puo essere eliminato senza alcun problema.</li></ul><p>Tuttavia, se il file manomesso viene letto da <b>un altro file manomesso </b>, l'eliminazione del file manomesso puo causare errori al chiamante e puo portare a malfunzionamenti come il sito web non visualizzabile. In tal caso, sono necessarie indagini sul chiamante e la cancellazione della sua manomissione.</p>"
 
 msgid "<h4>Infected database</h4><p>Database infections often result in Javascript code embedded in posts and widgets. It is often possible to make it harmless by removing only the part of the malware contained in the content without removing it line by line.</p>"
-msgstr "<h4>Base di dati infetta</h4><p>Le infezioni delle basi di dati si traducono spesso in codice Javascript incorporato nei post e nei widget. Spesso è possibile renderlo innocuo rimuovendo solo la parte del malware contenuta nel contenuto senza rimuoverlo riga per riga.</p>"
+msgstr "<h4>Base di dati infetta</h4><p>Le infezioni delle basi di dati si traducono spesso in codice Javascript incorporato nei post e nei widget. Spesso e possibile renderlo innocuo rimuovendo solo la parte del malware contenuta nel contenuto senza rimuoverlo riga per riga.</p>"
 
 msgid "Couldn't activate Include file protection because of no permission to write htaccess file."
 msgstr "Impossibile attivare la protezione del file Include a causa del mancato permesso di scrivere il file htaccess."
 
 msgid "Couldn't activate Upload folder protection because of no permission to write htaccess file."
-msgstr "Impossibile attivare la protezione della cartella Upload perché non c'è il permesso di scrivere il file htaccess."
+msgstr "Impossibile attivare la protezione della cartella Upload perche non c'e il permesso di scrivere il file htaccess."
 
 msgid "Couldn't activate Block danger SQL query because of no permission to write htaccess file."
-msgstr "Impossibile attivare il blocco delle query SQL pericolose perché manca il permesso di scrivere il file htaccess."
+msgstr "Impossibile attivare il blocco delle query SQL pericolose perche manca il permesso di scrivere il file htaccess."
 
 msgid "Include file protection"
 msgstr "Includere la protezione dei file"
@@ -685,7 +685,7 @@ msgid "Block danger SQL queries that used for SQL injection."
 msgstr "Blocca le query SQL pericolose utilizzate per l'SQL injection."
 
 msgid "Please wait 10 minutes until login page is usable."
-msgstr "Si prega di attendere 10 minuti fino a quando la pagina di login è utilizzabile."
+msgstr "Si prega di attendere 10 minuti fino a quando la pagina di login e utilizzabile."
 
 msgid "Too many login attempts"
 msgstr "Troppi tentativi di login"
@@ -694,7 +694,7 @@ msgid "There are 2 htaccess files in wordpress root folder and wordpress home fo
 msgstr "Ci sono 2 file htaccess nella cartella principale di wordpress e nella cartella home di wordpress. Si consiglia di eliminare il file htaccess della cartella principale per far funzionare correttamente le funzioni di sicurezza. <br>Cancella questo file:"
 
 msgid "Or maybe your site's allow_url_fopen setting is off."
-msgstr "O forse l'impostazione allow_url_fopen del tuo sito è spenta."
+msgstr "O forse l'impostazione allow_url_fopen del tuo sito e spenta."
 
 msgid "*Edited"
 msgstr "*Modificato"
@@ -703,22 +703,22 @@ msgid "Display & Edit"
 msgstr "Visualizza e modifica"
 
 msgid "Vulnerability check"
-msgstr "Controllo delle vulnerabilità"
+msgstr "Controllo delle vulnerabilita"
 
 msgid "This vulnerability checker will check if there are valunability(over CVSS 7.5 point) in your site's plugin and wordpress. We search valunability form <a href='https://nvd.nist.gov/vuln' target='_blank'>NIST</a> database."
-msgstr "Questo controllo di vulnerabilità controllerà se ci sono vulnerabilità (oltre il punto CVSS 7.5) nel plugin del tuo sito e wordpress. Cerchiamo la forma di vulnerabilità <a href='https://nvd.nist.gov/vuln' target='_blank'>NIST</a> database."
+msgstr "Questo controllo di vulnerabilita controllera se ci sono vulnerabilita (oltre il punto CVSS 7.5) nel plugin del tuo sito e wordpress. Cerchiamo la forma di vulnerabilita <a href='https://nvd.nist.gov/vuln' target='_blank'>NIST</a> database."
 
 msgid "You cannot run vulnerability checker on localhost or IP."
-msgstr "Non è possibile eseguire il verificatore di vulnerabilità su localhost o IP."
+msgstr "Non e possibile eseguire il verificatore di vulnerabilita su localhost o IP."
 
 msgid "Run vulnerability checker"
-msgstr "Esegui il verificatore di vulnerabilità"
+msgstr "Esegui il verificatore di vulnerabilita"
 
 msgid "Checking valunability now..."
-msgstr "Controllo della vulnerabilità ora..."
+msgstr "Controllo della vulnerabilita ora..."
 
 msgid "Vulnerability check result"
-msgstr "Risultato del controllo di vulnerabilità"
+msgstr "Risultato del controllo di vulnerabilita"
 
 msgid "Name"
 msgstr "Nome"
@@ -733,25 +733,25 @@ msgid "Status"
 msgstr "Stato"
 
 msgid "Valunability"
-msgstr "Validità"
+msgstr "Validita"
 
 msgid "No vulnerability"
-msgstr "Nessuna vulnerabilità"
+msgstr "Nessuna vulnerabilita"
 
 msgid "Vulnerability found"
-msgstr "Vulnerabilità trovata"
+msgstr "Vulnerabilita trovata"
 
 msgid "Not checked"
 msgstr "Non controllato"
 
 msgid "Valunability check failed. Are your site running on global domain?"
-msgstr "Controllo di validità fallito. Il tuo sito funziona su un dominio globale?"
+msgstr "Controllo di validita fallito. Il tuo sito funziona su un dominio globale?"
 
 msgid "Valunability check result"
-msgstr "Risultato del controllo di valutabilità"
+msgstr "Risultato del controllo di valutabilita"
 
 msgid "Recentry add vulnerabilities"
-msgstr "Aggiungere vulnerabilità di recente"
+msgstr "Aggiungere vulnerabilita di recente"
 
 msgid "WordPress/Plugin name"
 msgstr "Nome WordPress/Plugin"
@@ -766,16 +766,16 @@ msgid "Not available"
 msgstr "Non disponibile"
 
 msgid "(You can check valunability one time for free.)"
-msgstr "(Puoi controllare la validità una volta sola gratuitamente)."
+msgstr "(Puoi controllare la validita una volta sola gratuitamente)."
 
 msgid "Not available (Please purchase for malware subscription to check valunability on your site)"
-msgstr "Non disponibile (Si prega di acquistare per l'abbonamento malware per verificare la validità sul tuo sito)"
+msgstr "Non disponibile (Si prega di acquistare per l'abbonamento malware per verificare la validita sul tuo sito)"
 
 msgid "Vulnerability to check"
-msgstr "Vulnerabilità da controllare"
+msgstr "Vulnerabilita da controllare"
 
-msgid "<b style='color:#337ab7'>Disclaimer</b>: We do not guarantee the accuracy of the result of WordPress Doctor: Malware Scan Plugin. In addition, we are not responsible for any damage to users, other indirect servers, any items, or data by using this tool. In order to scan the malware found by us after installation, you need to subscribe the malware definition. Please use WordPress Doctor: Malware Scan Plugin with kind understanding and acknowledgement that it acquires a part of inspection data for the purpose of accuracy improvement.<br><b style='color:#337ab7'>Prohibited matters (licensing)</b>: Many of the functions of this plug-in can be used free of charge. But using this plug-in to get compensation from customers (Providing other companies with paid malware scanning and removal services) is prohibited. If you violate this clause, you agree to charge 400 $ per site. If you are interested in doing business like this, please contact us and conclude a licensing agreement."
-msgstr "<b style='color:#337ab7'>Disclaimer</b>: Non garantiamo l'accuratezza del risultato di WordPress Doctor: Malware Scan Plugin. Inoltre, non siamo responsabili di eventuali danni agli utenti, ad altri server indiretti, a qualsiasi oggetto o dato utilizzando questo strumento. Al fine di eseguire la scansione del malware trovato da noi dopo l'installazione, è necessario sottoscrivere la definizione di malware. Si prega di utilizzare WordPress Doctor: Malware Scan Plugin con gentile comprensione e riconoscendo che acquisisce una parte dei dati di ispezione allo scopo di migliorare l'accuratezza.<br><b style='color:#337ab7'>Materie vietate (licenza)</b>: Molte delle funzioni di questo plug-in possono essere utilizzate gratuitamente. Ma l'uso di questo plug-in per ottenere un compenso dai clienti (fornendo ad altre aziende servizi di scansione e rimozione di malware a pagamento) è proibito. Se si viola questa clausola, si accetta di addebitare 400 $ per sito. Se sei interessato a fare affari in questo modo, contattaci e concludi un accordo di licenza."
+msgid "<b style='color:#337ab7'>Disclaimer</b>: We do not guarantee the accuracy of the result of WP doctor: Malware Scan Plugin. In addition, we are not responsible for any damage to users, other indirect servers, any items, or data by using this tool. In the free version, you can only detect malware using data that is up to one month old from the time of installation. Please use WP doctor: Malware Scan Plugin with kind understanding and acknowledgement that it acquires a part of inspection data for the purpose of accuracy improvement.<br><b style='color:#337ab7'>Prohibited matters (licensing)</b>: Many of the functions of this plug-in can be used free of charge. But using this plug-in to get compensation from customers (Providing other companies with paid malware scanning and removal services) is prohibited. If you violate this clause, you agree to charge 400 $ per site. If you are interested in doing business like this, please contact us and conclude a licensing agreement."
+msgstr "<b style='color:#337ab7'>Disclaimer</b>: Non garantiamo l'accuratezza dei risultati di WP Doctor: Malware Scan Plugin. Inoltre, non siamo responsabili per eventuali danni agli utenti, ad altri server indiretti, a oggetti o dati derivanti dall'uso di questo strumento. Nella versione gratuita, è possibile rilevare malware solo utilizzando dati fino a un mese dalla data di installazione. Si prega di utilizzare WP Doctor: Malware Scan Plugin con la comprensione e l'accettazione che una parte dei dati di ispezione viene raccolta al fine di migliorare l'accuratezza.<br><b style='color:#337ab7'>Attività proibite (licenza)</b>: Molte delle funzioni di questo plugin possono essere utilizzate gratuitamente. Tuttavia, è vietato utilizzare questo plugin per ottenere compensi dai clienti (fornire servizi a pagamento di scansione e rimozione malware ad altre aziende). Se si viola questa clausola, si accetta di pagare 400 $ per sito. Se siete interessati a questo tipo di attività, vi preghiamo di contattarci e di stipulare un accordo di licenza."
 
 msgid "Show agreement"
 msgstr "Mostra l'accordo"
@@ -787,7 +787,7 @@ msgid "Database"
 msgstr "Database"
 
 msgid "Is this plugin latest version?"
-msgstr "Questo plugin è l'ultima versione?"
+msgstr "Questo plugin e l'ultima versione?"
 
 msgid "The number of database table scanned:"
 msgstr "Il numero di tabelle del database scansionate:"
@@ -814,7 +814,7 @@ msgid "Delete the database row data?"
 msgstr "Cancellare i dati della riga del database?"
 
 msgid "Note that database row data deletion may cause errors of the website."
-msgstr "Nota che la cancellazione dei dati di riga del database può causare errori del sito web."
+msgstr "Nota che la cancellazione dei dati di riga del database puo causare errori del sito web."
 
 msgid "Failed to delete database row data."
 msgstr "Impossibile eliminare i dati di riga del database."
@@ -832,7 +832,7 @@ msgid "Save changes of the database data?"
 msgstr "Salvare le modifiche dei dati del database?"
 
 msgid "Note that data editing may cause errors of the website."
-msgstr "Nota che la modifica dei dati può causare errori del sito web."
+msgstr "Nota che la modifica dei dati puo causare errori del sito web."
 
 msgid "Failed to change the data."
 msgstr "Impossibile modificare i dati."
@@ -853,7 +853,7 @@ msgid "A data stricture broken. Save failed."
 msgstr "Rottura di una stringa di dati. Salvataggio fallito."
 
 msgid "This data is serialized (array) data. In most cases, you will need to correct the text and enter the correct value for the 's:character count'."
-msgstr "Questi dati sono dati serializzati (array). Nella maggior parte dei casi, sarà necessario correggere il testo e inserire il valore corretto per il 's:character count'."
+msgstr "Questi dati sono dati serializzati (array). Nella maggior parte dei casi, sara necessario correggere il testo e inserire il valore corretto per il 's:character count'."
 
 msgid "Block malicious query"
 msgstr "Blocca la query dannosa"
@@ -865,7 +865,7 @@ msgid "Couldn't activate block malicious query function because of no permission
 msgstr "Impossibile attivare la funzione di blocco delle query maligne a causa del mancato permesso di scrivere il file htaccess."
 
 msgid "Database creation failed and the scan could not be performed. Please check if this mysql user has permission to create database table."
-msgstr "La creazione del database non è riuscita e la scansione non ha potuto essere eseguita. Si prega di controllare se questo utente mysql ha il permesso di creare la tabella del database."
+msgstr "La creazione del database non e riuscita e la scansione non ha potuto essere eseguita. Si prega di controllare se questo utente mysql ha il permesso di creare la tabella del database."
 
 msgid "patterns added since purchased"
 msgstr "modelli aggiunti dall'acquisto"
@@ -873,8 +873,8 @@ msgstr "modelli aggiunti dall'acquisto"
 msgid "Advanced blocking of hackers' IP"
 msgstr "Blocco avanzato degli IP degli hacker"
 
-msgid "When hackers attack your site, they check to see if the vulnerable files are present on your site　by actually accessing them. By detecting such access and immediately blocking the hacker's IP　for 24 hours, you can reduce the risk of hacking through the vulnerability."
-msgstr "Quando gli hacker attaccano il tuo sito, controllano se i file vulnerabili sono presenti sul tuo sito accedendovi effettivamente. Rilevando tale accesso e bloccando immediatamente l'IP dell'hacker per 24 ore, è possibile ridurre il rischio di hacking attraverso la vulnerabilità."
+msgid "When hackers attack your site, they check to see if the vulnerable files are present on your site by actually accessing them. By detecting such access and immediately blocking the hacker's IP for 24 hours, you can reduce the risk of hacking through the vulnerability."
+msgstr "Quando gli hacker attaccano il tuo sito, controllano se i file vulnerabili sono presenti sul tuo sito accedendovi effettivamente. Rilevando tale accesso e bloccando immediatamente l'IP dell'hacker per 24 ore, e possibile ridurre il rischio di hacking attraverso la vulnerabilita."
 
 msgid "Enable advanced blocking features of the hacker's IP (Paid)"
 msgstr "Abilita le funzioni avanzate di blocco dell'IP dell'hacker (a pagamento)"
@@ -910,10 +910,10 @@ msgid "During the license period"
 msgstr "Durante il periodo di licenza"
 
 msgid "This feature greatly reduces the possibility of tampering or malware infection with two algorithms that protect against hacker attacks before they occur<br>1 Blocks the patterns of the most commonly hacked files on the Internet for the past month.<br>2 Detects unauthorized access to programs directly in files other than those listed above, performs malware scanning, and blocks access if malware code patterns are included.<br>*This feature blocks the operation of vulnerable plug-ins and themes, and may interfere with some of their functions.<br>"
-msgstr "Questa funzione riduce notevolmente la possibilità di manomissione o infezione da malware con due algoritmi che proteggono dagli attacchi degli hacker prima che si verifichino.<br>1 Blocca i modelli dei file più comunemente violati su Internet nell'ultimo mese.<br>2 Rileva l'accesso non autorizzato ai programmi direttamente nei file diversi da quelli elencati sopra, esegue la scansione del malware e blocca l'accesso se sono inclusi modelli di codice malware.<br>*Questa funzione blocca il funzionamento di plug-in e temi vulnerabili e può interferire con alcune delle loro funzioni.<br>"
+msgstr "Questa funzione riduce notevolmente la possibilita di manomissione o infezione da malware con due algoritmi che proteggono dagli attacchi degli hacker prima che si verifichino.<br>1 Blocca i modelli dei file piu comunemente violati su Internet nell'ultimo mese.<br>2 Rileva l'accesso non autorizzato ai programmi direttamente nei file diversi da quelli elencati sopra, esegue la scansione del malware e blocca l'accesso se sono inclusi modelli di codice malware.<br>*Questa funzione blocca il funzionamento di plug-in e temi vulnerabili e puo interferire con alcune delle loro funzioni.<br>"
 
 msgid "Top 10 most attacked files now"
-msgstr "Top 10 dei file più attaccati ora"
+msgstr "Top 10 dei file piu attaccati ora"
 
 msgid "File name"
 msgstr "Nome del file"
@@ -931,7 +931,7 @@ msgid "Real-time block history"
 msgstr "Storia dei blocchi in tempo reale"
 
 msgid "Attacked vulnerability type"
-msgstr "Tipo di vulnerabilità attaccata"
+msgstr "Tipo di vulnerabilita attaccata"
 
 msgid "Plugin"
 msgstr "Plugin"
@@ -949,10 +949,10 @@ msgid "Last update"
 msgstr "Ultimo aggiornamento"
 
 msgid "When this feature is enabled, %s other attack patterns will be blocked."
-msgstr "Quando questa funzione è abilitata, %s altri modelli di attacco saranno bloccati."
+msgstr "Quando questa funzione e abilitata, %s altri modelli di attacco saranno bloccati."
 
 msgid "Couldn't activate the function.<br>1 Please confirm the htaccess file is writeable.<br>2 Database table is creatable.<br>3 file_get_contents is activated on PHP config."
-msgstr "Impossibile attivare la funzione.<br>1 Conferma che il file htaccess è scrivibile.<br>2 La tabella del database è creabile.<br>3 file_get_contents è attivato nella configurazione PHP."
+msgstr "Impossibile attivare la funzione.<br>1 Conferma che il file htaccess e scrivibile.<br>2 La tabella del database e creabile.<br>3 file_get_contents e attivato nella configurazione PHP."
 
 msgid "Displays up to 255 items."
 msgstr "Visualizza fino a 255 elementi."
@@ -978,11 +978,11 @@ msgstr "Arresto di emergenza del sito"
 msgid "Blocks all external access except for your current login IP"
 msgstr "Blocca tutti gli accessi esterni tranne il tuo attuale IP di accesso"
 
-msgid ".　It prohibits all external access and deters the activities of the kind of malware that automatically repeats tampering. You can then remove the malware."
-msgstr ".　Proibisce tutti gli accessi esterni e scoraggia le attività del tipo di malware che ripete automaticamente la manomissione. È quindi possibile rimuovere il malware."
+msgid ". It prohibits all external access and deters the activities of the kind of malware that automatically repeats tampering. You can then remove the malware."
+msgstr ".　Proibisce tutti gli accessi esterni e scoraggia le attivita del tipo di malware che ripete automaticamente la manomissione. E quindi possibile rimuovere il malware."
 
 msgid "*When this feature is enabled, all accesses except your current IP will be ignored. If you are unable to access the site due to a change of your IP address, please delete #EMERGENCY_BLOCK_START to #EMERGENCY_BLOCK_END in the HTACCESS file on the server and you will be able to access the site again."
-msgstr "*Quando questa funzione è abilitata, tutti gli accessi tranne il vostro IP attuale saranno ignorati. Se non potete accedere al sito a causa di un cambiamento del vostro indirizzo IP, cancellate #EMERGENCY_BLOCK_START a #EMERGENCY_BLOCK_END nel file HTACCESS sul server e sarete in grado di accedere nuovamente al sito."
+msgstr "*Quando questa funzione e abilitata, tutti gli accessi tranne il vostro IP attuale saranno ignorati. Se non potete accedere al sito a causa di un cambiamento del vostro indirizzo IP, cancellate #EMERGENCY_BLOCK_START a #EMERGENCY_BLOCK_END nel file HTACCESS sul server e sarete in grado di accedere nuovamente al sito."
 
 msgid "processing..."
 msgstr "elaborazione..."
@@ -991,19 +991,19 @@ msgid "error:You do not have permission to perform this function."
 msgstr "error:Non hai il permesso di eseguire questa funzione."
 
 msgid "error:Could not be changed due to incorrect data sent."
-msgstr "error:Non può essere cambiato a causa di dati errati inviati."
+msgstr "error:Non puo essere cambiato a causa di dati errati inviati."
 
 msgid "error:Failed to write to HTACCESS file."
 msgstr "error:Impossibile scrivere sul file HTACCESS."
 
 msgid "It worked! Only the currently logged-in IP can access the site now!"
-msgstr "Ha funzionato! Solo l'IP attualmente loggato può accedere al sito ora!"
+msgstr "Ha funzionato! Solo l'IP attualmente loggato puo accedere al sito ora!"
 
 msgid "Make the site accessible again."
 msgstr "Rendere il sito nuovamente accessibile."
 
 msgid "When the site is made accessible again, the contents of the old htaccess file below will be restored. If there is any malware in this file, please delete it before restoring the site."
-msgstr "Quando il sito sarà reso nuovamente accessibile, il contenuto del vecchio file htaccess qui sotto sarà ripristinato. Se c'è del malware in questo file, cancellalo prima di ripristinare il sito."
+msgstr "Quando il sito sara reso nuovamente accessibile, il contenuto del vecchio file htaccess qui sotto sara ripristinato. Se c'e del malware in questo file, cancellalo prima di ripristinare il sito."
 
 msgid "Restored access to the site."
 msgstr "Ripristinato l'accesso al sito."
@@ -1027,28 +1027,28 @@ msgid "Delete row data"
 msgstr "Cancellare i dati della riga"
 
 msgid "This file cannot be disinfected automatically because it is a theme file"
-msgstr "Questo file non può essere disinfettato automaticamente perché è un file di tema"
+msgstr "Questo file non puo essere disinfettato automaticamente perche e un file di tema"
 
 msgid "This file cannot be disinfected automatically because it is not an authorized file in wordpress.org"
-msgstr "Questo file non può essere disinfettato automaticamente perché non è un file autorizzato in wordpress.org"
+msgstr "Questo file non puo essere disinfettato automaticamente perche non e un file autorizzato in wordpress.org"
 
 msgid "This file is a configuration file and cannot be disinfected automatically"
-msgstr "Questo file è un file di configurazione e non può essere disinfettato automaticamente"
+msgstr "Questo file e un file di configurazione e non puo essere disinfettato automaticamente"
 
 msgid "Cannot be automatically disinfected because it is data in the database"
-msgstr "Non può essere disinfettato automaticamente perché si tratta di dati nel database"
+msgstr "Non puo essere disinfettato automaticamente perche si tratta di dati nel database"
 
 msgid "Automatic disinfection failed. It did not exist in the official directory. Possibly an original theme or plugin."
 msgstr "Disinfezione automatica fallita. Non esiste nella directory ufficiale. Possibilmente un tema o un plugin originale."
 
 msgid "Automatic extermination failed. There is a possibility that the file could not be rewritten due to a write permission problem."
-msgstr "Disinfezione automatica fallita. C'è la possibilità che il file non poteva essere riscritto a causa di un problema di permesso di scrittura."
+msgstr "Disinfezione automatica fallita. C'e la possibilita che il file non poteva essere riscritto a causa di un problema di permesso di scrittura."
 
 msgid "Database data not exists."
 msgstr "I dati del database non esistono."
 
 msgid "The official directory is down or shomething went wrong for restoring file."
-msgstr "La directory ufficiale è giù o qualcosa è andato storto per il ripristino del file."
+msgstr "La directory ufficiale e giu o qualcosa e andato storto per il ripristino del file."
 
 msgid "Processing..."
 msgstr "Elaborazione..."
@@ -1057,10 +1057,10 @@ msgid "Block access to wlwmanifest.xml."
 msgstr "Blocca l'accesso a wlwmanifest.xml."
 
 msgid "Prevents any access to wlwmanifest.xml. This file is used by Windows Live Writer to update your WordPress site, but is subject to unauthorized data acquisition and attack by hackers. Enabling this feature will disable WordPress updates by Windows Live Writer."
-msgstr "Impedisce qualsiasi accesso a wlwmanifest.xml. Questo file viene utilizzato da Windows Live Writer per aggiornare il sito WordPress, ma è soggetto all'acquisizione di dati non autorizzati e ad attacchi da parte di hacker. Abilitando questa funzione si disabiliteranno gli aggiornamenti di WordPress da parte di Windows Live Writer."
+msgstr "Impedisce qualsiasi accesso a wlwmanifest.xml. Questo file viene utilizzato da Windows Live Writer per aggiornare il sito WordPress, ma e soggetto all'acquisizione di dati non autorizzati e ad attacchi da parte di hacker. Abilitando questa funzione si disabiliteranno gli aggiornamenti di WordPress da parte di Windows Live Writer."
 
 msgid "Couldn't activate bloack wlwmanifest function because of no permission to write htaccess file."
-msgstr "Non è stato possibile attivare la funzione bloack wlwmanifest a causa dell'assenza di permessi per la scrittura del file htaccess."
+msgstr "Non e stato possibile attivare la funzione bloack wlwmanifest a causa dell'assenza di permessi per la scrittura del file htaccess."
 
 msgid "Auto-restore all"
 msgstr "Sterminio automatico in batch."
@@ -1069,7 +1069,7 @@ msgid "Cancel batch automatic extermination?"
 msgstr "Si desidera annullare la disinfestazione automatica dei lotti?"
 
 msgid "Bulk extermination is running..."
-msgstr "La disinfezione batch è in corso..."
+msgstr "La disinfezione batch e in corso..."
 
 msgid "Bulk Delete failed. You do not have permission."
 msgstr "Rimozione di massa non riuscita . Non avete l'autorizzazione."
@@ -1078,13 +1078,13 @@ msgid "Batch deletion failed."
 msgstr "Eliminazione batch non riuscita."
 
 msgid "Batch deletion failed. There were no files that can be deleted automatically."
-msgstr "L'eliminazione massiva non è riuscita. Non è stato possibile eliminare automaticamente alcun file."
+msgstr "L'eliminazione massiva non e riuscita. Non e stato possibile eliminare automaticamente alcun file."
 
 msgid "Unknown malware was detected and could not be executed. You can confirm the diagnosis of unknown malware by subscribing to the paid service and rescanning."
-msgstr "Non è stato possibile eseguirlo perché è stato rilevato un malware sconosciuto. È possibile confermare la diagnosi di un malware sconosciuto abbonandosi a un servizio a pagamento e effettuando una nuova scansione."
+msgstr "Non e stato possibile eseguirlo perche e stato rilevato un malware sconosciuto. E possibile confermare la diagnosi di un malware sconosciuto abbonandosi a un servizio a pagamento e effettuando una nuova scansione."
 
 msgid "Batch disinfection of files that can be automatically removed has been completed."
-msgstr "La rimozione in batch dei file che possono essere rimossi automaticamente è stata completata."
+msgstr "La rimozione in batch dei file che possono essere rimossi automaticamente e stata completata."
 
 msgid "Bulk Delete"
 msgstr "Disinfezione in batch."
@@ -1098,5 +1098,479 @@ msgstr "Avviare la disinfezione in batch."
 msgid "Cancel"
 msgstr "Annullamento"
 
-msgid "WordPress Doctor Malware scan and Security plugin"
-msgstr "WordPress Doctor Malware Scanner & Security Plugin"
+msgid "WP doctor Malware scan and Security plugin"
+msgstr "WP doctor Malware Scanner & Security Plugin"
+
+msgid "Repair and protect .htaccess and index.php"
+msgstr "Ripara e proteggi .htaccess e index.php"
+
+msgid "If you have symptoms of a malware infection that causes the htaccess file or index.php to be rewritten on its own, add monitoring and auto-repair code to your WordPress configuration file to prevent these two files from being rewritten again after restoring them. If you enable this function, the contents of the htaccess file and index.php cannot be changed."
+msgstr "Se avete i sintomi di un'infezione da malware che causa la riscrittura autonoma del file htaccess o index.php, aggiungete un codice di monitoraggio e di riparazione automatica al vostro file di configurazione di WordPress per impedire che questi due file vengano riscritti nuovamente dopo il loro ripristino. Se si attiva questa funzione, il contenuto del file htaccess e index.php non puo essere modificato."
+
+msgid "Protect htaccess and index.php"
+msgstr "Proteggi htaccess e index.php"
+
+msgid "Repair htaccess and index.php"
+msgstr "Ripara htaccess e index.php"
+
+msgid "Implement htaccess and index.php protection"
+msgstr "Implementa la protezione htaccess e index.php"
+
+msgid "If .htaccess and index.php are rewritten on their own, we will forcibly rewrite and restore the contents of the .htaccess and index.php displayed above. In this case, a special process is executed to stop the PHP process, so PHP may temporarily stop working and the site may not be able to be displayed. In this case, it may be necessary to restart PHP on the server or the server itself."
+msgstr "Se .htaccess e index.php vengono riscritti da soli, riscriveremo e ripristineremo forzatamente i contenuti di .htaccess e index.php visualizzati sopra. In questo caso, viene eseguito un processo speciale per arrestare il processo PHP, quindi PHP potrebbe smettere temporaneamente di funzionare e il sito potrebbe non essere visualizzato. In questo caso, potrebbe essere necessario riavviare PHP sul server o sul server stesso."
+
+msgid "Successfully repaired .htaccess and index.php"
+msgstr ".htaccess e index.php riparati con successo"
+
+msgid "This function is not available if 'Emergency suspension of all access to the site' is enabled."
+msgstr "Questa funzione non e disponibile se e abilitata la 'Sospensione d'urgenza di tutti gli accessi al sito'."
+
+msgid "Contents of index.php to be protected"
+msgstr "Contenuto di index.php da proteggere"
+
+msgid "initialisation"
+msgstr "inizializzazione"
+
+msgid "Contents of htaccess to be protected"
+msgstr "Contenuto di htaccess da proteggere"
+
+msgid "*This function is not available if index.php or htaccess protection is enabled."
+msgstr "*Questa funzione non e disponibile se la protezione index.php o htaccess e abilitata."
+
+msgid "Unprotect index.php,htaccess"
+msgstr "Rimuovere la protezione index.php,htaccess"
+
+msgid "The contents of index.php and htaccess are currently protected."
+msgstr "I contenuti di index.php e htaccess sono attualmente protetti."
+
+msgid "Failed repaire.htaccess and index.php"
+msgstr "Riparazione non riuscita di e.htaccess e index.php"
+
+msgid "Correct permissions"
+msgstr "Autorizzazioni corrette"
+
+msgid "Working..."
+msgstr "Funzionante..."
+
+msgid "Changed to optimal permissions!"
+msgstr "Modificati i permessi ottimali!"
+
+msgid "error:The permissions failed to change, we recommend that you fix this with a good connection to the server using FTP software."
+msgstr "error:Le autorizzazioni non sono state modificate; si consiglia di risolvere il problema con una buona connessione al server utilizzando un software FTP."
+
+msgid "Number of all detectable vulnerabilities:"
+msgstr "Numero di tutte le vulnerabilita rilevabili:"
+
+msgid "<b>Activated functions</b>: Login LockDown, Login captcha, Password reset captcha, Prevent information leak about WordPress version, Protect important files (htaccess, wp-config.php), Protect server information, Block access to wlwmanifest.xml, Block malicious query, Protect author information, Prohibit display of Index list, Prohibit WPSCAN, Prohibit Pingback, Prevent brute-force attack, Prohibit Trace & Track, Include file protection, Upload folder protection, Block danger SQL query,  Prohibit comment posting via proxy, Comment form captcha, Prohibit comment posting by spambots, noindex & 404 if not found searchresult page"
+msgstr "<b>Funzioni attivate</b>: Blocco accesso, Captcha accesso, Captcha reimpostazione password, Previene la fuga di informazioni sulla versione di WordPress, Proteggi file importanti (htaccess, wp-config.php), Proteggi informazioni sul server, Blocca l'accesso a wlwmanifest.xml , Blocca query dannose, Proteggi informazioni sull'autore, Proibisci visualizzazione dell'elenco indice, Proibisci WPSCAN, Proibisci Pingback, Previeni attacchi di forza bruta, Proibisci traccia e traccia, Includi protezione file, Protezione cartella caricamento, Blocca query SQL pericolose, Proibisci pubblicazione di commenti tramite proxy , Captcha del modulo commenti, Proibisci la pubblicazione di commenti da parte di spambot, noindex e 404 se non viene trovata la pagina dei risultati di ricerca"
+
+msgid "<b>Activated functions</b>: Login LockDown, Login captcha, Password reset captcha, Change login page URL, Prevent information leak about WordPress version, Protect important files (htaccess, wp-config.php), Protect server information, Block access to wlwmanifest.xml, Block malicious query, Protect author information, Prohibit display of Index list, Prohibit WPSCAN, Prohibit editing themes and plugins,Include file protection, Upload folder protection, Block danger SQL query, Prohibit Pingback, Prevent brute-force attack, Prohibit REST API, Prohibit Trace & Track, Prohibit comment posting via proxy, Comment form captcha, Prohibit comment posting by spambots, noindex & 404 if not found searchresult page"
+msgstr "<b>Funzioni attivate</b>: Blocco accesso, Captcha accesso, Captcha reimpostazione password, Modifica URL pagina di accesso, Previeni fuga di informazioni sulla versione di WordPress, Proteggi file importanti (htaccess, wp-config.php), Proteggi informazioni server, Blocca accesso a wlwmanifest.xml, Blocca query dannose, Proteggi informazioni sull'autore, Proibisci visualizzazione dell'elenco degli indici, Proibisci WPSCAN, Proibisci modifica di temi e plugin, Includi protezione file, Protezione cartella caricamento, Blocca query SQL pericolose, Proibisci Pingback, Previeni attacchi di forza bruta , Proibisci API REST, Proibisci traccia e traccia, Proibisci la pubblicazione di commenti tramite proxy, Captcha del modulo commenti, Proibisci la pubblicazione di commenti da parte di spambot, noindex e 404 se non viene trovata la pagina dei risultati di ricerca"
+
+msgid "Noindexing search results page on wordpress if result not exist."
+msgstr "Pagina dei risultati di ricerca Noindexing su WordPress se il risultato non esiste."
+
+msgid "If a WordPress search result does not exist, it will be noindexed and a status 404 will be returned. This prevents the search results in WordPress from being created and registered in search engines illegally."
+msgstr "Se un risultato di ricerca WordPress non esiste, verra noindexed e verra restituito lo stato 404. Cio impedisce che i risultati di ricerca in WordPress vengano creati e registrati illegalmente nei motori di ricerca."
+
+msgid "Couldn't activate Noindexing search results function."
+msgstr "Impossibile attivare la funzione dei risultati di ricerca Noindexing."
+
+msgid "Wp-Doctor Malware scan plugin Lite has been detected; if you are using the Pro version, please stop and remove the Lite version"
+msgstr "E stato rilevato il plugin Wp-Doctor Malware scan Lite; se si utilizza la versione Pro, interrompere e rimuovere la versione Lite."
+
+msgid "Brute Force Attack Resistance Testing"
+msgstr "Test di resistenza agli attacchi di forza bruta"
+
+msgid "This test uses a list of 5,000 commonly used passwords to see if a hacker can break the site's administrator and editor passwords with a brute force attack. If a user is found to be a victim of this scan, we recommend that the user's password be changed as soon as possible to a meaningless string of 14 or more characters and containing one-byte alphanumeric symbols."
+msgstr "Questo test utilizza un elenco di 5,000 password comunemente utilizzate per verificare se un hacker e in grado di violare le password dell'amministratore e dell'editor del sito con un attacco di forza bruta. Se un utente risulta essere vittima di questa scansione, si consiglia di cambiare al piu presto la password dell'utente con una stringa senza senso di 14 o piu caratteri e contenente simboli alfanumerici a un byte."
+
+msgid "Test user password tolerance"
+msgstr "Verifica della tolleranza della password utente"
+
+msgid "Investigating user password tolerance..."
+msgstr "Indagine sulla tolleranza delle password utente..."
+
+msgid "CVSS Vulnerability check"
+msgstr "Verifica della vulnerabilita CVSS"
+
+msgid "Reinstalling the plugin that failed the inspection may correct the problem."
+msgstr "La reinstallazione del plugin che non ha superato l'ispezione puo correggere il problema."
+
+msgid "The inspection has been completed!"
+msgstr "L'ispezione e stata completata!"
+
+msgid "No vulnerabilities"
+msgstr "Nessuna vulnerabilita"
+
+msgid "Password is weak. Password breached:"
+msgstr "La password e debole. Password violata:"
+
+msgid "Fix now"
+msgstr "Correggere ora"
+
+msgid "Scan malware automatically"
+msgstr "Scansione automatica del malware"
+
+msgid "Scan vulnerability automatically(Paid)"
+msgstr "Scansione automatica delle vulnerabilità (a pagamento)"
+
+msgid "A vulnerability was found on the site. The vulnerabilities found are as follows"
+msgstr "È stata rilevata una vulnerabilità nel sito. Le vulnerabilità trovate sono le seguenti"
+
+msgid " Please check the vulnerability detected."
+msgstr " Controllare la vulnerabilità rilevata."
+
+msgid " Please check the malware and vulnerabilities detected."
+msgstr " Controllare il malware e le vulnerabilità rilevate."
+
+msgid "Hack monitor & IP blocker"
+msgstr "Hack monitor e blocco IP"
+
+msgid "Unlimited"
+msgstr "Illimitato"
+
+msgid "Unblock"
+msgstr "Sblocca"
+
+msgid "Block now"
+msgstr "Blocca ora"
+
+msgid "Blocking IPs"
+msgstr "IP bloccati"
+
+msgid "Blocked time"
+msgstr "Tempo bloccato"
+
+msgid "Block time limit"
+msgstr "Limite di tempo di blocco"
+
+msgid "Un block this IP"
+msgstr "Sblocca questo IP"
+
+msgid "Enabling this feature will detect and log hackers' attacks against your site. You can also block hacker IPs from this log. Keep in mind that hackers attack WordPress sites at random, so a logged attack does not necessarily mean that the hack was successful."
+msgstr "Abilitando questa funzione, gli attacchi degli hacker contro il tuo sito verranno rilevati e registrati. Puoi anche bloccare gli IP degli hacker da questo registro. Tieni presente che gli hacker attaccano i siti WordPress in modo casuale, quindi un attacco registrato non significa necessariamente che l'attacco abbia avuto successo."
+
+msgid "Enable Hack Monitor"
+msgstr "Abilita Hack Monitor"
+
+msgid "Number of logs to be stored"
+msgstr "Numero di registri da archiviare"
+
+msgid "infinity"
+msgstr "infinito"
+
+msgid "Forever"
+msgstr "Per sempre"
+
+msgid "1hour"
+msgstr "1 ora"
+
+msgid "24hour"
+msgstr "24 ore"
+
+msgid "Block length"
+msgstr "Durata del blocco"
+
+msgid "Notice:In many cases, a one-hour block is sufficient because hackers change their attack target to the next site as soon as they fail."
+msgstr "Nota: in molti casi, un blocco di un'ora è sufficiente perché gli hacker cambiano il loro obiettivo di attacco al sito successivo non appena falliscono."
+
+msgid "Automatic blocking of IPs of detected vulnerability attacks (paid)"
+msgstr "Blocco automatico degli IP degli attacchi di vulnerabilità rilevati (a pagamento)"
+
+msgid "Automatic blocking of detected WPSCAN IPs (paid)"
+msgstr "Blocco automatico degli IP WPSCAN rilevati (a pagamento)"
+
+msgid "Automatic blocking of detected brute force attack IPs (paid)"
+msgstr "Blocco automatico degli IP degli attacchi brute force rilevati (a pagamento)"
+
+msgid "Hack log"
+msgstr "Registro degli hack"
+
+msgid "Hacking type"
+msgstr "Tipo di hacking"
+
+msgid "Hacker's IP(Check Abuse IP)"
+msgstr "IP dell'hacker (Controlla IP di abuso)"
+
+msgid "Accessed file"
+msgstr "File consultato"
+
+msgid "Hack count"
+msgstr "Conteggio degli hack"
+
+msgid "Block this IP"
+msgstr "Blocca questo IP"
+
+msgid "No data found."
+msgstr "Nessun dato trovato."
+
+msgid "This Ip was auto blocked <br>till"
+msgstr "Questo IP è stato bloccato automaticamente <br>fino a"
+
+msgid "Login lockdown"
+msgstr "Blocco dell'accesso"
+
+msgid "Vulnerability hack"
+msgstr "Hack della vulnerabilità"
+
+msgid "Ajax action vulnerability hack"
+msgstr "Hack della vulnerabilità dell'azione Ajax"
+
+msgid "Runs WPSCAN"
+msgstr "Esegue WPSCAN"
+
+msgid "Brute force attack"
+msgstr "Attacco brute force"
+
+msgid "XMLRPC brute force attack"
+msgstr "Attacco brute force XMLRPC"
+
+msgid "The Hack Monitor also logs brute force attacks with weak passwords. Therefore, it cannot be enabled if there is an administrator user who is already using a weak password."
+msgstr "Hack Monitor registra anche gli attacchi brute force con password deboli. Pertanto, non può essere abilitato se c'è un utente amministratore che sta già utilizzando una password debole."
+
+msgid "If you have inadvertently blocked your IP, please FTP to your server's HTACCESS file and delete #WPINFECBLOCKIP_START to #WPINFECBLOCKIP_END"
+msgstr "Se hai bloccato inavvertitamente il tuo IP, vai tramite FTP al file HTACCESS del tuo server ed elimina #WPINFECBLOCKIP_START in #WPINFECBLOCKIP_END"
+
+msgid "Hack monitor & Auto IP blocker"
+msgstr "Hack monitor e Auto IP blocker"
+
+msgid "Block failed, does the HTACCESS file exist and is it writable permissions? Or did you enter the correct IP?"
+msgstr "Blocco fallito, il file HTACCESS esiste e ha permessi di scrittura? Oppure hai inserito l'IP corretto?"
+
+msgid "Login log"
+msgstr "Registro di accesso"
+
+msgid "Brute force attack(Excessive access to WP-LOGIN, XMLRPC etc.)"
+msgstr "Attacco di forza bruta (accesso eccessivo a WP-LOGIN, XMLRPC ecc.)."
+
+msgid "Process manager"
+msgstr "Gestore dei processi"
+
+msgid "The Process Manager detects and displays potentially malware processes running in memory. If a process keeps executing a file that you do not recognize, and the PHP file does not exist (or is executing a file that does not exist in the WordPress core files), and the execution time is long (more than 1 hour), malware may have embedded some malware in the process. If the htaccess file or index.php is rewritten without your permission and malicious code is continuously embedded, malware may be deployed in the process."
+msgstr "Il Gestore processi rileva e visualizza i processi potenzialmente malware in esecuzione nella memoria. Se un processo continua a eseguire un file non riconosciuto, il file PHP non esiste (o sta eseguendo un file che non esiste nei file core di WordPress) e il tempo di esecuzione è lungo (più di 1 ora), è possibile che un malware sia stato incorporato nel processo. Se il file htaccess o index.php viene riscritto senza l'autorizzazione dell'utente e il codice dannoso viene continuamente incorporato, è possibile che il malware venga distribuito nel processo."
+
+msgid "*Processes may not be retrieved or stopped on some servers."
+msgstr "*I processi potrebbero non essere recuperati o arrestati su alcuni server."
+
+msgid "Refresh"
+msgstr "Aggiornare"
+
+msgid "Pid process not found."
+msgstr "Processo Pid non trovato."
+
+msgid "Pid error."
+msgstr "Errore Pid."
+
+msgid "Exist"
+msgstr "Esistente"
+
+msgid "Not exist"
+msgstr "Non esiste"
+
+msgid "User ID"
+msgstr "ID utente"
+
+msgid "Process ID"
+msgstr "ID processo"
+
+msgid "Command"
+msgstr "Comando"
+
+msgid "Start time"
+msgstr "Ora di inizio"
+
+msgid "File exists"
+msgstr "Il file esiste"
+
+msgid "Code"
+msgstr "Codice"
+
+msgid "Kill process"
+msgstr "Uccidere il processo"
+
+msgid "No php process found."
+msgstr "Nessun processo php trovato."
+
+msgid "Kill"
+msgstr "Uccidere"
+
+msgid "The free version of the plugin does not provide access to the latest malware detection patterns from the time of installation or the expiration of your paid subscription. <br>For this reason, the malware detection power of the free version will gradually decrease. <br>The malware detection power score is a calculated score based on the ratio of malware currently detected by the latest malware detection patterns that are not installed on your site. <br>If the score is 80, this means that 20% of malware is currently being detected by malware detection patterns that are not installed on your site, so we recommend that you subscribe to the paid version to maintain the plugin&#39;s strong detection power."
+msgstr "La versione gratuita del plugin non fornisce accesso agli ultimi modelli di rilevamento malware dal momento dell'installazione o dalla scadenza dell'abbonamento a pagamento. <br>Per questo motivo, la potenza di rilevamento malware della versione gratuita diminuirà gradualmente. <br>Il punteggio della potenza di rilevamento malware è un punteggio calcolato in base al rapporto tra malware attualmente rilevato dagli ultimi modelli di rilevamento malware che non sono installati sul tuo sito. <br>Se il punteggio è 80, significa che il 20% del malware è attualmente rilevato da modelli di rilevamento malware che non sono installati sul tuo sito, quindi ti consigliamo di abbonarti alla versione a pagamento per mantenere la forte potenza di rilevamento del plugin."
+
+msgid "Automatic blocking of detected malicious cookie attack IPs (paid)"
+msgstr "Blocco automatico degli attacchi tramite cookie (a pagamento)"
+
+msgid "Are you sure you want to disable the plugin? Doing so will reset settings, logs, and other data."
+msgstr "Sei sicuro di voler disattivare il plugin? Questa operazione ripristinerà le impostazioni, i registri e altri dati."
+
+msgid "Content Security Policy"
+msgstr "Content Security Policy"
+
+msgid "CSP (Content Security Policy) is a mechanism that specifies to the browser “which types of sources (such as scripts, images, stylesheets, etc.) are allowed to be loaded and from where,” helping to prevent XSS (Cross-Site Scripting: attacks that execute external scripts on a site), and even if unauthorized code is embedded due to site tampering, it can partially (though not perfectly) prevent users accessing the site from executing such malicious scripts; when enabled, it is recommended to verify the site’s display and behavior."
+msgstr "CSP (Content Security Policy) è un meccanismo che indica al browser «quali tipi di risorse (come script, immagini, fogli di stile, ecc.) possono essere caricati e da quali origini». Questo aiuta a prevenire gli attacchi XSS (Cross-Site Scripting: attacchi che eseguono script esterni su un sito) e, anche nel caso in cui venga incorporato codice non autorizzato a causa di una manomissione del sito, può impedire parzialmente (sebbene non in modo perfetto) che gli utenti che accedono al sito eseguano tali script dannosi. Una volta abilitato, si consiglia di verificare la visualizzazione e il comportamento del sito."
+
+msgid "Enable CSP settings"
+msgstr "Abilita le impostazioni CSP"
+
+msgid "✓Check the current CSP externally"
+msgstr "※ Verifica esternamente la CSP attuale"
+
+msgid "Basic rule setting: default-src"
+msgstr "Impostazione della regola di base: default-src"
+
+msgid "When default-src is set, it collectively specifies various CSP settings such as script-src below; however, if script-src or other directives are additionally set, they will override default-src, so please be careful."
+msgstr "Quando viene impostato default-src, vengono definite collettivamente varie impostazioni CSP come script-src. Tuttavia, se vengono impostate anche script-src o altre direttive, queste sovrascriveranno default-src. Si prega di prestare attenzione."
+
+msgid "Example: If default-src and script-src are both specified → only the script-src setting is applied to JavaScript."
+msgstr "Esempio: se sono specificati sia default-src sia script-src → a JavaScript si applica solo l’impostazione di script-src."
+
+msgid "Global settings for allowing browser loading"
+msgstr "Impostazioni globali per consentire il caricamento nel browser"
+
+msgid "Do not set"
+msgstr "Non impostare"
+
+msgid "Allow all"
+msgstr "Consenti tutto"
+
+msgid "Allow only sources on the same domain (Recommended: make this strict and configure allowed domains individually in other items)"
+msgstr "Consenti solo le risorse dello stesso dominio (Consigliato: mantenere questa opzione restrittiva e configurare i domini consentiti singolarmente negli altri elementi)"
+
+msgid "Allow sources on the same domain and the sources entered below"
+msgstr "Consenti le risorse dello stesso dominio e le risorse inserite di seguito"
+
+msgid "✓To add allowed domains, please add one per line in the text area"
+msgstr "※ Per aggiungere domini consentiti, inserirne uno per riga nell’area di testo"
+
+msgid "* means all subdomains are included"
+msgstr "* indica che sono inclusi tutti i sottodomini"
+
+msgid "Control of inline scripts and CSS"
+msgstr "Controllo degli script inline e del CSS"
+
+msgid "JavaScript loading settings: script-src"
+msgstr "Impostazioni di caricamento JavaScript: script-src"
+
+msgid "This setting controls the sources from which JavaScript can be loaded and executed, serving as a countermeasure against XSS and the execution of maliciously embedded scripts."
+msgstr "Questa impostazione controlla le origini da cui JavaScript può essere caricato ed eseguito. Serve come contromisura contro XSS e contro l’esecuzione di script incorporati in modo dannoso."
+
+msgid "JavaScript allowed to be loaded by the browser"
+msgstr "JavaScript consentito per il caricamento dal browser"
+
+msgid "Do not set (uses the default-src setting)"
+msgstr "Non impostare (utilizza l’impostazione default-src)"
+
+msgid "Allow only sources on the same domain"
+msgstr "Consenti solo le risorse dello stesso dominio"
+
+msgid "Allow sources on the same domain and specified external sources (Recommended)"
+msgstr "Consenti le risorse dello stesso dominio e le origini esterne specificate (Consigliato)"
+
+msgid "Check the domains to allow"
+msgstr "Seleziona i domini da consentire"
+
+msgid "✓To add more allowed domains, please add one per line in the text area"
+msgstr "※ Per aggiungere altri domini consentiti, inserirne uno per riga nell’area di testo"
+
+msgid "Control of inline scripts"
+msgstr "Controllo degli script inline"
+
+msgid "Allow eval (Not recommended)"
+msgstr "Consenti eval (Non consigliato)"
+
+msgid "Destination settings for connections: connect-src"
+msgstr "Impostazioni delle destinazioni di connessione: connect-src"
+
+msgid "Restricts destination URLs for communications performed by JavaScript at runtime (fetch / XHR / Beacon / WebSocket / EventSource, etc.), helping to prevent information leakage via external communications and the retrieval of malicious data from external servers."
+msgstr "Limita gli URL di destinazione per le comunicazioni effettuate da JavaScript in fase di esecuzione (fetch / XHR / Beacon / WebSocket / EventSource, ecc.), aiutando a prevenire la fuoriuscita di informazioni tramite comunicazioni esterne e il recupero di dati dannosi da server esterni."
+
+msgid "Settings for destinations allowed by the browser for communication"
+msgstr "Impostazioni delle destinazioni di comunicazione consentite dal browser"
+
+msgid "WordPress plugin/theme information, API communication"
+msgstr "Informazioni su plugin/temi WordPress, comunicazione API"
+
+msgid "iframe source settings: frame-src / child-src"
+msgstr "Impostazioni delle sorgenti iframe: frame-src / child-src"
+
+msgid "This setting prevents loading malicious advertisements or embedded content by restricting which domains iframe elements (and their generated child content) embedded in a page can be loaded from."
+msgstr "Questa impostazione impedisce il caricamento di pubblicità dannose o contenuti incorporati limitando i domini da cui possono essere caricati gli elementi iframe (e i contenuti generati al loro interno) incorporati in una pagina."
+
+msgid "Settings for allowed iframe sources"
+msgstr "Impostazioni delle sorgenti iframe consentite"
+
+msgid "All Google services"
+msgstr "Tutti i servizi Google"
+
+msgid "Stylesheet (CSS) source settings: style-src"
+msgstr "Impostazioni delle sorgenti dei fogli di stile (CSS): style-src"
+
+msgid "This CSP directive restricts which domains and formats CSS applied to a page (external CSS, inline CSS, style attributes, etc.) can be loaded from, helping to prevent information leakage or XSS via abused styles."
+msgstr "Questa direttiva CSP limita i domini e i formati da cui può essere caricato il CSS applicato a una pagina (CSS esterno, CSS inline, attributi style, ecc.), contribuendo a prevenire la perdita di informazioni o attacchi XSS tramite l’abuso degli stili."
+
+msgid "Settings for allowed stylesheet (CSS) sources"
+msgstr "Impostazioni delle sorgenti consentite dei fogli di stile (CSS)"
+
+msgid "Control of inline styles"
+msgstr "Controllo degli stili inline"
+
+msgid "Restrictions on use of the base tag: base-uri"
+msgstr "Restrizioni sull’uso del tag base: base-uri"
+
+msgid "This CSP setting prevents attacks that redirect relative URLs to external sites or send information externally by restricting the base URL that can be specified with the HTML base tag."
+msgstr "Questa impostazione CSP previene attacchi che reindirizzano URL relativi verso siti esterni o inviano informazioni all’esterno, limitando l’URL di base che può essere specificato tramite il tag HTML base."
+
+msgid "Same domain only"
+msgstr "Solo lo stesso dominio"
+
+msgid "Disallow"
+msgstr "Non consentire"
+
+msgid "Form submission destination settings: form-action"
+msgstr "Impostazioni delle destinazioni di invio dei moduli: form-action"
+
+msgid "This CSP setting prevents attacks where form submission destinations are changed to unauthorized external sites through XSS or tampering, resulting in stolen input data, by restricting the URLs to which HTML forms (form tags) can submit data."
+msgstr "Questa impostazione CSP previene attacchi in cui, tramite XSS o manomissione, la destinazione di invio dei moduli viene modificata verso siti esterni non autorizzati, causando il furto dei dati inseriti, limitando gli URL a cui i moduli HTML (tag form) possono inviare dati."
+
+msgid "Settings for destinations to which form tags can submit data"
+msgstr "Impostazioni delle destinazioni a cui i moduli possono inviare dati"
+
+msgid "Image source settings: img-src"
+msgstr "Impostazioni delle sorgenti delle immagini: img-src"
+
+msgid "img-src is a setting that restricts image loading sources to specific domains, preventing information leakage (tracking) via unauthorized external images and malicious resource loading through XSS attacks."
+msgstr "img-src è un’impostazione che limita le sorgenti di caricamento delle immagini a domini specifici, prevenendo la perdita di informazioni (tracciamento) tramite immagini esterne non autorizzate e il caricamento di risorse dannose tramite attacchi XSS."
+
+msgid "Settings for allowed image loading sources"
+msgstr "Impostazioni delle sorgenti consentite per il caricamento delle immagini"
+
+msgid "Allow your own domain and add additional allowed domains"
+msgstr "Consenti il dominio proprio e aggiungi ulteriori domini consentiti"
+
+msgid "Allow images in the data: format"
+msgstr "Consenti immagini nel formato data:"
+
+msgid "Font source settings: font-src"
+msgstr "Impostazioni delle sorgenti dei caratteri: font-src"
+
+msgid "This CSP directive restricts which domains and formats Fonts applied to a page. Prevents tracking and information leaks caused by font loading."
+msgstr "Questa direttiva CSP limita i domini e i formati dei caratteri applicati a una pagina. Previene il tracciamento e le fughe di informazioni causate dal caricamento dei caratteri."
+
+msgid "Settings for allowed Font sources"
+msgstr "Impostazioni delle sorgenti dei caratteri consentite"
+
+msgid "Allow font load in the data: format"
+msgstr "Consenti il caricamento dei caratteri nel formato data:"
+
+msgid "Use add_action (Using a cache plugin may cause it to not work.)"
+msgstr "Usa add_action (L'uso di un plugin di cache potrebbe impedire il corretto funzionamento.)"
+
+msgid "Use htaccess"
+msgstr "Usa htaccess"
+
+msgid "*This vulnerability may be a serious one that allows tampering without requiring special privileges."
+msgstr "*Questa vulnerabilità potrebbe essere una vulnerabilità pericolosa che consente la manomissione senza richiedere privilegi speciali."
+
+msgid "*This vulnerability may be a dangerous one that could allow data tampering."
+msgstr "*Questa vulnerabilità potrebbe essere una vulnerabilità pericolosa che consente la manomissione dei dati."

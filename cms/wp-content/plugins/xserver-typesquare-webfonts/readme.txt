@@ -1,11 +1,11 @@
 === TypeSquare Webfonts for エックスサーバー ===
 Contributors: xserverjp
 Tags: fonts,Webfonts
-Requires at least: 4.3.1
-Tested up to: 5.3
-Stable tag: 1.2.1
+Requires at least: 5.2
+Tested up to: 6.9
+Stable tag: 2.0.9
 License: GPLv3 or later
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 エックスサーバー株式会社が提供する各レンタルサーバーサービスでWebフォントを利用できるプラグインです。
 
@@ -17,11 +17,11 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 また、カスタムフォントテーマ機能を使うことで33書体の中からフォントを自由に組み合わせることも可能です。
 
 = 利用対象 =
-エックスサーバーが提供する「エックスサーバー」「エックスサーバービジネス」「wpX」「シックスコア」「X2」の各レンタルサーバーをご契約の場合、無料で利用できる機能です。
+エックスサーバーが提供する「エックスサーバー」「Xserverビジネス」「シン・レンタルサーバー」「wpX Speed」の各レンタルサーバーをご契約の場合、無料で利用できる機能です。
 
 プラグインのインストールの他、各レンタルサーバーサービスの管理ツールより、Webフォントを使用するドメイン名の設定が必要となります。
 
-なお、「エックスサーバー」「エックスサーバービジネス」「wpX」「シックスコア」「X2」以外のサーバーでは動作しませんのでご注意ください。
+なお、「エックスサーバー」「Xserverビジネス」「シン・レンタルサーバー」「wpX Speed」以外のサーバーでは動作しませんのでご注意ください。
 
 
 = 利用できる書体 =
@@ -45,7 +45,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 　じゅん201
 　じゅん501
 　新丸ゴ R
-　秀英にじみ丸ゴシック B
+　秀英にじみ丸ゴ B
 
 【デザイン書体】
 　フォーク M
@@ -81,23 +81,14 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 　◇エックスサーバー マニュアル
 　　https://www.xserver.ne.jp/manual/
 
-　◇エックスサーバービジネス マニュアル
-　　https://support.xserver.ne.jp/
+　◇Xserverビジネス マニュアル
+　　https://support.xserver.ne.jp/manual/
 
-　◇wpXレンタルサーバー マニュアル
-　　https://www.wpx.ne.jp/server/manual/
+　◇シン・レンタルサーバー マニュアル
+　　https://www.shin-server.jp/support/manual/
 
-　◇wpXクラウド マニュアル
-　　https://www.wpx.ne.jp/cloud/manual/
-
-　◇シックスコア 共有サーバー マニュアル
-　　http://www.sixcore.ne.jp/shared/man/
-
-　◇シックスコア 専用サーバー マニュアル
-　　http://www.sixcore.ne.jp/dedicated/man/
-
-　◇X2 マニュアル
-　　http://www.xtwo.ne.jp/support/man/
+　◇wpX Speed マニュアル
+　　https://www.wpx.ne.jp/support/manual/
 
 ※Webフォント機能の利用は無料ですが、提供各サービスの利用料、通信にかかる費用などはお客様の負担となります。
 
@@ -105,16 +96,17 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 == Installation ==
 ※このプラグインを使用するためには、エックスサーバー株式会社が提供する以下いずれかのレンタルサーバーサービスの契約が必要です。
-　「エックスサーバー」「エックスサーバービジネス」「wpXレンタルサーバー」「wpXクラウド」「シックスコア」「X2」
+　「エックスサーバー」「Xserverビジネス」「シン・レンタルサーバー」「wpX Speed」
 
 1.「TypeSquare Webfonts for エックスサーバー」をプラグインディレクトリからダウンロードします。
 
 2.WordPressダッシュボードのプラグインメニューからプラグインを有効化します。
 
 3.以下の管理画面からWebフォントを使用するドメイン名を設定します。
-　　エックスサーバー、エックスサーバービジネス：サーバーパネル
-　　wpX：管理パネル
-　　シックスコア、X2：サーバー管理ツール
+　　エックスサーバー：サーバーパネル
+　　Xserverビジネス：サーバーパネル
+　　シン・レンタルサーバー：サーバーパネル
+　　wpX Speed：管理パネル
 
 
 == Frequently asked questions ==
@@ -123,25 +115,44 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 　◇エックスサーバー よくある質問
 　　https://www.xserver.ne.jp/support/faq/
 
-　◇エックスサーバービジネス よくある質問
+　◇Xserverビジネス よくある質問
 　　https://support.xserver.ne.jp/faq/
 
-　◇wpXレンタルサーバー よくある質問
-　　https://www.wpx.ne.jp/server/support/faq/
+　◇シン・レンタルサーバー よくある質問
+　　https://www.shin-server.jp/support/faq/
 
-　◇wpXクラウド よくある質問
-　　https://www.wpx.ne.jp/cloud/support/faq/
+　◇wpX Speed よくある質問
+　　https://www.wpx.ne.jp/support/faq/
 
-　◇シックスコア 共有サーバー よくある質問
-　　http://www.sixcore.ne.jp/shared/faq/
+== Changelog ==
+= 2.0.9 =
+* 軽微な修正
 
-　◇シックスコア 専用サーバー よくある質問
-　　http://www.sixcore.ne.jp/dedicated/faq/
+= 2.0.8 =
+* 既知の脆弱性に対応
 
-　◇X2 よくある質問
-　　http://www.xtwo.ne.jp/support/faq/
+= 2.0.7 =
+* 軽微な修正
 
-= Changelog ==
+= 2.0.6 =
+* 軽微な修正
+
+= 2.0.5 =
+* 軽微な修正
+
+= 2.0.4 =
+* UI改善対応
+* PHP8.0対応
+
+= 1.2.4 =
+* プラグインのアイコン、バナー画像を変更
+
+= 1.2.3 =
+* 検証済み最新バージョンを更新
+
+= 1.2.2 =
+* 検証済み最新バージョンを更新
+
 = 1.2.1 =
 * Twenty-Twentyテーマの個別記事ページにおいて、フォントが適用されない不具合を修正
 

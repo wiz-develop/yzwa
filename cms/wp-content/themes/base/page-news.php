@@ -12,10 +12,7 @@
 
 get_header();
 
-$page_tit_en = CFS()->get('page_tit_en', $get_page_id);
-$category = get_the_category();
-$cat_name = $category[0]->name;
-$cat_acf = 'category_'.$category[0]->cat_ID;
+$page_tit_en = CFS()->get('page_tit_en', get_queried_object_id());
 
 ?>
 <div id="splash"></div>
@@ -50,8 +47,10 @@ $cat_acf = 'category_'.$category[0]->cat_ID;
 											$query->the_post();
 											$postid = get_the_ID();
 											$slug = get_post($postid)->post_name;
-											$category = get_the_category();
-											$cat_name = $category[0]->name; //TODO:投稿にカテゴリーが複数登録されている場合はどれを表示する？
+												$category = get_the_category();
+												$primary_category = reset( $category );
+												$cat_name = $primary_category ? $primary_category->name : '';
+												$cat_acf = $primary_category ? 'category_' . $primary_category->cat_ID : '';
 								?>
 									<article class="anime-scroll mb-2">
 										<a href="<?php the_permalink(); ?>">

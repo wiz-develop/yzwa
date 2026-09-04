@@ -9,7 +9,6 @@ class TypeSquare_Admin_Base {
 	const MESSAGE_KEY = 'typesquare-admin-errors';
 	const MENU_FONTTHEME = 'typesquare-admin-fonttheme';
 	const MENU_FONTGEN = 'typesquare-admin-fontgen';
-	const FONT_THEME_MAX = 10;
 	private function __construct(){}
 
 	public static function get_instance() {

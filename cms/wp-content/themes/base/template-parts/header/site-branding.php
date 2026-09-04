@@ -8,7 +8,6 @@
  */
 
 $parts = $args['parts'];
-$parent_cats = get_categories($parent_cat_args);
 
 ?>
 <nav id="site-navigation" class="text-center <?php if ($parts === 'header') echo 'main-navigation';?><?php if ($parts === 'footer') echo 'search-navigation';?>" aria-label="Top Menu">

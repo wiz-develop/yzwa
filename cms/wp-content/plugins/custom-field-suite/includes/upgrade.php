@@ -9,7 +9,7 @@ class cfs_upgrade
 
     public function __construct() {
         $this->version = CFS_VERSION;
-        $this->last_version = get_option('cfs_version');
+        $this->last_version = (string) get_option( 'cfs_version', '0' );
 
         if ( version_compare( $this->last_version, $this->version, '<' ) ) {
             if ( version_compare( $this->last_version, '1.0.0', '<' ) ) {
